@@ -1,0 +1,23 @@
+:root {
+  /* fonts */
+  --regular: 400;
+  --bold: 700;
+
+  /* color */
+  --white: #FFFFFF;
+  --background-blue: #3f2aff;
+  --background-dark: #212133;
+  --background-card: #edf0f9;
+  --text-dark: #2e2b44;
+  --text-gray: #666666;
+  --text-teachers: #85859b;
+  --active: #646469;
+  --hover: #FF9900;
+
+
+  /* sizes */
+
+
+  /* transition */
+  --short: .5s;
+}
