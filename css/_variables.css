@@ -2,13 +2,17 @@
   /* fonts */
   --regular: 400;
   --bold: 700;
+  --default-fs: 16px;
+  --default-lh: 32px;
 
   /* color */
   --white: #FFFFFF;
-  --background-blue: #3f2aff;
-  --background-dark: #212133;
-  --background-card: #edf0f9;
-  --text-dark: #2e2b44;
+  --grey: #999999;
+  --background-default: #E5E5E5;
+
+  --background-black: #000000;
+  --text-dark: #333333;
+  --text-white: #FFFFFF;
   --text-gray: #666666;
   --text-teachers: #85859b;
   --active: #646469;
@@ -16,6 +20,9 @@
 
 
   /* sizes */
+  --body-min-width: 320px;
+  --container-max-width: 1920px;
+  --container-padding: 160px;
 
 
   /* transition */

@@ -18,16 +18,37 @@ img, svg {
 }
 
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #E5E5E5;
+  min-width: var(--body-min-width);
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1920px;
+  font-size: var(--default-fs);
+  line-height: var(--default-lh);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
+  color: var(--text-dark);
+  background-color: var(--background-default);
+
+
 }
 
 /* glob */
+.container {
+  flex-grow: 1;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -50,8 +71,8 @@ body {
   padding: 24px;
   width: 270px;
   color: #FFFFFF;
-  background: #3F2AFF;
-  border-radius: 20px;
+  background: #9D5CD0;
+  border-radius: 100px;
   transition-property: background-color, color;
   transition-duration: var(--short);
 }
