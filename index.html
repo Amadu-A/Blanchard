@@ -15,6 +15,9 @@
   <script defer src="js/burger.js"></script>
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/hero-swiper.js"></script>
+  <script defer src="js/galary-swiper.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=5e377f37-8e68-4715-b713-f9f40d50777a&lang=ru_RU"></script>
+  <script defer src="js/map.js"></script>
 </head>
 <body>
   <header class="header">
@@ -82,7 +85,106 @@
           </div>
         </div>
         <div class="galary__swiper">
+          <div class="content-wrap">
+            <div class="test-left-elem">
+              <h2 class="test-title">Test</h2>
+              <div class="test-select"></div>
+            </div>
+            <div class="test-swiper">
+              <div class="test-navigation">
+                <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+                <div class="test-pagination"></div>
+                <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+              </div>
+              <div class="swiper-container slides-container">
+              <div class="swiper-wrapper">
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" media="(max-width: 580px)">
+                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 960px)">
+                    <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg" media="(max-width: 1360px)">
 
+                    <!-- Здесь картинка от 1361 до 1920 и выше -->
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2021/10/31/15/00/flowers-6757727_960_720.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                  </picture>
+                </a>
+                <a class="swiper-slide test-slide" href="#">
+                  <picture>
+                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="test-last">
+
+              <div class="test-last-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -92,13 +194,13 @@
         <p class="catalog__text">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
         </p>
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper js-tabs-wrap">
           <ul class="list-reset catalog__wrapper-accordion accordion-container">
-            <li class="catalog__wrapper-accordion-item ac">
+            <li class="catalog__wrapper-accordion-item ac js-enabled is-active">
               <h3 class="catalog__wrapper-accordion-item-title flex">
                 <button class="btn-reset catalog__wrapper-accordion-item-spoiler flex ac-trigger">C 1400 по 1499 гг.</button>
               </h3>
-              <div class="accordion__content ac-panel js-tabs-wrap">
+              <div class="accordion__content ac-panel">
                 <ul class="accordion__content-list list-reset">
                   <li class="accordion__content-list-elem">
                     <button class="accordion__content-list-elem-link js-tab-btn btn-reset" data-path="empty">Бенедетто ди Биндо</button>
@@ -309,10 +411,229 @@
         </div>
       </div>
     </section>
-    <section class="events"></section>
-    <section class="projects"></section>
-    <section class="contacts"></section>
-    <section class="map"></section>
+    <section class="events">
+      <div class="container">
+        <h2 class="title">События</h2>
+        <div class="content-wrap">
+          <div class="test-left-elem">
+            <h2 class="test-title">Test</h2>
+            <div class="test-select"></div>
+          </div>
+          <div class="test-swiper">
+            <div class="test-navigation">
+              <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+              <div class="test-pagination"></div>
+              <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container slides-container">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" media="(max-width: 580px)">
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 960px)">
+                  <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg" media="(max-width: 1360px)">
+
+                  <!-- Здесь картинка от 1361 до 1920 и выше -->
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2021/10/31/15/00/flowers-6757727_960_720.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="test-last">
+
+            <div class="test-last-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <h2 class="title">Проекты</h2>
+        <p class="projects__text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены      исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects
+        </p>
+        <h3 class="title">Партнёры проектов:</h3>
+        <div class="content-wrap">
+          <div class="test-left-elem">
+            <h2 class="test-title">Test</h2>
+            <div class="test-select"></div>
+          </div>
+          <div class="test-swiper">
+            <div class="test-navigation">
+              <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+              <div class="test-pagination"></div>
+              <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container slides-container">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" media="(max-width: 580px)">
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 960px)">
+                  <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg" media="(max-width: 1360px)">
+
+                  <!-- Здесь картинка от 1361 до 1920 и выше -->
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2021/10/31/15/00/flowers-6757727_960_720.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
+                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="test-last">
+
+            <div class="test-last-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__showroom"></div>
+        <form action="/" class="contacts__form"></form>
+        <div class="contacts__links"></div>
+      </div>
+      <div class="contacts__map" id="myMap1"></div>
+    </section>
   </main>
   <footer class="footer">
 

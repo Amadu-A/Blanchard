@@ -1,29 +1,7 @@
-.galary {
-  position: relative;
+.events {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url("../img/galary-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--grey);
-  color: var(--text-white);
-}
-
-.galary__left {
-  margin-right: 50px;
-  max-width: 400px;
-  width: 100%;
-}
-
-/* .galary__title {
-  color: var(--text-white);
-} */
-
-.galary__filter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: var(--white);
 }
 
 
@@ -232,7 +210,3 @@
     padding-top: calc(110% - 6px);
   }
 }
-
-
-
-
