@@ -9,7 +9,7 @@
   --white: #FFFFFF;
   --grey: #999999;
   --background-default: #E5E5E5;
-
+  --background-gray: #CACACA;
   --background-black: #000000;
   --text-dark: #333333;
   --text-white: #FFFFFF;
@@ -26,5 +26,5 @@
 
 
   /* transition */
-  --short: .5s;
+  --short: .3s;
 }
