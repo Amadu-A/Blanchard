@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+/* .galary__container {
+  display: flex;
+} */
+
 /* .galary__title {
   color: var(--text-white);
 } */
@@ -67,7 +71,7 @@
   margin-right: 0;
 }
 
-.slides-container {
+.js-slides-container {
   overflow: hidden;
 }
 

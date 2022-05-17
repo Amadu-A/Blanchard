@@ -11,6 +11,7 @@ function init(){
         // от 0 (весь мир) до 19.
         zoom: 14,
         controls: [] // это отключает элементы управления
+
     },
     {
         suppressMapOpenBlock: true, // это отключает некоторые элементы внизу карты
@@ -32,6 +33,16 @@ function init(){
     // });
 
     // Размещение геообъекта на карте.
-    // myMap.geoObjects.add(myGeoObject);
-    myMap.geoObjects.add(myPlacemark);
+    myMap.geoObjects.add(myGeoObject);
+    // myMap.geoObjects.add(myPlacemark);
+
+    //отключаем зум колёсиком мышки
+    myMap.behaviors.disable('scrollZoom');
+    // myMap.behaviors.disable('drag');
+
+    //на мобильных устройствах... (проверяем по userAgent браузера)
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        //... отключаем перетаскивание карты
+        myMap.behaviors.disable('drag');
+    }
 }

@@ -9,9 +9,8 @@
   <link href="favicon.svg" rel="icon">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script defer src="js/tabs.js"></script>
-  <script defer src="js/accordion.min.js"></script>
+  <script defer src="libs/accordion.min.js"></script>
   <script defer src="js/accordion.init.js"></script>
-
   <script defer src="js/burger.js"></script>
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/hero-swiper.js"></script>
@@ -59,7 +58,7 @@
       </div>
     </section>
     <section class="galary">
-      <div class="container">
+      <div class="container galary__container">
         <div class="galary__left">
           <h2 class="title galary__title">Галерея</h2>
           <div class="galary__filter">
@@ -85,18 +84,14 @@
           </div>
         </div>
         <div class="galary__swiper">
-          <div class="content-wrap">
-            <div class="test-left-elem">
-              <h2 class="test-title">Test</h2>
-              <div class="test-select"></div>
-            </div>
-            <div class="test-swiper">
+          <div class="events__content-wrap">
+            <div class="events__swiper">
               <div class="test-navigation">
-                <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+                <button class="events__nav-btn test-prev" aria-label="К предыдущему слайду"></button>
                 <div class="test-pagination"></div>
-                <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+                <button class="events__nav-btn test-next" aria-label="К следующему слайду"></button>
               </div>
-              <div class="swiper-container slides-container">
+              <div class="swiper-container js-slides-container">
               <div class="swiper-wrapper">
                 <a class="swiper-slide test-slide" href="#">
                   <picture>
@@ -138,52 +133,9 @@
                     <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
                   </picture>
                 </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
-                  </picture>
-                </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                  </picture>
-                </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                  </picture>
-                </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
-                  </picture>
-                </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                  </picture>
-                </a>
-                <a class="swiper-slide test-slide" href="#">
-                  <picture>
-                    <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                    <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                  </picture>
-                </a>
               </div>
             </div>
             </div>
-            <div class="test-last">
-
-              <div class="test-last-content">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -414,105 +366,60 @@
     <section class="events">
       <div class="container">
         <h2 class="title">События</h2>
-        <div class="content-wrap">
-          <div class="test-left-elem">
-            <h2 class="test-title">Test</h2>
-            <div class="test-select"></div>
-          </div>
-          <div class="test-swiper">
+        <div class="events__content-wrap">
+          <div class="events__swiper">
             <div class="test-navigation">
-              <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+              <button class="events__nav-btn test-prev" aria-label="К предыдущему слайду"></button>
               <div class="test-pagination"></div>
-              <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+              <button class="events__nav-btn test-next" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper-container slides-container">
+            <div class="events__swiper-container swiper-container js-slides-container">
             <div class="swiper-wrapper">
-              <a class="swiper-slide test-slide" href="#">
+              <div class="swiper-slide test-slide" href="#">
                 <picture>
-                  <source srcset="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" media="(max-width: 580px)">
-                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(max-width: 960px)">
-                  <source srcset="https://cdn.pixabay.com/photo/2021/11/14/21/14/animals-6795732__340.jpg" media="(max-width: 1360px)">
+                  <source srcset="img/events-book-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/events-book-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/events-book-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="test-image" src="img/events-book-!@1920.jpg" alt="">
+                </picture>
+                span.event
+              </div>
+              <div class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="img/events-discuss-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/events-discuss-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/events-discuss-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="test-image" src="img/events-discuss-!@1920.jpg" alt="">
+                </picture>
+              </div>
+              <div class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="img/events-exhibition-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/events-exhibition-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/events-exhibition-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="test-image" src="img/events-exhibition-!@1920.jpg" alt="">
+                </picture>
+              </div>
+              <div class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="img/events-art-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/events-art-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/events-art-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="test-image" src="img/events-art-!@1920.jpg" alt="">
+                </picture>
+              </div>
+              <div class="swiper-slide test-slide" href="#">
+                <picture>
+                  <source srcset="img/events-vinzor-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/events-vinzor-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/events-vinzor-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="test-image" src="img/events-vinzor-!@1920.jpg" alt="">
+                </picture>
+              </div>
 
-                  <!-- Здесь картинка от 1361 до 1920 и выше -->
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2021/10/31/15/00/flowers-6757727_960_720.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/forest-1072828__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="">
-                </picture>
-              </a>
-              <a class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg" media="(min-width: 1024px)">
-                  <img class="test-image" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
-                </picture>
-              </a>
             </div>
           </div>
           </div>
-          <div class="test-last">
-
-            <div class="test-last-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
@@ -535,7 +442,7 @@
               <div class="test-pagination"></div>
               <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper-container slides-container">
+            <div class="swiper-container js-slides-container">
             <div class="swiper-wrapper">
               <a class="swiper-slide test-slide" href="#">
                 <picture>

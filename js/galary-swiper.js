@@ -1,4 +1,4 @@
-let gallerySlider = new Swiper(".slides-container", {
+let gallerySlider = new Swiper(".js-slides-container", {
   slidesPerView: 1,
   grid: {
     rows: 1,
@@ -18,7 +18,7 @@ let gallerySlider = new Swiper(".slides-container", {
     441: {
       slidesPerView: 2,
       grid: {
-        rows: 2
+        rows: 1
       },
       spaceBetween: 30
     },
@@ -26,7 +26,7 @@ let gallerySlider = new Swiper(".slides-container", {
     1200: {
       slidesPerView: 3,
       grid: {
-        rows: 2
+        rows: 1
       },
       spaceBetween: 50
     }
