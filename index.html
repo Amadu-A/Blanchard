@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link href="css/normalize.css" rel="stylesheet">
+  <!-- <link href="libs/choices.min.css" rel="stylesheet"> -->
   <link href="css/style.css" rel="stylesheet">
   <link href="favicon.svg" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- <script defer src="libs/choices.min.js"></script> -->
+  <!-- <script defer src="libs/just-validate.min.js"></script> -->
+  <!-- <script defer src="libs/inputmask.min.js"></script> -->
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="js/dropdown-simplebar.js"></script>
+  <!-- <script defer src="js/select.js"></script> -->
+  <!-- <script defer src="js/validation.js"></script> -->
+  <!-- <script defer src="js/tooltip.js"></script> -->
   <script defer src="js/tabs.js"></script>
   <script defer src="libs/accordion.min.js"></script>
   <script defer src="js/accordion.init.js"></script>
   <script defer src="js/burger.js"></script>
+  <script defer src="js/form-search.js"></script>
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/hero-swiper.js"></script>
   <script defer src="js/galary-swiper.js"></script>
@@ -22,10 +33,164 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__up">
-
+        <button class="btn-reset header__burger hamburger hamburger--collapse js-burger" type="button">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+        <div class="header__left">
+          <a class="header__logo" href="#">
+            <img src="img/logo.svg" alt="Логотип Скиллбокс" width="173" height="40">
+          </a>
+        </div>
+        <!-- <div class="col-md-10"> -->
+        <nav class="header__nav">
+          <div class="header__nav-wrap js-menu-wrap">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#">О&nbsp;нас</a>
+              </li>
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#advantages">Галерея</a>
+              </li>
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#teachers">Каталог</a>
+              </li>
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#courses">События</a>
+              </li>
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#courses">Проекты</a>
+              </li>
+              <li class="header__nav-list-elem">
+                <a class="header__nav-list-elem-link js-menu-link" href="#courses">Контакты</a>
+              </li>
+            </ul>
+            <button class="btn-reset header__nav-btn js-menu-link" type="button">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
+              </svg>
+              <span>Войти</span>
+            </button>
+          </div>
+        </nav>
       </div>
       <div class="header__down">
+        <ul class="list-reset header__menu">
+          <li class="header__menu-item">
+            <button class="header__menu-item-btn">
+              Реализм
+            </button>
+            <div class="header__menu-item-dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">Тинторетто</li>
+                <li class="dropdown__item">Фридрих</li>
+                <li class="dropdown__item">Леонардо</li>
+                <li class="dropdown__item">Верроккьо</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+              </ul>
+            </div>
+          </div>
+          </li>
+          <li class="header__menu-item">
+            <button class="header__menu-item-btn">
+              Импрессионизм
+            </button>
+            <div class="header__menu-item-dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">Моне</li>
+                <li class="dropdown__item">Сислей</li>
+                <li class="dropdown__item">Мане</li>
+                <li class="dropdown__item">Ренуар</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+              </ul>
+            </div>
+          </div>
+          </li>
 
+            <li class="header__menu-item">
+            <button class="header__menu-item-btn">
+              Постимпрессионизм
+            </button>
+            <div class="header__menu-item-dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">Ван Гог</li>
+                <li class="dropdown__item">Сезанн</li>
+                <li class="dropdown__item">Гоген</li>
+                <li class="dropdown__item">Сёра</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+              </ul>
+            </div>
+          </div>
+          </li>
+            <li class="header__menu-item">
+            <button class="header__menu-item-btn">
+              Авангард
+            </button>
+            <div class="header__menu-item-dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">Кандинский</li>
+                <li class="dropdown__item">Маринетти</li>
+                <li class="dropdown__item">Малевич</li>
+                <li class="dropdown__item">Пикассо</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+              </ul>
+            </div>
+          </div>
+          </li>
+            <li class="header__menu-item">
+            <button class="header__menu-item-btn">
+              Футуризм
+            </button>
+            <div class="header__menu-item-dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">Карра</li>
+                <li class="dropdown__item">Протелла</li>
+                <li class="dropdown__item">Северини</li>
+                <li class="dropdown__item">Балла</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+                <li class="dropdown__item">text</li>
+              </ul>
+            </div>
+          </div>
+          </li>
+        </ul>
+        <button class="btn-reset header__search-btn js-open-search" type="button" aria-label="Найти">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="currentColor"/>
+            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <form class="header__search-form js-form" action="/" method="get">
+          <input class="header__search-input" type="text" placeholder="Что будем искать?">
+          <button class="btn-reset header__search-btn header__search-btn--submit" type="submit" aria-label="Найти">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="currentColor"/>
+              <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+          <button class="header__close-btn btn-reset js-close-search" type="button" aria-label="Закрыть">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"/>
+              <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"/>
+              <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </header>

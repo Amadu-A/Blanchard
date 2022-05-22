@@ -1,6 +1,7 @@
 :root {
   /* fonts */
   --regular: 400;
+  --semibold: 600;
   --bold: 700;
   --default-fs: 16px;
   --default-lh: 32px;
@@ -22,7 +23,7 @@
   /* sizes */
   --body-min-width: 320px;
   --container-max-width: 1920px;
-  --container-padding: 160px;
+  --container-padding: calc(160 / 1920 * 100%);
 
 
   /* transition */
