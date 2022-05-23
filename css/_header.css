@@ -14,8 +14,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   margin: inherit;
   padding: inherit;
   top: 0;
@@ -31,9 +30,12 @@
   display: none;
 }
 
+.header__left {
+  margin-right: calc(179 / 1600 * 100%);
+}
+
 .header__logo {
   display: block;
-  /* margin-right: calc(179 / 1600 * 100%); */
   width: 173px;
   height: 40px;
 }
@@ -46,10 +48,13 @@
 .header__nav {
   font-weight: var(--semibold);
   line-height: 21px;
+  width: 100%;
 }
 
 .header__nav-wrap {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header__nav-list {
@@ -99,6 +104,10 @@
   color: var(--text-white);
 }
 
+.header__up-search {
+  display: none;
+}
+
 .header__down {
   position: absolute;
   display: flex;
@@ -125,6 +134,7 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
 }
 .dropdown.dropdown__active {
   visibility: visible;
@@ -146,16 +156,95 @@
 }
 
 .dropdown__simplebar .simplebar-track.simplebar-vertical {
-  background-color: grey;
+  background-color: #000000;
   width: 2px;
 }
 .dropdown__simplebar .simplebar-scrollbar {
   width: 2px;
-  background-color: pink;
+  background-color: #FFFFFF;
+}
+
+.header__menu-item-dropdown-tintoretto {
+  background-image: url('../img/dropdown-realism-tintoretto.jpg');
+}
+
+.header__menu-item-dropdown-fridrih {
+  background-image: url('../img/dropdown-realism-fridrih.jpg');
+}
+
+.header__menu-item-dropdown-leonardo {
+  background-image: url('../img/dropdown-realism-leonardo.jpg');
+}
+
+.header__menu-item-dropdown-verokko {
+  background-image: url('../img/dropdown-realism-verokko.jpg');
+}
+
+.header__menu-item-dropdown-mone {
+  background-image: url('../img/dropdown-impressionism-mone.jpg');
+}
+
+.header__menu-item-dropdown-sisley {
+  background-image: url('../img/dropdown-impressionism-sisley.jpg');
+}
+
+.header__menu-item-dropdown-mane {
+  background-image: url('../img/dropdown-impressionism-mane.jpg');
+}
+
+.header__menu-item-dropdown-renuar {
+  background-image: url('../img/dropdown-impressionism-renuar.jpg');
+}
+
+.header__menu-item-dropdown-vangog {
+  background-image: url('../img/dropdown-postimpressionism-vangog.jpg');
+}
+
+.header__menu-item-dropdown-sezann {
+  background-image: url('../img/dropdown-postimpressionism-sezann.jpg');
+}
+
+.header__menu-item-dropdown-gogen {
+  background-image: url('../img/dropdown-postimpressionism-gogen.jpg');
+}
+
+.header__menu-item-dropdown-siora {
+  background-image: url('../img/dropdown-postimpressionism-siora.jpg');
+}
+
+.header__menu-item-dropdown-candinsky {
+  background-image: url('../img/dropdown-avant-garde-candinsky.jpg');
+}
+
+.header__menu-item-dropdown-marinetty {
+  background-image: url('../img/dropdown-avant-garde-marinetty.jpg');
+}
+
+.header__menu-item-dropdown-malevich {
+  background-image: url('../img/dropdown-avant-garde-malevich.jpg');
+}
+
+.header__menu-item-dropdown-picasso {
+  background-image: url('../img/dropdown-avant-garde-picasso.jpg');
+}
+
+.header__menu-item-dropdown-karra {
+  background-image: url('../img/dropdown-futurism-karra.jpg');
+}
+
+.header__menu-item-dropdown-pratella {
+  background-image: url('../img/dropdown-futurism-pratella.jpg');
+}
+
+.header__menu-item-dropdown-severiny {
+  background-image: url('../img/dropdown-futurism-severiny.jpg');
+}
+
+.header__menu-item-dropdown-balla {
+  background-image: url('../img/dropdown-futurism-balla.jpg');
 }
 
 .header__menu {
-  /* background-color: rgba(0,0,0,0.5); */
   display: flex;
   flex-wrap: wrap;
 }
@@ -164,12 +253,33 @@
   margin-right: 50px;
 }
 .header__menu-item-btn {
+  position: relative;
   background-color: transparent;
   border: none;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 26px;
   cursor: pointer;
+}
+
+.header__menu-item-btn::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  top: 30px;
+  right: -10px;
+  border-bottom: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  transition: transform .3s;
+}
+
+.header__menu-item-btn.btn__active::after {
+  top: 35px;
+  transform: rotate(135deg);
 }
 
 /*search*/
@@ -180,8 +290,8 @@
 .header__search-btn,
 .header__close-btn {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   line-height: 1;
   color: var(--text);
   outline: none;
@@ -189,10 +299,11 @@
 }
 
 .header__search-btn--submit {
-  margin-right: 22px;
+  margin-right: 9px;
 }
 
 .header__close-btn {
+  display: none;
   color: var(--grey);
 }
 
@@ -222,9 +333,9 @@
   top: 5px;
   display: none;
   align-items: center;
-  max-width: 539px;
+  max-width: 251px;
   width: 100%;
-  padding: 16px 13px 16px 32px;
+  padding: 16px 0 16px;
   background: var(--background);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
   border-radius: 16px;
@@ -235,7 +346,6 @@
   display: flex;
   animation-name: search-open;
   animation-duration: .3s;
-  z-index: 1000;
 }
 
 .header__search-form.is-closed {
@@ -245,14 +355,14 @@
 
 .header__search-input {
   flex-grow: 1;
-  margin-right: 14px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--gray-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
   font-weight: var(--medium);
   font-size: 18px;
-  color: var(--focus-input);
+  color: #FFFFFF 85%;
   transition: border-color var(--short);
 }
 
@@ -267,12 +377,21 @@
 
 
 @media (max-width: 1360px) {
+  /* .header__up {
+    justify-content: space-between;
+  } */
+
   .header__burger {
     position: relative;
+    margin-right: calc(332 / 974 * 100%);
     z-index: 13;
     display: inline-block;
     width: 30px;
     height: 23px;
+  }
+
+  .header__left {
+    margin-right: 5px;
   }
 
   .header__logo {
@@ -328,4 +447,22 @@
     animation-name: menu-close;
     animation-duration: .3s;
   }
+
+  .header__up-search {
+    display: initial;
+  }
+
+  .header__down {
+    display: none;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__close-btn {
+    display: inline-block;
+  }
+
+
 }

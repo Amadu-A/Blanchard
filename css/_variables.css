@@ -29,3 +29,9 @@
   /* transition */
   --short: .3s;
 }
+
+@media (max-width: 1360px) {
+  :root {
+    --container-padding: 50px;
+  }
+}

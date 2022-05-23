@@ -72,8 +72,33 @@
               </svg>
               <span>Войти</span>
             </button>
+
           </div>
         </nav>
+        <div class="header__up-search">
+          <button class="btn-reset header__search-btn js-open-search" type="button" aria-label="Найти">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+            </svg>
+          </button>
+          <form class="header__search-form js-form" action="/" method="get">
+            <button class="btn-reset header__search-btn header__search-btn--submit" type="submit" aria-label="Найти">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <input class="header__search-input" type="text" placeholder="Поиск по сайту">
+            <button class="header__close-btn btn-reset js-close-search" type="button" aria-label="Закрыть">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"/>
+                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"/>
+                <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
       <div class="header__down">
         <ul class="list-reset header__menu">
@@ -83,11 +108,11 @@
             </button>
             <div class="header__menu-item-dropdown dropdown">
             <div class="dropdown__simplebar">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">Тинторетто</li>
-                <li class="dropdown__item">Фридрих</li>
-                <li class="dropdown__item">Леонардо</li>
-                <li class="dropdown__item">Верроккьо</li>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item header__menu-item-dropdown-tintoretto">Тинторетто</li>
+                <li class="dropdown__item header__menu-item-dropdown-fridrih">Фридрих</li>
+                <li class="dropdown__item header__menu-item-dropdown-leonardo">Леонардо</li>
+                <li class="dropdown__item header__menu-item-dropdown-verokko">Верроккьо</li>
                 <li class="dropdown__item">text</li>
                 <li class="dropdown__item">text</li>
                 <li class="dropdown__item">text</li>
@@ -101,14 +126,11 @@
             </button>
             <div class="header__menu-item-dropdown dropdown">
             <div class="dropdown__simplebar">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">Моне</li>
-                <li class="dropdown__item">Сислей</li>
-                <li class="dropdown__item">Мане</li>
-                <li class="dropdown__item">Ренуар</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item header__menu-item-dropdown-mone">Моне</li>
+                <li class="dropdown__item header__menu-item-dropdown-sisley">Сислей</li>
+                <li class="dropdown__item header__menu-item-dropdown-mane">Мане</li>
+                <li class="dropdown__item header__menu-item-dropdown-renuar">Ренуар</li>
               </ul>
             </div>
           </div>
@@ -120,14 +142,11 @@
             </button>
             <div class="header__menu-item-dropdown dropdown">
             <div class="dropdown__simplebar">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">Ван Гог</li>
-                <li class="dropdown__item">Сезанн</li>
-                <li class="dropdown__item">Гоген</li>
-                <li class="dropdown__item">Сёра</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item header__menu-item-dropdown-vangog">Ван Гог</li>
+                <li class="dropdown__item header__menu-item-dropdown-sezann">Сезанн</li>
+                <li class="dropdown__item header__menu-item-dropdown-gogen">Гоген</li>
+                <li class="dropdown__item header__menu-item-dropdown-siora">Сёра</li>
               </ul>
             </div>
           </div>
@@ -138,14 +157,11 @@
             </button>
             <div class="header__menu-item-dropdown dropdown">
             <div class="dropdown__simplebar">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">Кандинский</li>
-                <li class="dropdown__item">Маринетти</li>
-                <li class="dropdown__item">Малевич</li>
-                <li class="dropdown__item">Пикассо</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item header__menu-item-dropdown-candinsky">Кандинский</li>
+                <li class="dropdown__item header__menu-item-dropdown-marinetty">Маринетти</li>
+                <li class="dropdown__item header__menu-item-dropdown-malevich">Малевич</li>
+                <li class="dropdown__item header__menu-item-dropdown-picasso">Пикассо</li>
               </ul>
             </div>
           </div>
@@ -156,41 +172,40 @@
             </button>
             <div class="header__menu-item-dropdown dropdown">
             <div class="dropdown__simplebar">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">Карра</li>
-                <li class="dropdown__item">Протелла</li>
-                <li class="dropdown__item">Северини</li>
-                <li class="dropdown__item">Балла</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
-                <li class="dropdown__item">text</li>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item header__menu-item-dropdown-karra">Карра</li>
+                <li class="dropdown__item header__menu-item-dropdown-pratella">Прателла</li>
+                <li class="dropdown__item header__menu-item-dropdown-severiny">Северини</li>
+                <li class="dropdown__item header__menu-item-dropdown-balla">Балла</li>
               </ul>
             </div>
           </div>
           </li>
         </ul>
-        <button class="btn-reset header__search-btn js-open-search" type="button" aria-label="Найти">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="currentColor"/>
-            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"/>
-          </svg>
-        </button>
-        <form class="header__search-form js-form" action="/" method="get">
-          <input class="header__search-input" type="text" placeholder="Что будем искать?">
-          <button class="btn-reset header__search-btn header__search-btn--submit" type="submit" aria-label="Найти">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="currentColor"/>
-              <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"/>
+        <div class="header__down-search">
+          <button class="btn-reset header__search-btn js-open-search active" type="button" aria-label="Найти">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
             </svg>
           </button>
-          <button class="header__close-btn btn-reset js-close-search" type="button" aria-label="Закрыть">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"/>
-              <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"/>
-              <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
-            </svg>
-          </button>
-        </form>
+          <form class="header__search-form js-form is-opened" action="/" method="get">
+            <button class="btn-reset header__search-btn header__search-btn--submit" type="submit" aria-label="Найти">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <input class="header__search-input" type="text" placeholder="Поиск по сайту">
+            <button class="header__close-btn btn-reset js-close-search" type="button" aria-label="Закрыть">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"/>
+                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"/>
+                <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </header>
