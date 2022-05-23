@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <!-- <link href="libs/choices.min.css" rel="stylesheet"> -->
+  <link href="libs/choices.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="favicon.svg" rel="icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- <script defer src="libs/choices.min.js"></script> -->
+  <script defer src="libs/choices.min.js"></script>
+  <script defer src="js/select.js"></script>
   <!-- <script defer src="libs/just-validate.min.js"></script> -->
   <!-- <script defer src="libs/inputmask.min.js"></script> -->
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script defer src="js/dropdown-simplebar.js"></script>
-  <!-- <script defer src="js/select.js"></script> -->
+
   <!-- <script defer src="js/validation.js"></script> -->
   <!-- <script defer src="js/tooltip.js"></script> -->
   <script defer src="js/tabs.js"></script>
@@ -43,7 +44,6 @@
             <img src="img/logo.svg" alt="Логотип Скиллбокс" width="173" height="40">
           </a>
         </div>
-        <!-- <div class="col-md-10"> -->
         <nav class="header__nav">
           <div class="header__nav-wrap js-menu-wrap">
             <ul class="header__nav-list list-reset">
@@ -72,7 +72,6 @@
               </svg>
               <span>Войти</span>
             </button>
-
           </div>
         </nav>
         <div class="header__up-search">
@@ -239,34 +238,17 @@
     </section>
     <section class="galary test-section">
       <div class="container galary__container">
-        <div class="galary__left">
-          <h2 class="title galary__title">Галерея</h2>
-          <div class="galary__filter">
-            <div class="galary__filter-selector">
-              <p class="galary__filter-selector-title">Фильтр:</p>
-              <ul class="galary__filter-selector-list list-reset">
-                <li class="galary__filter-selector-list-elem">Живопись</li>
-                <li class="galary__filter-selector-list-elem">Рисунок</li>
-                <li class="galary__filter-selector-list-elem">Скульптура</li>
-              </ul>
-            </div>
-            <ul class="galary__filter-checkbox list-reset">
-              <li class="galary__filter-checkbox-elem">
-                XIX век
-              </li>
-              <li class="galary__filter-checkbox-elem">
-                XX век
-              </li>
-              <li class="galary__filter-checkbox-elem">
-                Совеременность
-              </li>
-            </ul>
-          </div>
-        </div>
         <div class="content-wrap">
-          <div class="test-left-elem">
-            <h2 class="test-title">Test</h2>
-            <div class="test-select"></div>
+          <div class="galary__left-elem">
+            <h2 class="title galary__title">Галерея</h2>
+            <p class="galary__select-title">Фильтр:</p>
+            <div class="galary__select">
+              <select name="select">
+                <option value="">Живопись</option>
+                <option value="Рисунок"></option>
+                <option value="Скульптура"></option>
+              </select>
+            </div>
           </div>
           <div class="test-swiper">
             <div class="test-navigation">
@@ -327,13 +309,27 @@
             </div>
           </div>
           </div>
-          <div class="test-last">
-
-            <div class="test-last-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
+          <div class="galary__last">
+            <div class="galary__last-content">
+              <ul class="galary__last-content-checkbox list-reset">
+                <li class="galary__last-content-checkbox-elem">
+                  <label class="check-label">
+                    <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XIX век</span>
+                  </label>
+                </li>
+                <li class="galary__last-content-checkbox-elem">
+                  <label class="check-label">
+                    <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XX век</span>
+                  </label>
+                </li>
+                <li class="galary__last-content-checkbox-elem">
+                  <label class="check-label">
+                    <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">Совеременность</span>
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
-
         </div>
       </div>
     </section>

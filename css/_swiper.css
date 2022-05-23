@@ -1,13 +1,3 @@
-/* html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
-
 .test-section {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -26,33 +16,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.test-left-elem,
-.test-last {
-  width: calc(400 / 1600 * 100%);
-}
-
-.test-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.test-select {
-  min-height: 50px;
-  border-radius: 5px;
-  background-color: lightgray;
-}
-
-.test-last {
-  position: relative;
-}
-
-.test-last-content {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
 }
 
 .test-swiper {

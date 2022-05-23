@@ -16,6 +16,27 @@
   width: 100%;
 }
 
+.galary__left-elem,
+.galary__last {
+  width: calc(400 / 1600 * 100%);
+}
+
+.galary__select {
+  min-height: 50px;
+  border-radius: 6px;
+}
+
+.galary__last {
+  position: relative;
+}
+
+.galary__last-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
 /* .galary__container {
   display: flex;
 } */
@@ -24,11 +45,203 @@
   color: var(--text-white);
 } */
 
-.galary__filter {
+/* select */
+.choices__inner {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  z-index: 3;
+  color: var(--text-white);
+}
+
+.is-open .choices__inner {
+  margin-bottom: 1px;
+  border-radius: 6px;
+  border: 1px solid var(--white);
+}
+
+.choices__list.choices__list--dropdown.is-active {
+  background-color: #000000;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-color: var(--white);
+}
+
+.choices.is-focused:focus,
+.choices:hover {
+  /* outline: 1px solid red; */
+  background: rgba(255, 255, 255, 0.2);
+  outline-offset: 0;
+}
+
+.choices.is-focused.is-open {
+  outline: none;
+}
+
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 10px;
+  color: var(--grey);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+}
+
+.choices__item {
+  padding-right: 10px;
+  padding-left: 5px;
+  width: 100%;
+  opacity: 1;
+}
+
+.choices__item:not(:last-child) {
+  border-bottom: 1px solid var(--grey);
+}
+
+.choices__list.choices__list--dropdown.is-active {
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+}
+
+.choices__list--dropdown .choices__placeholder {
+	display: none;
+}
+
+.choices[data-type*=select-one]::after {
+  content: "";
+  border-width: 0;
+  width: 8px;
+  height: 8px;
+  right: 15px;
+  top: 25px;
+  border-bottom: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  z-index: 4;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  content: "";
+  border-width: 0;
+  top: 35px;
+  border-top: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+}
+
+/* checkbox */
+
+.galary__last-content-checkbox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.galary__last-content-checkbox-elem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.galary__last-content-checkbox-elem {
+  position: relative;
+  display: inline-block;
+}
+
+.galary__last-content-checkbox-elem .custom-checkbox-text {
+  transition: color .3s ease-in-out;
+}
+
+.check-label {
+  vertical-align: middle;
+  color: inherit;
+  cursor: pointer;
+}
+
+.check-label:hover .custom-checkbox {
+  border-color: yellowgreen;
+}
+
+.check-label:hover .custom-checkbox-text {
+  color: yellowgreen;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 9px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transition: border-color .3s ease-in-out;
+}
+
+.custom-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  left: 30%;
+  top: 30%;
+  border: 1px solid #CCB26E;
+  border-top: transparent;
+  border-right: transparent;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
+}
+
+/* .checkbox:checked ~ .custom-checkbox::before,
+.checkbox:checked ~ .custom-checkbox {
+  opacity: 1;
+  border-color: #CCB26E;
+} */
+
+/* .list-item-checkbox-content-elem:hover *,
+.custom-checkbox:hover,
+.check-label:hover .custom-checkbox,
+.check-label:hover {
+  cursor: pointer;
+  color: #967010;
+  border-color: #967010;
+} */
+
+.checkbox:checked ~ .custom-checkbox {
+  border-color: violet;
+}
+
+.checkbox:checked ~ .custom-checkbox::before {
+  opacity: 1;
+}
+
+.checkbox:focus ~ .custom-checkbox {
+  border-color: orange;
+}
+
+.checkbox:focus ~ .custom-checkbox::before {
+  border-color: orange;
+}
+
+.check-text {
+  vertical-align: middle;
+  transition: color .3s ease;
+}
+
+.checkbox:checked ~ .check-text {
+  color: violet;
+}
+
+.checkbox:focus ~ .check-text {
+  color: orange;
+}
+
 
 /* swiper */
 

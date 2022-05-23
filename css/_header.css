@@ -383,7 +383,7 @@
 
   .header__burger {
     position: relative;
-    margin-right: calc(332 / 974 * 100%);
+    margin-right: calc(332 / 924 * 100%);
     z-index: 13;
     display: inline-block;
     width: 30px;
