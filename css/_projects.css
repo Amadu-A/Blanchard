@@ -3,3 +3,135 @@
   padding-bottom: 80px;
   background-color: var(--white);
 }
+
+.projects__text {
+  margin: 0;
+  margin-bottom: 30px;
+  max-width: 1080px;
+}
+
+.projects__title-3 {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* swiper */
+.projects__content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects__swiper {
+  position: relative;
+  min-width: 100%
+}
+
+.projects__card {
+  border: 1px solid var(--background-gray);
+}
+
+.projects__card.swiper-slide {
+  background-image: none;
+  background-color: var(--white);
+}
+
+.projects__slides-container {
+  overflow: hidden;
+}
+
+.projects__navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.projects__nav-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #ECECEC;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.projects__nav-btn::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px / 2);
+  width: 12px;
+  height: 12px;
+  border-color: #000000;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.projects__prev {
+  position: absolute;
+  left: -25px;
+}
+
+.projects__next {
+  position: absolute;
+  right: -25px;
+}
+
+.projects__next::before {
+  left: calc(50% - 17px / 2);
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+.projects__prev::before {
+  left: calc(50% - 10px / 2);
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.projects__slides-container {
+  overflow: hidden;
+}
+
+.projects__slide {
+  position: relative;
+  overflow: hidden;
+  background-color: #926B88;
+}
+
+.projects__slide::before {
+  content: "";
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-top: calc(100% - 350px);
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+
+.projects__slide:hover::after {
+  opacity: 1;
+}
+
+.projects__slide:focus {
+  outline: none;
+}
+
+.projects__slide:focus::before {
+  border-color: #7943A4;
+}
+
+.projects__slide:active::before {
+  border-color: #D1A9F0;
+  background-color: rgba(194, 131, 243, 0.4);
+}

@@ -6,6 +6,7 @@
 
 .catalog__text {
   margin-bottom: 50px;
+  max-width: 1080px;
 }
 
 .catalog__wrapper {

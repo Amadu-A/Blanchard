@@ -27,6 +27,8 @@
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/hero-swiper.js"></script>
   <script defer src="js/galary-swiper.js"></script>
+  <script defer src="js/events-swiper.js"></script>
+  <script defer src="js/projects-swiper.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=5e377f37-8e68-4715-b713-f9f40d50777a&lang=ru_RU"></script>
   <script defer src="js/map.js"></script>
 </head>
@@ -236,7 +238,7 @@
         </p>
       </div>
     </section>
-    <section class="galary test-section">
+    <section class="galary">
       <div class="container galary__container">
         <div class="content-wrap">
           <div class="galary__left-elem">
@@ -252,11 +254,11 @@
           </div>
           <div class="test-swiper">
             <div class="test-navigation">
-              <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
-              <div class="test-pagination"></div>
-              <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+              <button class="galary__nav-btn galary__prev" aria-label="К предыдущему слайду"></button>
+              <div class="galary__pagination"></div>
+              <button class="galary__nav-btn galary__next" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper-container js-slides-container">
+            <div class="swiper-container galary__slides-container">
             <div class="swiper-wrapper">
               <a class="swiper-slide test-slide" href="#">
                 <picture>
@@ -559,17 +561,17 @@
     <section class="events">
       <div class="container">
         <h2 class="title">События</h2>
-        <div class="content-wrap">
+        <div class="events__content-wrap">
           <div class="test-swiper events__swiper">
-            <div class="events__test-navigation">
-              <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
+            <div class="events__navigation">
+              <button class="events__navigation-btn events__prev btn-reset" aria-label="К предыдущему слайду"></button>
               <div class="test-pagination"></div>
-              <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+              <button class="events__navigation-btn events__next btn-reset" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper-container js-slides-container">
+            <div class="swiper-container events__slides-container">
             <div class="swiper-wrapper">
-              <div class="events__slide swiper-slide">
-                <a class="events__test-slide" href="#">
+              <div class="events__card swiper-slide">
+                <a class="events__slide" href="#">
                   <picture>
                     <source srcset="img/events-book-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-book-!@768.jpg" media="(max-width: 960px)">
@@ -589,8 +591,8 @@
                   <a href="#" class="events__slide-content-link">Подробнее</a>
                 </div>
               </div>
-              <div class="events__slide swiper-slide">
-                <a class="events__test-slide" href="#">
+              <div class="events__card swiper-slide">
+                <a class="events__slide" href="#">
                   <picture>
                     <source srcset="img/events-discuss-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-discuss-!@768.jpg" media="(max-width: 960px)">
@@ -609,8 +611,8 @@
                 </div>
               </div>
 
-              <div class="events__slide swiper-slide">
-                <a class="events__test-slide" href="#">
+              <div class="events__card swiper-slide">
+                <a class="events__slide" href="#">
                   <picture>
                     <source srcset="img/events-exhibition-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-exhibition-!@768.jpg" media="(max-width: 960px)">
@@ -631,8 +633,8 @@
                 </div>
               </div>
 
-              <div class="events__slide swiper-slide">
-                <a class="events__test-slide" href="#">
+              <div class="events__card swiper-slide">
+                <a class="events__slide" href="#">
                   <picture>
                     <source srcset="img/events-art-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-art-!@768.jpg" media="(max-width: 960px)">
@@ -653,8 +655,8 @@
                 </div>
               </div>
 
-              <div class="events__slide swiper-slide">
-                <a class="events__test-slide" href="#">
+              <div class="events__card swiper-slide">
+                <a class="events__slide" href="#">
                   <picture>
                     <source srcset="img/events-vinzor-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-vinzor-!@768.jpg" media="(max-width: 960px)">
@@ -672,125 +674,10 @@
                   <a href="#" class="events__slide-content-link">Подробнее</a>
                 </div>
               </div>
-
-
             </div>
           </div>
           </div>
-          <!-- <div class="test-last">
-
-            <div class="test-last-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.</p>
-            </div>
-          </div> -->
-
         </div>
-        <!-- <div class="events__content-wrap">
-          <div class="events__swiper">
-            <div class="test-navigation">
-              <button class="events__nav-btn test-prev" aria-label="К предыдущему слайду"></button>
-              <div class="test-pagination"></div>
-              <button class="events__nav-btn test-next" aria-label="К следующему слайду"></button>
-            </div>
-            <div class="events__swiper-container swiper-container js-slides-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" href="#">
-                <picture class="test-slide">
-                  <source srcset="img/events-book-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/events-book-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/events-book-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="test-image" src="img/events-book-!@1920.jpg" alt="">
-                </picture>
-                <div class="events__slide-content">
-                  <span class="events__slide-content-location">
-                    Музей им. Щусева
-                    с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
-                  </span>
-                  <h3 class="events__slide-content-title">Книжная гравюра в живом восприятии</h3>
-                  <p class="events__slide-content-descr">
-                    Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-                  </p>
-                  <a href="#" class="events__slide-content-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="img/events-discuss-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/events-discuss-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/events-discuss-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="test-image" src="img/events-discuss-!@1920.jpg" alt="">
-                </picture>
-                <div class="events__slide-content">
-                  <span class="events__slide-content-location">ММОМА</span>
-                  <span class="events__slide-content-location">24&nbsp;марта 19:00</span>
-                  <h3 class="events__slide-content-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                  <p class="events__slide-content-descr">
-                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-                  </p>
-                  <a href="#" class="events__slide-content-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="img/events-exhibition-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/events-exhibition-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/events-exhibition-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="test-image" src="img/events-exhibition-!@1920.jpg" alt="">
-                </picture>
-                <div class="events__slide-content">
-                  <span class="events__slide-content-location">
-                    Еврейский музей
-                    с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
-                  </span>
-                  <h3 class="events__slide-content-title">Выставка «Формация 2020»</h3>
-                  <p class="events__slide-content-descr">
-                    Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
-                  </p>
-                  <a href="#" class="events__slide-content-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="img/events-art-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/events-art-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/events-art-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="test-image" src="img/events-art-!@1920.jpg" alt="">
-                </picture>
-                <div class="events__slide-content">
-                  <span class="events__slide-content-location">
-                    ММАМ
-                    с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
-                  </span>
-                  <h3 class="events__slide-content-title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора серебра&raquo;</h3>
-                  <p class="events__slide-content-descr">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.
-                  </p>
-                  <a href="#" class="events__slide-content-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide test-slide" href="#">
-                <picture>
-                  <source srcset="img/events-vinzor-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/events-vinzor-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/events-vinzor-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="test-image" src="img/events-vinzor-!@1920.jpg" alt="">
-                </picture>
-                <div class="events__slide-content">
-                  <span class="events__slide-content-location">Третьяковка на&nbsp;Крымском валу
-                    с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</span>
-                  <h3 class="events__slide-content-title">XXIV Международная биеннале молодого искусства</h3>
-                  <p class="events__slide-content-descr">
-                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.
-                  </p>
-                  <a href="#" class="events__slide-content-link">Подробнее</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          </div>
-        </div> -->
-
       </div>
     </section>
     <section class="projects">
@@ -799,94 +686,96 @@
         <p class="projects__text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены      исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects
         </p>
-        <h3 class="title">Партнёры проектов:</h3>
-        <div class="test-swiper events__swiper">
-          <div class="test-navigation">
-            <button class="nav-btn test-prev" aria-label="К предыдущему слайду"></button>
-            <div class="test-pagination"></div>
-            <button class="nav-btn test-next" aria-label="К следующему слайду"></button>
+        <h3 class="projects__title-3">Партнёры проектов:</h3>
+        <div class="projects__content-wrap">
+          <div class="test-swiper projects__swiper">
+            <div class="projects__navigation">
+              <button class="projects__nav-btn projects__prev" aria-label="К предыдущему слайду"></button>
+              <div class="projects__pagination"></div>
+              <button class="projects__nav-btn projects__next" aria-label="К следующему слайду"></button>
+            </div>
+            <div class="swiper-container projects__slides-container">
+            <div class="swiper-wrapper">
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-freeelands.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-ICA.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-workhouse.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-1849.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+
+              <div class="events__slide swiper-slide">
+                <a class="events__test-slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-hiscox.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-camden.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-stassen.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-watts.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#">
+                  <picture>
+                    <img class="test-image" src="img/projects-esad.jpg" alt="">
+                  </picture>
+                </a>
+
+              </div>
+
+
+            </div>
           </div>
-          <div class="swiper-container js-slides-container">
-          <div class="swiper-wrapper">
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-freeelands.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-ICA.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-workhouse.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-1849.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-hiscox.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-camden.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-stassen.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-watts.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-            <div class="events__slide swiper-slide">
-              <a class="events__test-slide" href="#">
-                <picture>
-                  <img class="test-image" src="img/projects-esad.jpg" alt="">
-                </picture>
-              </a>
-
-            </div>
-
-
           </div>
-        </div>
         </div>
       </div>
     </section>
