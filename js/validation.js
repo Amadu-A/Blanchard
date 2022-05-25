@@ -30,7 +30,7 @@ var phoneElement = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7(999) 999-99-99");
 im.mask(phoneElement);
 
-const validation = new window.JustValidate('.form', {
+const validation = new window.JustValidate('.contacts__form', {
   errorFieldCssClass: 'is-invalid',
   errorFieldStyle: {
     border: '1px solid #FF5C00',
@@ -60,16 +60,16 @@ validation
     errorMessage: 'Вы не ввели имя'
   }
 ])
-.addField('.input-mail', [
-  {
-    rule: 'required',
-    errorMessage: 'Вы не ввели e-mail',
-  },
-  {
-    rule: 'email',
-    errorMessage: 'Укажите ваш e-mail',
-  },
-])
+// .addField('.input-mail', [
+//   {
+//     rule: 'required',
+//     errorMessage: 'Вы не ввели e-mail',
+//   },
+//   {
+//     rule: 'email',
+//     errorMessage: 'Укажите ваш e-mail',
+//   },
+// ])
 .addField('.input-tel', [
   {
     validator: () => {

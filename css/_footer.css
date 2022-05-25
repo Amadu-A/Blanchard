@@ -1,0 +1,39 @@
+.footer {
+  background-color: #000000;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+.footer__logo {
+  display: block;
+  width: 173px;
+  height: 40px;
+}
+
+.footer__social {
+  max-width: 50%;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.footer__social-list-elem {
+  margin-bottom: 20px;
+}
+
+.footer__social-list-elem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__social-list-elem-link {
+  display: flex;
+  color: #CACACA;
+}

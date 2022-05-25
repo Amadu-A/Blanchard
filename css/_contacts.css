@@ -1,8 +1,125 @@
 .contacts {
-  padding-top: 80px;
-  padding-bottom: 80px;
   background-color: var(--white);
 }
+
+.contacts__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 155px;
+  border: 1px solid #CACACA;
+}
+
+.contacts__showroom {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__showroom-title {
+  margin: 0%;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contacts__showroom-address {
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contacts__form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contacts__form-validation-error {
+
+}
+
+.contacts__form-validation-input {
+  margin-right: 20px;
+  padding: 9px 24px;
+  width: 270px;
+  height: 50px;
+  line-height: 32px;
+  border-radius: 100px;
+}
+
+.input-name {
+
+}
+
+.input-tel {
+
+}
+
+.contacts__form-btn {
+  padding: 9px 24px;
+}
+
+.contacts__form-validation-input.is-invalid {
+  border: 1px solid #FF5C00;
+}
+
+.list-item-validation-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px 53px;
+  width: 192px;
+  height: 60px;
+  background: #FF5C00;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.just-validate-error-label {
+  margin-top: -17px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00;
+}
+
+.contacts__form-validation-error {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__links-text {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.contacts__links-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__links-list-elem {
+  margin-bottom: 20px;
+}
+
+.contacts__links-list-elem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contacts__links-list-elem-link:focus {
+  opacity: 0.5;
+}
+
 
 .contacts__map {
   width: 100%;
