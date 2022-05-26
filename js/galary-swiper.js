@@ -10,8 +10,8 @@ let gallerySlider = new Swiper(".galary__slides-container", {
     type: "fraction"
   },
   navigation: {
-    nextEl: ".galary__next",
-    prevEl: ".galary__prev"
+    nextEl: ".galary__nav-next",
+    prevEl: ".galary__nav-prev"
   },
 
   breakpoints: {

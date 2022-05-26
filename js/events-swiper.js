@@ -11,8 +11,8 @@
       type: "fraction"
     },
     navigation: {
-      nextEl: ".events__next",
-      prevEl: ".events__prev"
+      nextEl: ".events__navigation-next",
+      prevEl: ".events__navigation-prev"
     },
 
     breakpoints: {

@@ -15,9 +15,10 @@
   --text-dark: #333333;
   --text-white: #FFFFFF;
   --text-gray: #666666;
-  --text-teachers: #85859b;
-  --active: #646469;
-  --hover: #FF9900;
+  --focus: #7943A4;
+  --active: #7943A4;
+  --active-btn-enter: #9D5CD0;
+  --hover: #C283F3;
 
 
   /* sizes */

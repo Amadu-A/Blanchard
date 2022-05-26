@@ -37,13 +37,6 @@
   bottom: 0;
 }
 
-/* .galary__container {
-  display: flex;
-} */
-
-/* .galary__title {
-  color: var(--text-white);
-} */
 
 /* select */
 .choices__inner {
@@ -242,6 +235,184 @@
 
 
 /* swiper */
+.galary__content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.galary__swiper {
+
+  width: calc(1150 / 1600 * 100%);
+  margin-right: 0;
+}
+
+.galary__slides-container {
+  overflow: hidden;
+}
+
+.galary__nav {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.galary__pagination {
+  margin-right: 10px;
+  text-align: center;
+  color: var(--text-white);
+}
+
+.galary__nav-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #666666;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.galary__nav-btn::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px / 2);
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.galary__nav-prev {
+  margin-right: 10px;
+}
+
+.galary__nav-next::before {
+  left: calc(50% - 7px / 2);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.galary__nav-prev::before {
+  left: calc(50% - 7px / 2);
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.galary__slide {
+  position: relative;
+  overflow: hidden;
+  background-color: #926B88;
+}
+
+.galary__slide::before {
+  content: "";
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-top: calc(100% - 6px);
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+
+.galary__slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  background-clip: content-box;
+  transition: opacity .5s ease;
+}
+
+.galary__slide:hover::after {
+  opacity: 1;
+}
+
+.galary__slide:focus {
+  outline: none;
+}
+
+.galary__slide:focus::before {
+  border-color: #7943A4;
+}
+
+.galary__slide:active::before {
+  border-color: #D1A9F0;
+  background-color: rgba(194, 131, 243, 0.4);
+}
+
+.galary__slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
+
+@media (max-width: 1024px) {
+  .galary__slide::before {
+    padding-top: calc(85% - 6px);
+  }
+}
+
+@media (max-width: 768px) {
+  .galary__left-elem,
+  .galary__swiper {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .galary__last {
+    width: 100%;
+  }
+
+  .galary__last-content {
+    position: static;
+  }
+
+  /* .test-select {
+    max-width: 300px;
+  } */
+}
+
+@media (max-width: 440px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .galary__swiper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .galary__nav {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .galary__slide::before {
+    padding-top: calc(110% - 6px);
+  }
+}
 
 
 

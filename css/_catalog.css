@@ -84,11 +84,12 @@
   z-index: 1;
 }
 
-.accordion__content {
+.catalog__accordion {
   overflow: hidden;
+  columns: 3;
 }
 
-.accordion__content-wrap {
+.catalog__accordion-wrap {
   padding-bottom: 40px;
   opacity: 0;
   visibility: hidden;
@@ -96,12 +97,12 @@
   transition-delay: .3s;
 }
 
-.is-active .accordion__content-wrap {
+.is-active .catalog__accordion-wrap {
   opacity: 1;
   visibility: visible;
 }
 
-.is-active .questions__list-item-spoiler::after {
+.is-active .catalog__list-item-spoiler::after {
   transform: translateY(-50%) rotate(45deg);
 }
 

@@ -143,7 +143,7 @@
   background-color: rgba(194, 131, 243, 0.4);
 }
 
-.projects__pic {
+.projects__slide-image {
   filter: grayscale(1);
   opacity: 0.5;
 }
