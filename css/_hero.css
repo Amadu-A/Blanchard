@@ -1,6 +1,6 @@
 .hero__container {
-  max-width: 770px;
-  padding: 250px 0 135px;
+  max-width: 620px;
+  padding: 243px 0 121px;
   position: relative;
   z-index: 2;
 }
@@ -21,9 +21,10 @@
 
 .hero__title {
   margin-top: 0;
+  margin-bottom: 19px;
   font-weight: 700;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 82px;
 }
 
 .hero__text {
