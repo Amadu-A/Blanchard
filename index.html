@@ -12,13 +12,8 @@
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script src="libs/choices.min.js" defer></script>
   <script src="js/select.js" defer></script>
-  <script src="libs/just-validate.min.js" defer></script>
-  <!-- <script defer src="libs/inputmask.min.js"></script> -->
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
   <script src="js/dropdown-simplebar.js" defer></script>
-
-  <script src="js/validation.js" defer></script>
-  <!-- <script defer src="js/tooltip.js"></script> -->
   <script src="js/tabs.js" defer></script>
   <script src="libs/accordion.min.js" defer></script>
   <script src="js/accordion.init.js" defer></script>
@@ -28,7 +23,11 @@
   <script src="js/hero-swiper.js" defer></script>
   <script src="js/galary-swiper.js" defer></script>
   <script src="js/events-swiper.js" defer></script>
+  <script src="js/tooltip.js" defer></script>
   <script src="js/projects-swiper.js" defer></script>
+  <script src="libs/just-validate.min.js" defer></script>
+  <script src="libs/inputmask.min.js" defer></script>
+  <script src="js/validation.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=5e377f37-8e68-4715-b713-f9f40d50777a&lang=ru_RU" defer></script>
   <script src="js/map.js" defer></script>
 </head>
@@ -93,10 +92,9 @@
             </button>
             <input class="header__search-input" type="text" placeholder="Поиск по сайту">
             <button class="header__close-btn btn-reset js-close-search" aria-label="Закрыть" type="button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"></rect>
-                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"></rect>
-                <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"></circle>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="currentColor"/>
               </svg>
             </button>
           </form>
@@ -111,13 +109,27 @@
             <div class="header__menu-item-dropdown dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
-                  <li class="dropdown__item header__menu-item-dropdown-tintoretto">Тинторетто</li>
-                  <li class="dropdown__item header__menu-item-dropdown-fridrih">Фридрих</li>
-                  <li class="dropdown__item header__menu-item-dropdown-leonardo">Леонардо</li>
-                  <li class="dropdown__item header__menu-item-dropdown-verokko">Верроккьо</li>
-                  <li class="dropdown__item">text</li>
-                  <li class="dropdown__item">text</li>
-                  <li class="dropdown__item">text</li>
+                  <li class="dropdown__item header__menu-item-dropdown-tintoretto">
+                    <a href="#" class="header__menu-item-dropdown-link">Тинторетто</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-fridrih">
+                    <a href="#" class="header__menu-item-dropdown-link">Фридрих</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-leonardo">
+                    <a href="#" class="header__menu-item-dropdown-link">Леонардо</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-verokko">
+                    <a href="#" class="header__menu-item-dropdown-link">Верроккьо</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="header__menu-item-dropdown-link">text</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="header__menu-item-dropdown-link">text</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="header__menu-item-dropdown-link">text</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -129,10 +141,18 @@
             <div class="header__menu-item-dropdown dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
-                  <li class="dropdown__item header__menu-item-dropdown-mone">Моне</li>
-                  <li class="dropdown__item header__menu-item-dropdown-sisley">Сислей</li>
-                  <li class="dropdown__item header__menu-item-dropdown-mane">Мане</li>
-                  <li class="dropdown__item header__menu-item-dropdown-renuar">Ренуар</li>
+                  <li class="dropdown__item header__menu-item-dropdown-mone">
+                    <a href="#" class="header__menu-item-dropdown-link">Моне</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-sisley">
+                    <a href="#" class="header__menu-item-dropdown-link">Сислей</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-mane">
+                    <a href="#" class="header__menu-item-dropdown-link">Мане</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-renuar">
+                    <a href="#" class="header__menu-item-dropdown-link">Ренуар</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -145,10 +165,18 @@
             <div class="header__menu-item-dropdown dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
-                  <li class="dropdown__item header__menu-item-dropdown-vangog">Ван Гог</li>
-                  <li class="dropdown__item header__menu-item-dropdown-sezann">Сезанн</li>
-                  <li class="dropdown__item header__menu-item-dropdown-gogen">Гоген</li>
-                  <li class="dropdown__item header__menu-item-dropdown-siora">Сёра</li>
+                  <li class="dropdown__item header__menu-item-dropdown-vangog">
+                    <a href="#" class="header__menu-item-dropdown-link">Ван Гог</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-sezann">
+                    <a href="#" class="header__menu-item-dropdown-link">Сезанн</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-gogen">
+                    <a href="#" class="header__menu-item-dropdown-link">Гоген</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-siora">
+                    <a href="#" class="header__menu-item-dropdown-link">Сёра</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -160,10 +188,18 @@
             <div class="header__menu-item-dropdown dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
-                  <li class="dropdown__item header__menu-item-dropdown-candinsky">Кандинский</li>
-                  <li class="dropdown__item header__menu-item-dropdown-marinetty">Маринетти</li>
-                  <li class="dropdown__item header__menu-item-dropdown-malevich">Малевич</li>
-                  <li class="dropdown__item header__menu-item-dropdown-picasso">Пикассо</li>
+                  <li class="dropdown__item header__menu-item-dropdown-candinsky">
+                    <a href="#" class="header__menu-item-dropdown-link">Кандинский</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-marinetty">
+                    <a href="#" class="header__menu-item-dropdown-link">Маринетти</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-malevich">
+                    <a href="#" class="header__menu-item-dropdown-link">Малевич</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-picasso">
+                    <a href="#" class="header__menu-item-dropdown-link">Пикассо</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -175,10 +211,18 @@
             <div class="header__menu-item-dropdown dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
-                  <li class="dropdown__item header__menu-item-dropdown-karra">Карра</li>
-                  <li class="dropdown__item header__menu-item-dropdown-pratella">Прателла</li>
-                  <li class="dropdown__item header__menu-item-dropdown-severiny">Северини</li>
-                  <li class="dropdown__item header__menu-item-dropdown-balla">Балла</li>
+                  <li class="dropdown__item header__menu-item-dropdown-karra">
+                    <a href="#" class="header__menu-item-dropdown-link">Карра</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-pratella">
+                    <a href="#" class="header__menu-item-dropdown-link">Прателла</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-severiny">
+                    <a href="#" class="header__menu-item-dropdown-link">Северини</a>
+                  </li>
+                  <li class="dropdown__item header__menu-item-dropdown-balla">
+                    <a href="#" class="header__menu-item-dropdown-link">Балла</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -200,10 +244,9 @@
             </button>
             <input class="header__search-input" type="text" placeholder="Поиск по сайту">
             <button class="header__close-btn btn-reset js-close-search" aria-label="Закрыть" type="button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="currentColor"></rect>
-                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="currentColor"></rect>
-                <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"></circle>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="currentColor"/>
               </svg>
             </button>
           </form>
@@ -608,7 +651,7 @@
                   <p class="events__slide-content-descr">
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
                   </p>
-                  <a class="events__slide-content-link" href="#">Подробнее</a>
+                  <a class="events__slide-content-link" href="#"><u>Подробнее</u></a>
                 </div>
               </div>
 
@@ -685,7 +728,10 @@
       <div class="container">
         <h2 class="title">Проекты</h2>
         <p class="projects__text">
-          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены      исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="Пример современных тенденций - современная методология разработки">i</button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  ">i</button> исключительно в разрезе маркетинговых и финансовых
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="В стремлении повысить качество">i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#projects" class="projects__text-link">blanchard-art.ru/projects</a>
         </p>
         <h3 class="projects__title-3">Партнёры проектов:</h3>
         <div class="projects__content-wrap">
@@ -791,10 +837,10 @@
           </address>
         </div>
         <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <label class="contacts__form-validation-error" for>
+          <label class="contacts__form-validation-error" for="">
             <input class="contacts__form-validation-input input-name" data-validate-field="name" name="Имя" type="text" placeholder="Имя*" required>
           </label>
-          <label class="contacts__form-validation-error" for>
+          <label class="contacts__form-validation-error" for="">
             <input class="contacts__form-validation-input input-tel" data-validate-field="phone" name="Телефон" type="tel" placeholder="Телефон*" required>
           </label>
           <button class="btn-reset btn contacts__form-btn">Заказать обратный звонок</button>

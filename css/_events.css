@@ -79,6 +79,26 @@
   transform-origin: center;
 }
 
+.events__navigation-btn:focus:not(:hover) {
+  outline: 2px solid var(--active-btn-enter);
+  outline-offset: -2px;
+}
+
+.events__navigation-btn:active {
+  background-color: var(--active-border);
+  outline: 2px solid var(--active-btn-enter);
+  outline-offset: -2px;
+}
+
+.events__navigation-btn.swiper-button-disabled::before,
+.events__navigation-btn.swiper-button-disabled,
+.events__navigation-btn.swiper-button-disabled:hover:not(:active) {
+  display: none;
+  outline: none;
+  background-color: var(--disable-light);
+  border-color: var(--disable-border);
+}
+
 .events__navigation-prev {
   position: absolute;
   left: -25px;
@@ -148,6 +168,26 @@
   object-fit: cover;
 }
 
+.events__slide-content-link {
+  padding: 6px;
+  line-height: 1;
+  color: var(--active-btn-enter);
+  border-bottom: 1px solid var(--active-btn-enter);
+  transition-duration: var(--short);
+  transition-property: background-color, border-color, color;
+}
+
+.events__slide-content-link:focus:not(:hover) {
+  color: var(--text-white);
+  background-color: var(--active-btn-enter);
+}
+
+.events__slide-content-link:active {
+  color: var(--text-dark);
+  background-color: transparent;
+  /* border-bottom: 1px solid var(--active); */
+}
+
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 /*
 @media (max-width: 1024px) {
@@ -195,5 +235,18 @@
 
   .events__slide::before {
     padding-top: calc(110% - 6px);
+  }
+}
+
+@media (any-hover: hover) {
+  .events__navigation-btn:hover:not(:active) {
+    background-color: var(--active-border);
+    outline: none;
+  }
+
+  .events__slide-content-link:hover:not(:active) {
+    color: var(--focus);
+    background-color: transparent;
+    /* border-bottom: 1px solid var(--active-btn-enter); */
   }
 }

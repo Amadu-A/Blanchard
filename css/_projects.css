@@ -62,7 +62,7 @@
   flex-shrink: 0;
   width: 30px;
   height: 30px;
-  background-color: #ECECEC;
+  background-color: var(--disable-light);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -74,9 +74,29 @@
   top: calc(50% - 7px / 2);
   width: 7px;
   height: 7px;
-  border-color: #000000;
+  border-color: var(--background-black);
   transform: rotate(45deg);
   transform-origin: center;
+}
+
+.projects__nav-btn:focus:not(:hover) {
+  outline: 2px solid var(--active-btn-enter);
+  outline-offset: -2px;
+}
+
+.projects__nav-btn:active {
+  background-color: var(--active-border);
+  outline: 2px solid var(--active-btn-enter);
+  outline-offset: -2px;
+}
+
+
+.projects__nav-btn.swiper-button-disabled::before,
+.projects__nav-btn.swiper-button-disabled,
+.projects__nav-btn.swiper-button-disabled:hover:not(:active) {
+  outline: none;
+  background-color: var(--disable-light);
+  border-color: var(--disable-border);
 }
 
 .projects__prev {
@@ -91,14 +111,14 @@
 
 .projects__next::before {
   left: calc(50% - 7px / 2);
-  border-top: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-top: 1px solid var(--background-black);
+  border-right: 1px solid var(--background-black);
 }
 
 .projects__prev::before {
   left: calc(50% - 7px / 2);
-  border-left: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-left: 1px solid var(--background-black);
+  border-bottom: 1px solid var(--background-black);
 }
 
 .projects__pagination {
@@ -112,7 +132,6 @@
 .projects__slide {
   position: relative;
   overflow: hidden;
-  /* background-color: #926B88; */
 }
 
 .projects__slide::before {
@@ -120,7 +139,6 @@
   position: relative;
   z-index: 1;
   display: block;
-  /* padding-top: calc(100% - 350px); */
   border: 3px solid transparent;
   box-sizing: border-box;
   transition: background-color .3s ease, border-color .3s ease;
@@ -135,15 +153,96 @@
 }
 
 .projects__slide:focus::before {
-  border-color: #7943A4;
+  border-color: var(--focus);
 }
 
 .projects__slide:active::before {
-  border-color: #D1A9F0;
+  border-color: var(--active-border);
   background-color: rgba(194, 131, 243, 0.4);
 }
 
 .projects__slide-image {
   filter: grayscale(1);
   opacity: 0.5;
+}
+
+.projects__text-link {
+  padding: 6px;
+  line-height: 1;
+  color: var(--active-btn-enter);
+  transition-duration: var(--short);
+  transition-property: background-color, border-color, color;
+}
+
+.projects__text-link:focus:not(:hover) {
+  color: var(--text-white);
+  background-color: var(--active-btn-enter);
+}
+
+.projects__text-link:active {
+  color: var(--active);
+  background-color: transparent;
+  border-bottom: 1px solid var(--active);
+}
+
+/* tooltip */
+.js-tooltip-btn {
+  align-items: center;
+  padding: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  font-size: 10px;
+  color: var(--background-black);
+  border: 1px solid var(--active-btn-enter);
+  border-radius: 50%;
+}
+
+.js-tooltip-btn:focus:not(:hover) {
+  background-color: var(--active-border);
+}
+
+.js-tooltip-btn:active {
+  color: var(--text-white);
+  background-color: var(--active-btn-enter);
+  border: none;
+}
+
+.tippy-box[data-theme~='test-tooltip'] {
+  padding: 7px 15px 8px;
+  border-radius: 0;
+  background-color: #666666;
+  color: #FFFFFF;
+}
+
+.tippy-box[data-theme~='test-tooltip'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #666666;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #666666;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #666666;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #666666;
+}
+
+
+@media (any-hover: hover) {
+  .projects__nav-btn:hover:not(:active) {
+    background-color: var(--active-border);
+    outline: none;
+  }
+
+  .js-tooltip-btn:hover:not(:active) {
+    background-color: var(--active-border);
+  }
+
+  .projects__text-link:hover:not(:active) {
+    color: var(--active-btn-enter);
+    background-color: transparent;
+    border-bottom: 1px solid var(--active-btn-enter);;
+  }
+
 }

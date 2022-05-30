@@ -8,7 +8,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 155px;
-  border: 1px solid #CACACA;
+  border: 1px solid var(--background-gray);
 }
 
 .contacts__showroom {
@@ -30,10 +30,13 @@
 
 .contacts__form {
   display: flex;
+  align-items: flex-end;
   flex-wrap: nowrap;
 }
 
 .contacts__form-validation-error {
+  display: flex;
+  flex-direction: column-reverse;
 
 }
 
@@ -46,46 +49,39 @@
   border-radius: 100px;
 }
 
-.input-name {
-
-}
-
-.input-tel {
-
-}
-
 .contacts__form-btn {
   padding: 9px 24px;
+  min-height: 50px;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid var(--active-btn-enter);
+  color: var(--active-btn-enter);
+}
+
+.contacts__form-btn:focus:not(:hover) {
+  outline: 2px solid var(--hover);
+  outline-offset: 2px;
+}
+
+.contacts__form-btn:active {
+  outline: 3px solid var(--active-border);
+  outline-offset: -3px;
+  background-color: var(--active);
+  color: var(--text-white);
 }
 
 .contacts__form-validation-input.is-invalid {
-  border: 1px solid #FF5C00;
+  border: 1px solid var(--error);
 }
 
-.list-item-validation-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 17px 53px;
-  width: 192px;
-  height: 60px;
-  background: #FF5C00;
-  border-radius: 10px;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  color: #FFFFFF;
+.contacts__form-validation-input:focus-visible {
+  border: 1px solid var(--text-dark);
 }
 
 .just-validate-error-label {
-  margin-top: -17px;
-  margin-bottom: 5px;
-  padding-left: 20px;
-  font-family: 'Roboto';
-  font-weight: 400;
+  margin-left: 26px;
   font-size: 12px;
-  line-height: 14px;
-  color: #FF5C00;
+  line-height: 16px;
 }
 
 .contacts__form-validation-error {
@@ -109,6 +105,7 @@
 }
 
 .contacts__links-list-elem {
+  display: flex;
   margin-bottom: 20px;
 }
 
@@ -116,8 +113,19 @@
   margin-right: 20px;
 }
 
-.contacts__links-list-elem-link:focus {
+.contacts__links-list-elem-link {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__links-list-elem-link:focus:not(:hover) {
   opacity: 0.5;
+}
+
+.contacts__links-list-elem-link:active {
+  outline: 1px solid #9643A4;
+  outline-offset: -1px;
+  border-radius: 100%;
 }
 
 
@@ -128,4 +136,22 @@
 
 [class*="ground-pane"] {
   filter: grayscale(1);
+}
+
+
+@media (any-hover: hover) {
+  .contacts__links-list-elem-link:hover:not(:active) {
+    opacity: 0.5;
+  }
+
+  .contacts__form-btn:hover:not(:active) {
+    background-color: var(--active-btn-enter);
+    border: none;
+    outline: none;
+    color: var(--text-white);
+  }
+
+  .contacts__form-validation-input:hover:not(:active) {
+    background-color: var(--hover-background);
+  }
 }

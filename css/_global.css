@@ -43,10 +43,10 @@ body {
 
 .title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 48px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 65px;
 }
 
 .list-reset {
@@ -73,7 +73,7 @@ body {
   color: #FFFFFF;
   background: #9D5CD0;
   border-radius: 100px;
-  transition-property: background-color, color;
+  transition-property: background-color, color, outline-color;
   transition-duration: var(--short);
 }
 
@@ -93,18 +93,19 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .btn:focus {
-  outline: 2px solid var(--focus);
-  outline-offset: 1px;
+  outline: 2px solid var(--hover);
+  outline-offset: 2px;
 }
 
 .btn:active {
-  background-color: #16104e;
-  color: #646469;
+  background-color: var(--active);
+  outline: 3px solid var(--active-border);
+  outline-offset: -3px;
 }
 
 @media (any-hover: hover) {
   .btn:hover:not(:active) {
-    background-color: #251a86;
-    color: #a29aeb;
+    outline: 3px solid var(--active-border);
+    outline-offset: -3px;
   }
 }

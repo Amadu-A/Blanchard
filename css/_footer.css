@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000000;
+  background-color: var(--background-black);
 }
 
 .footer__container {
@@ -35,5 +35,21 @@
 
 .footer__social-list-elem-link {
   display: flex;
-  color: #CACACA;
+  color: var(--background-gray);
+  transition-duration: var(--short);
+  transition-property: color;
+}
+
+.footer__social-list-elem-link:focus:not(:hover) {
+  color: var(--white);
+}
+
+.footer__social-list-elem-link:active {
+  color: var(--active-btn-enter);
+}
+
+@media (any-hover: hover) {
+  .footer__social-list-elem-link:hover:not(:active) {
+    color: var(--white);
+  }
 }

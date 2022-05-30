@@ -119,7 +119,7 @@
   position: absolute;
   top: 50%;
   width: 1px;
-  height: 2px;
+  height: 1px;
   background-color: var(--white);
   transition-duration: var(--short);
   transition-property: background-color, transform;
@@ -132,6 +132,7 @@
 
 .header__nav-btn:active {
   color: var(--active-btn-enter);
+  outline: none;
 }
 
 .header__nav-btn:active .header__nav-btn-hover {
@@ -180,11 +181,14 @@
   padding-right: 20px;
 }
 .dropdown__item {
-  min-height: 30px;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
   background-color: rgba(0,0,0,0.8);
   color: var(--text-white);
   margin-bottom: 20px;
+  transition-duration: 3s;
+  transition-property: background-color, background;
 }
 .dropdown__item:last-child {
   margin-bottom: 0px;
@@ -197,6 +201,28 @@
 .dropdown__simplebar .simplebar-scrollbar {
   width: 2px;
   background-color: var(--white)FFF;
+}
+
+.header__menu-item-dropdown-link {
+  display: block;
+  width: 100%;
+  padding: 2px;
+  padding-left: 14px;
+  transition-duration: var(--short);
+  transition-property: border-color, background, background-color;
+}
+
+.header__menu-item-dropdown-link:focus {
+  padding-left: 12px;
+  border: 2px solid var(--active-btn-enter);
+  outline: none;
+}
+
+.header__menu-item-dropdown-link:active {
+  padding-left: 12px;
+  border: 2px solid var(--active-border);
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  outline: none;
 }
 
 .header__menu-item-dropdown-tintoretto {
@@ -370,19 +396,16 @@
 .header__close-btn:focus:not(:hover) {
   outline: 2px solid var(--hover);
   outline-offset: 2px;
+  color: var(--active-btn-enter);
 }
 
-.header__search-btn:active {
+.header__search-btn:active,
+.header__close-btn:active {
   color: var(--active);
 }
 
 .header__search-btn:visited {
   color: transparent;
-}
-
-
-.header__close-btn:active {
-  color: var(--text);
 }
 
 .header__search-form {
@@ -431,6 +454,11 @@
 
 .header__search-input:focus::placeholder {
   opacity: 0;
+}
+
+.header__search-input:focus:not(:hover),
+.header__search-input:active {
+  border-color: var(--active)
 }
 
 
@@ -534,6 +562,7 @@
 
   .header__nav-btn:hover:not(:active) {
     color: var(--hover);
+    outline: none;
   }
 
   .header__nav-btn:hover:not(:active) .header__nav-btn-hover{
@@ -548,6 +577,22 @@
 
   .header__menu-item-btn:hover:not(:active)::after {
     border-color: var(--active-btn-enter);
+    outline: none;
+  }
+
+  .header__menu-item-dropdown-link:hover:not(:active) {
+    padding-left: 12px;
+    border: 2px solid var(--active-btn-enter);
+  }
+
+  .header__search-input:hover:not(:active) {
+    border-color: var(--hover)
+  }
+
+  .header__search-btn:hover:not(:active),
+  .header__close-btn:hover:not(:active) {
+    outline: none;
+    color: var(--active-btn-enter);
   }
   /* .header__nav-list-elem-link:hover::after {
     transform: scaleX(1);
