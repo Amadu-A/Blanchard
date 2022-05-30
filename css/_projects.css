@@ -66,6 +66,7 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: outline-color var(--short) ease-in-out, background-color var(--short) ease-in-out;
 }
 
 .projects__nav-btn::before {
@@ -77,6 +78,7 @@
   border-color: var(--background-black);
   transform: rotate(45deg);
   transform-origin: center;
+  transition: background-color var(--short) ease-in-out, border-color var(--short) ease-in-out;
 }
 
 .projects__nav-btn:focus:not(:hover) {

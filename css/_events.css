@@ -15,12 +15,13 @@
 .events__swiper {
   position: relative;
   min-width: 100%;
-  width: calc(1150 / 1600 * 100%);
+  width: calc((1150 / 1600 * 100%) + 1px);
   margin-right: 0;
 }
 
 .events__card {
-  border: 1px solid var(--background-gray);
+  outline: 1px solid var(--background-gray);
+  outline-offset: -1px;
 }
 
 .events__slide-content {
@@ -28,12 +29,81 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 13px 50px 45px;
+  height: 400px;
+
+}
+
+.events__slide-content-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.events__slide-content-location {
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--grey);
+}
+
+/* .events__slide-content-location:last-child {
+  margin-bottom: 13px;
+} */
+
+.events__slide-content-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.events__slide-content-descr {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .events__card.swiper-slide {
   background-image: none;
   background-color: var(--white);
   height: auto;
+}
+
+.events__slide-content-wrap {
+  display: inline-block;
+  width: max-content;
+}
+
+.events__slide-content-link {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  line-height: 1;
+  color: var(--active-btn-enter);
+  border-bottom: 1px solid var(--active-btn-enter);
+  transition-duration: var(--short);
+  transition-property: background-color, border-color, color;
+}
+
+
+.events__slide-content-wrap:focus:not(:hover) {
+  padding: 6px;
+  background-color: var(--active-btn-enter);
+  color: var(--text-white);
+}
+.events__slide-content-link:focus-within:not(:hover) {
+  color: var(--text-white);
+  border-color: var(--text-white);
+  background-color: var(--active-btn-enter);
+}
+
+.events__slide-content-link:active {
+  color: var(--text-dark);
+  background-color: transparent;
+  border-color: var(--text-dark);
 }
 /* swiper */
 
@@ -62,10 +132,11 @@
   flex-shrink: 0;
   width: 50px;
   height: 50px;
-  background-color: #ECECEC;
+  background-color: var(--disable-light);
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: outline-color var(--short) ease-in-out, background-color var(--short) ease-in-out;
 }
 
 .events__navigation-btn::before {
@@ -74,9 +145,10 @@
   top: calc(50% - 12px / 2);
   width: 12px;
   height: 12px;
-  border-color: #000000;
+  border-color: var(--background-black);
   transform: rotate(45deg);
   transform-origin: center;
+  transition: background-color var(--short) ease-in-out, border-color var(--short) ease-in-out;
 }
 
 .events__navigation-btn:focus:not(:hover) {
@@ -168,26 +240,6 @@
   object-fit: cover;
 }
 
-.events__slide-content-link {
-  padding: 6px;
-  line-height: 1;
-  color: var(--active-btn-enter);
-  border-bottom: 1px solid var(--active-btn-enter);
-  transition-duration: var(--short);
-  transition-property: background-color, border-color, color;
-}
-
-.events__slide-content-link:focus:not(:hover) {
-  color: var(--text-white);
-  background-color: var(--active-btn-enter);
-}
-
-.events__slide-content-link:active {
-  color: var(--text-dark);
-  background-color: transparent;
-  /* border-bottom: 1px solid var(--active); */
-}
-
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 /*
 @media (max-width: 1024px) {
@@ -246,7 +298,7 @@
 
   .events__slide-content-link:hover:not(:active) {
     color: var(--focus);
-    background-color: transparent;
+    border-color: transparent;
     /* border-bottom: 1px solid var(--active-btn-enter); */
   }
 }

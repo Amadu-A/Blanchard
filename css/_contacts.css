@@ -116,6 +116,7 @@
 .contacts__links-list-elem-link {
   width: 40px;
   height: 40px;
+  transition: opacity var(--short) ease-in-out, outline-color var(--short) ease-in-out;
 }
 
 .contacts__links-list-elem-link:focus:not(:hover) {
