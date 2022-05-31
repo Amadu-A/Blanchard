@@ -86,6 +86,7 @@
   border-bottom: 1px solid var(--active-btn-enter);
   transition-duration: var(--short);
   transition-property: background-color, border-color, color;
+  cursor: pointer;
 }
 
 
@@ -95,6 +96,7 @@
   color: var(--text-white);
 }
 .events__slide-content-link:focus-within:not(:hover) {
+  padding: 6px;
   color: var(--text-white);
   border-color: var(--text-white);
   background-color: var(--active-btn-enter);
@@ -112,6 +114,7 @@
 }
 
 .events__pagination {
+  display: none;
   margin-right: 10px;
   text-align: center;
   color: var(--text-white);

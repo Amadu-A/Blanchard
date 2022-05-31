@@ -302,8 +302,6 @@
   background-color: var(--disable-dark);
 }
 
-/* :not(:focus):not(:hover):not(:active) */
-
 .galary__nav-prev {
   margin-right: 19px;
 }
@@ -366,11 +364,11 @@
 }
 
 .galary__slide:focus::before {
-  border-color: #7943A4;
+  border-color: var(--focus);
 }
 
 .galary__slide:active::before {
-  border-color: #D1A9F0;
+  border-color: var(--active-border);
   background-color: rgba(194, 131, 243, 0.4);
 }
 
