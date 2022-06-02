@@ -6,10 +6,10 @@ function init(){
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
         // воспользуйтесь инструментом Определение координат.
-        center: [48.872185073737896,2.354223999999991],
+        center: [55.76036893311881,37.61470110778741],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 14,
+        zoom: 17,
         controls: [] // это отключает элементы управления
 
     },
@@ -18,23 +18,23 @@ function init(){
     });
 
     // Создание геообъекта с типом точка (метка).
-    var myGeoObject = new ymaps.GeoObject({
-        geometry: {
-            type: "Point", // тип геометрии - точка
-            coordinates: [48.872185073737896,2.354223999999991] // координаты точки
-        }
-    });
-
-    // var myPlacemark = new ymaps.Placemark([48.872185073737896,2.354223999999991], {}, {
-    //     iconLayout: 'default#image',
-    //     iconImageHref: 'img/subtract.svg',
-    //     iconImageSize: [30, 42],
-    //     iconImageOffset: [-3, -42]
+    // var myGeoObject = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point", // тип геометрии - точка
+    //         coordinates: [48.872185073737896,2.354223999999991] // координаты точки
+    //     }
     // });
 
+    var myPlacemark = new ymaps.Placemark([55.76036893311881,37.61470110778741], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/point.svg',
+        iconImageSize: [20, 20],
+        iconImageOffset: [-3, -42]
+    });
+
     // Размещение геообъекта на карте.
-    myMap.geoObjects.add(myGeoObject);
-    // myMap.geoObjects.add(myPlacemark);
+    // myMap.geoObjects.add(myGeoObject);
+    myMap.geoObjects.add(myPlacemark);
 
     //отключаем зум колёсиком мышки
     myMap.behaviors.disable('scrollZoom');

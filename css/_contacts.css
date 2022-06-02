@@ -17,7 +17,7 @@
 }
 
 .contacts__showroom-title {
-  margin: 0%;
+  margin: 0;
   font-size: 24px;
   font-weight: 600;
 }
@@ -52,7 +52,10 @@
 .contacts__form-btn {
   padding: 9px 24px;
   min-height: 50px;
+  width: 329px;
   height: 100%;
+  font-weight: 700;
+  font-size: 18px;
   background-color: transparent;
   border: 2px solid var(--active-btn-enter);
   color: var(--active-btn-enter);
@@ -90,6 +93,7 @@
 }
 
 .contacts__links {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -97,6 +101,9 @@
 .contacts__links-text {
   margin: 0;
   margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .contacts__links-list {
@@ -133,6 +140,15 @@
 .contacts__map {
   width: 100%;
   height: 700px;
+}
+
+.contacts__map-point {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: var(--active-btn-enter);
+  z-index: 999999;
 }
 
 [class*="ground-pane"] {

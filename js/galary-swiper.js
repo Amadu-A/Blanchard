@@ -1,6 +1,7 @@
 (() => {
   let gallerySlider = new Swiper(".galary__slides-container", {
     slidesPerView: 1,
+    slidesPerGroup: 3,
     grid: {
       rows: 1,
       fill: "row"

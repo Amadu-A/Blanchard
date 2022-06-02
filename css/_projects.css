@@ -1,12 +1,12 @@
 .projects {
-  padding-top: 80px;
+  padding-top: 1px;
   padding-bottom: 80px;
   background-color: var(--white);
 }
 
 .projects__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 1080px;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .projects__pagination {
-  opacity: 0;
+  display: none;
 }
 
 .projects__slides-container {
@@ -136,7 +136,7 @@
   overflow: hidden;
 }
 
-.projects__slide::before {
+/* .projects__slide::before {
   content: "";
   position: relative;
   z-index: 1;
@@ -144,7 +144,7 @@
   border: 3px solid transparent;
   box-sizing: border-box;
   transition: background-color .3s ease, border-color .3s ease;
-}
+} */
 
 .projects__slide:hover::after {
   opacity: 1;
@@ -164,6 +164,7 @@
 }
 
 .projects__slide-image {
+  display: block;
   filter: grayscale(1);
   opacity: 0.5;
 }

@@ -1,5 +1,5 @@
 .events {
-  padding-top: 80px;
+  padding-top: 1px;
   padding-bottom: 80px;
   background-color: var(--white);
 }
@@ -28,8 +28,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 13px 50px 45px;
-  height: 400px;
+  padding: 13px 50px 42px;
+  height: 345px;
 
 }
 
@@ -42,7 +42,7 @@
   margin-bottom: 13px;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 17px;
   color: var(--grey);
 }
 
@@ -52,7 +52,7 @@
 
 .events__slide-content-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -78,15 +78,18 @@
 }
 
 .events__slide-content-link {
-  display: flex;
+  position: relative;
+  display: inline-block;
+  width: max-content;
   padding-top: 6px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   line-height: 1;
   color: var(--active-btn-enter);
   border-bottom: 1px solid var(--active-btn-enter);
   transition-duration: var(--short);
   transition-property: background-color, border-color, color;
   cursor: pointer;
+  z-index: 99999;
 }
 
 
@@ -95,7 +98,7 @@
   background-color: var(--active-btn-enter);
   color: var(--text-white);
 }
-.events__slide-content-link:focus-within:not(:hover) {
+.events__slide-content-link:focus:not(:hover) {
   padding: 6px;
   color: var(--text-white);
   border-color: var(--text-white);
@@ -125,8 +128,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: calc(50% - 25px);
   width: 100%;
-  height: 100%;
+  min-height: 50px;
   z-index: 10;
 }
 
@@ -186,14 +190,14 @@
 
 .events__navigation-next::before {
   left: calc(50% - 17px / 2);
-  border-top: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-top: 1px solid var(--background-black);
+  border-right: 1px solid var(--background-black);
 }
 
 .events__navigation-prev::before {
   left: calc(50% - 10px / 2);
-  border-left: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-left: 1px solid var(--background-black);
+  border-bottom: 1px solid var(--background-black);
 }
 
 .events__slides-container {
@@ -212,8 +216,7 @@
   z-index: 1;
   display: block;
   padding-top: calc(100% - 200px);
-  border: 3px solid transparent;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   transition: background-color .3s ease, border-color .3s ease;
 }
 
