@@ -344,7 +344,7 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: 960px) {
   .catalog__wrapper {
     flex-direction: row;
     justify-content: flex-end;
@@ -390,7 +390,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 580px) {
   .catalog__accordion-wrap {
     columns: unset;
   }

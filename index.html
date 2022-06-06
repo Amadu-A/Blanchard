@@ -42,7 +42,11 @@
         </button>
         <div class="header__left">
           <a class="header__logo" href="#">
-            <img src="img/logo.svg" alt="Логотип Скиллбокс" width="173" height="40">
+            <picture>
+              <source srcset="img/logo-!@320.svg" media="(max-width: 580px)" width="97" height="22">
+              <source srcset="img/logo-!@1024.svg" media="(max-width: 1360px)" width="187" height="42">
+              <img src="img/logo.svg" alt="Логотип Скиллбокс" width="173" height="40">
+            </picture>
           </a>
         </div>
         <nav class="header__nav">
@@ -582,9 +586,9 @@
           <article class="catalog__wrapper-article active js-tab-content" data-target="girlandaio">
             <div class="catalog__wrapper-article-img-wrap">
               <picture>
-                <source srcset="img/catalog-gir-!@320.jpg" media="(max-width: 576px)">
-                <source srcset="img/catalog-gir-!@768.jpg" media="(max-width: 962px)">
-                <source srcset="img/catalog-gir-!@1024.jpg" media="(max-width: 1280px)">
+                <source srcset="img/catalog-gir-!@320.jpg" media="(max-width: 580px)">
+                <source srcset="img/catalog-gir-!@768.jpg" media="(max-width: 960px)">
+                <source srcset="img/catalog-gir-!@1024.jpg" media="(max-width: 1360px)">
                 <img class="catalog__wrapper-article-img" src="img/catalog-gir-!@1920.jpg" alt="Картина Доменико Гирландайо">
               </picture>
             </div>
@@ -603,9 +607,9 @@
           <article class="catalog__wrapper-article js-tab-content" data-target="empty">
             <div class="catalog__wrapper-article-img-wrap">
               <picture>
-                <source srcset="img/catalog-epmpty-!@320.jpg" media="(max-width: 576px)">
-                <source srcset="img/catalog-epmpty-!@768.jpg" media="(max-width: 962px)">
-                <source srcset="img/catalog-epmpty-!@1024.jpg" media="(max-width: 1280px)">
+                <source srcset="img/catalog-epmpty-!@320.jpg" media="(max-width: 580px)">
+                <source srcset="img/catalog-epmpty-!@768.jpg" media="(max-width: 960px)">
+                <source srcset="img/catalog-epmpty-!@1024.jpg" media="(max-width: 1360px)">
                 <img class="catalog__wrapper-article-img" src="img/catalog-epmpty-!@1920.jpg" alt="Пустое изображение">
               </picture>
             </div>

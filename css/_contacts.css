@@ -189,7 +189,7 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: 960px) {
   .contacts__form-validation-error {
     width: calc(50% - 10px);
     margin-right: 20px;
