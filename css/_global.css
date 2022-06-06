@@ -103,6 +103,19 @@ a:focus-visible, .btn:focus-visible {
   outline-offset: -3px;
 }
 
+@media (max-width: 580px) {
+  .btn {
+    padding: 12px;
+    width: 200px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
 @media (any-hover: hover) {
   .btn:hover:not(:active) {
     outline: 3px solid var(--active-border);

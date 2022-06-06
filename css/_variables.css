@@ -43,3 +43,10 @@
     --container-padding: 50px;
   }
 }
+
+@media (max-width: 580px) {
+  :root {
+    --default-fs: 14px;
+    --default-lh: 28px;
+  }
+}

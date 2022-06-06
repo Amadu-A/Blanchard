@@ -64,7 +64,7 @@
 }
 
 .choices__list.choices__list--dropdown.is-active {
-  background-color: #000000;
+  background-color: var(--background-black);
 }
 
 .is-focused .choices__inner,
@@ -173,7 +173,7 @@
   margin-right: 9px;
   width: 12px;
   height: 12px;
-  border: 1px solid #999999;
+  border: 1px solid var(--grey);
   box-sizing: border-box;
   border-radius: 3px;
   transition: border-color .3s ease-in-out;
@@ -186,7 +186,7 @@
   height: 4px;
   left: 33%;
   top: 33%;
-  background-color: #C283F3;
+  background-color: var(--hover);
   border-radius: 100%;
   box-sizing: border-box;
   transition: opacity .3s ease-in-out;
@@ -314,8 +314,8 @@
 
 .galary__nav-prev::before {
   left: calc(50% - 7px / 2);
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 
 .galary__slide {
@@ -376,20 +376,43 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
+/* .swiper-wrapper .swiper-slide {
+  background-image: unset;
+} */
+
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 
-@media (max-width: 1024px) {
+@media (max-width: 1360px) {
   .galary__slide::before {
     padding-top: calc(85% - 6px);
+    border: 2px solid transparent;
+  }
+
+  .galary__left-elem,
+  .galary__last {
+    width: calc(250 / 824 * 100%);
+  }
+
+  .galary__swiper {
+    padding-top: 19px;
+    width: calc(530 / 824 * 100%);
+  }
+
+  .galary__nav {
+    padding-left: 1px;
+  }
+
+  .galary__slide {
+    min-height: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .galary__left-elem,
   .galary__swiper {
     width: 100%;
@@ -404,13 +427,9 @@
   .galary__last-content {
     position: static;
   }
-
-  /* .test-select {
-    max-width: 300px;
-  } */
 }
 
-@media (max-width: 440px) {
+@media (max-width: 580px) {
   .container {
     padding-left: 15px;
     padding-right: 15px;

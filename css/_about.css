@@ -1,9 +1,17 @@
 .about {
   padding-top: 80px;
-  padding-bottom: 54px;
+  padding-bottom: 71px;
   background-color: var(--white);
 }
 
 .about__text {
+  margin: 0;
   max-width: 1080px;
+}
+
+@media (max-width: 580px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 42px;
+  }
 }
