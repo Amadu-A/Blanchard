@@ -48,5 +48,6 @@
   :root {
     --default-fs: 14px;
     --default-lh: 28px;
+    --container-padding: 15px;
   }
 }

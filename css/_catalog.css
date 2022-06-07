@@ -5,6 +5,7 @@
 }
 
 .catalog__text {
+  margin-top: 0;
   margin-bottom: 39px;
   max-width: 1080px;
 }
@@ -342,9 +343,25 @@
     font-size: 24px;
     line-height: 1;
   }
+
+  .catalog__wrapper-article-img-wrap {
+    margin-bottom: 33px;
+  }
+
+  .catalog__wrapper-article-title {
+    margin-bottom: 15px;
+  }
+
+  .catalog__wrapper-article-burn {
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 960px) {
+  .catalog__text {
+    margin-bottom: 20px;
+  }
+
   .catalog__wrapper {
     flex-direction: row;
     justify-content: flex-end;
@@ -361,12 +378,21 @@
     width: 100%;
   }
 
+  .catalog__wrapper-article-img-wrap {
+    margin-bottom: 35px;
+  }
+
   .catalog__accordion-wrap {
+    padding: 26px 0;
     columns: 3;
   }
 
   .catalog__accordion-wrap-empty {
     columns: unset;
+  }
+
+  .catalog__accordion-list {
+    padding-bottom: 40px;
   }
 
   .catalog__accordion-list-background::before {
@@ -391,8 +417,66 @@
 }
 
 @media (max-width: 580px) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .catalog__text {
+    display: none;
+  }
+
+  .catalog__wrapper-accordion-item-title {
+    min-height: auto;
+  }
+
+  .catalog__wrapper-accordion-item-spoiler {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .catalog__accordion-list-elem {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .catalog__wrapper-accordion-item-spoiler::before {
+    top: calc(50% - 30px / 2);
+    width: 30px;
+    height: 30px;
+  }
+
+  .catalog__wrapper-accordion-item-spoiler::after {
+    right: calc(30px / 2 - 7px / 2);
+    top: calc(50% - 7px / 2);
+    width: 7px;
+    height: 7px;
+}
+
   .catalog__accordion-wrap {
+    padding: 21px 0;
     columns: unset;
+  }
+
+  .catalog__accordion-list {
+    padding-bottom: 0;
+  }
+
+  .catalog__wrapper-article-img-wrap {
+    margin-bottom: 25px;
+  }
+
+  .catalog__wrapper-article-title {
+    margin-bottom: 20px;
+  }
+
+  .catalog__wrapper-article-text {
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 

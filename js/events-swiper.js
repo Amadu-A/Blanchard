@@ -1,6 +1,6 @@
 (() => {
   let eventsSlider = new Swiper(".events__slides-container", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     grid: {
       rows: 1,
       fill: "row"
@@ -16,20 +16,28 @@
     },
 
     breakpoints: {
-      441: {
-        slidesPerView: 2,
-        grid: {
-          rows: 1
-        },
-        spaceBetween: 30
-      },
+      // 580: {
+      //   slidesPerView: 2,
+      //   grid: {
+      //     rows: 1
+      //   },
+      //   spaceBetween: 30
+      // },
 
-      1200: {
+      1360: {
         slidesPerView: 3,
         grid: {
-          rows: 1
+          rows: 1,
+          fill: "row"
         },
-        spaceBetween: 50
+        pagination: {
+          el: '.events .swiper-pagination',
+          clickable: true,
+        },
+        a11y: {
+          paginationBulletMessage: 'Перейти к слайду {{index}}'
+        },
+        spaceBetween: 27
       }
     },
 

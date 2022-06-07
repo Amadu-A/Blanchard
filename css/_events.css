@@ -20,6 +20,8 @@
 }
 
 .events__card {
+  display: flex;
+  flex-direction: column;
   outline: 1px solid var(--background-gray);
   outline-offset: -1px;
 }
@@ -28,8 +30,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
   padding: 13px 50px 42px;
-  height: 345px;
+  min-height: 345px;
 
 }
 
@@ -244,6 +247,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.events__slider-pagination.swiper-pagination {
+  bottom: 27px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1;
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
