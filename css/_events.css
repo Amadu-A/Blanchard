@@ -38,6 +38,7 @@
 .events__slide-content-up {
   display: flex;
   flex-direction: column;
+  margin-bottom: 68px;
 }
 
 .events__slide-content-location {
@@ -47,10 +48,6 @@
   line-height: 17px;
   color: var(--grey);
 }
-
-/* .events__slide-content-location:last-child {
-  margin-bottom: 13px;
-} */
 
 .events__slide-content-title {
   margin: 0;
@@ -89,8 +86,6 @@
   border-bottom: 1px solid var(--active-btn-enter);
   transition-duration: var(--short);
   transition-property: background-color, border-color, color;
-  cursor: pointer;
-  z-index: 99999;
 }
 
 
@@ -256,6 +251,10 @@
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 
 @media (max-width: 1360px) {
+  .events__navigation {
+    display: none;
+  }
+
   .events__slide::before {
     padding-top: calc(100% - 90px);
   }
@@ -314,8 +313,31 @@
   }
 
   .events__slide::before {
-    padding-top: calc(110% - 6px);
+    padding-top: calc(100% - 90px);
   }
+
+  .events__slide-content {
+    padding: 17px 23px 50px;
+  }
+
+  .events__slide-content-location {
+    margin-right: -5px;
+    margin-bottom: 10px;
+  }
+
+  .events__slide-content-up {
+    margin-bottom: 15px;
+  }
+
+  .events__slide-content-link {
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    margin-left: 5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
 }
 
 @media (any-hover: hover) {
