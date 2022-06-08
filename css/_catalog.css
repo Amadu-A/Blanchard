@@ -1,6 +1,6 @@
 .catalog {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: var(--white);
 }
 
@@ -358,6 +358,10 @@
 }
 
 @media (max-width: 960px) {
+  .catalog {
+    /* padding-bottom: 30px; */
+  }
+
   .catalog__text {
     margin-bottom: 20px;
   }
@@ -419,7 +423,7 @@
 @media (max-width: 580px) {
   .catalog {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .catalog__text {

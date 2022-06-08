@@ -1,5 +1,5 @@
 .events {
-  padding-top: 1px;
+  padding-top: 41px;
   padding-bottom: 80px;
   background-color: var(--white);
 }
@@ -32,8 +32,7 @@
   justify-content: space-between;
   flex: 1;
   padding: 13px 50px 42px;
-  min-height: 345px;
-
+  min-height: auto;
 }
 
 .events__slide-content-up {
@@ -63,7 +62,6 @@
 
 .events__slide-content-descr {
   margin: 0;
-  margin-bottom: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -219,7 +217,6 @@
   z-index: 1;
   display: block;
   padding-top: calc(100% - 200px);
-  /* box-sizing: border-box; */
   transition: background-color .3s ease, border-color .3s ease;
 }
 
@@ -257,49 +254,64 @@
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
-/*
-@media (max-width: 1024px) {
-  .test-slide::before {
-    padding-top: calc(85% - 6px);
+
+@media (max-width: 1360px) {
+  .events__slide::before {
+    padding-top: calc(100% - 90px);
+  }
+
+  .events__slide-content {
+    padding: 15px 33px 49px;
+    min-height: auto;
+  }
+
+  .events__slide-content-up {
+    margin-bottom: 25px;
+  }
+
+  .events__slide-content-location {
+    margin-bottom: 2px;
+    text-align: end;
+  }
+
+  .events__slide-content-title {
+    margin-bottom: 5px;
+  }
+
+  .events__slide-content-descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 
-@media (max-width: 768px) {
-  .test-left-elem,
-  .test-swiper {
-    width: 100%;
-    marign-left: 0;
-    margin-bottom: 20px;
+@media (max-width: 960px) {
+  .events {
+    padding-top: 15px;
   }
 
-  .test-last {
-    width: 100%;
+  .events__slide::before {
+    padding-top: calc(100% - 116px);
   }
 
-  .test-last-content {
-    position: static;
+  .events__slide-content {
+    padding: 14px 37px 50px 37px;
   }
 
-  .test-select {
-    max-width: 300px;
-  }
-} */
-
-@media (max-width: 440px) {
-  /* .container {
-    padding-left: 15px;
-    padding-right: 15px;
+  .events__slide-content-up {
+    margin-bottom: 26px;
   }
 
-  .test-swiper {
-    display: flex;
-    flex-direction: column-reverse;
+  .events__slide-content-location {
+    margin-right: -21px;
   }
+}
 
-  .test-navigation {
-    align-self: center;
-    margin-top: 20px;
-  } */
+@media (max-width: 580px) {
+  .events {
+    padding-top: 5px;
+  }
 
   .events__slide::before {
     padding-top: calc(110% - 6px);

@@ -16,28 +16,44 @@
     },
 
     breakpoints: {
-      // 580: {
-      //   slidesPerView: 2,
-      //   grid: {
-      //     rows: 1
-      //   },
-      //   spaceBetween: 30
-      // },
+      320: {
+        slidesPerView: 1,
+        grid: {
+          rows: 1
+        }
+        // spaceBetween: 30
+      },
 
-      1360: {
+      768: {
+        slidesPerView: 2,
+        grid: {
+          rows: 1
+        },
+        spaceBetween: 34
+      },
+
+      1024: {
         slidesPerView: 3,
         grid: {
           rows: 1,
           fill: "row"
         },
-        pagination: {
-          el: '.events .swiper-pagination',
-          clickable: true,
-        },
-        a11y: {
-          paginationBulletMessage: 'Перейти к слайду {{index}}'
-        },
         spaceBetween: 27
+        // pagination: {
+        //   el: '.events .swiper-pagination',
+        //   clickable: true,
+        // },
+        // a11y: {
+        //   paginationBulletMessage: 'Перейти к слайду {{index}}'
+        // }
+      },
+
+      1920: {
+        slidesPerView: 3,
+        grid: {
+          rows: 1
+        },
+        spaceBetween: 50
       }
     },
 
