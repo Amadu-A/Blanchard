@@ -88,8 +88,13 @@ body {
   overflow: hidden;
 }
 
-a:focus-visible, .btn:focus-visible {
+/* a:focus-visible, .btn:focus-visible {
   outline: none;
+} */
+
+*:focus {
+  outline: 1px solid var(--focus);
+  outline-offset: 1px;
 }
 
 .btn:focus {
