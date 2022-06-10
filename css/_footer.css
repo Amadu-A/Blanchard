@@ -35,6 +35,8 @@
 
 .footer__social-list-elem-link {
   display: flex;
+  width: 40px;
+  height: 40px;
   color: var(--background-gray);
   transition-duration: var(--short);
   transition-property: color;
