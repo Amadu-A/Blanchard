@@ -1,7 +1,7 @@
 (() => {
   let gallerySlider = new Swiper(".galary__slides-container", {
     slidesPerView: 1,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     grid: {
       rows: 1,
       fill: "row"
@@ -19,16 +19,25 @@
     breakpoints: {
       580: {
         slidesPerView: 2,
-        // slidesPerGroup: 1,
+        slidesPerGroup: 2,
         grid: {
           rows: 1
         },
-        spaceBetween: 30
+        spaceBetween: 38
+      },
+
+      780: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1
+        },
+        spaceBetween: 34
       },
 
       1360: {
         slidesPerView: 3,
-        // slidesPerGroup: 2,
+        slidesPerGroup: 3,
         grid: {
           rows: 1
         },
