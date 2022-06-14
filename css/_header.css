@@ -471,8 +471,8 @@
     margin-right: calc(349 / 924 * 100%);
     z-index: 13;
     display: inline-block;
-    width: 30px;
-    height: 23px;
+    width: 45px;
+    height: 29px;
   }
 
   .header__left {

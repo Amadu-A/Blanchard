@@ -103,6 +103,10 @@
   border-bottom: 1px solid var(--grey);
 }
 
+.choices__item.is-selected {
+  display: none;
+}
+
 .choices__list.choices__list--dropdown.is-active {
   border: 1px solid var(--grey);
   border-radius: 6px;
