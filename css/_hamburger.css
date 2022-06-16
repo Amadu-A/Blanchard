@@ -19,10 +19,14 @@
   opacity: .7;
 }
 
+.hamburger.is-active .hamburger__inner {
+  width: 29px;
+}
+
 .hamburger.is-active .hamburger__inner,
 .hamburger.is-active .hamburger__inner::before,
 .hamburger.is-active .hamburger__inner::after {
-  background-color: #2E2B44;
+  background-color: #FFFFFF;
 }
 
 .hamburger__box {
