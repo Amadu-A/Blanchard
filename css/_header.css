@@ -600,6 +600,7 @@
 @media (max-width: 580px) {
   .header__up {
     min-height: 45px;
+    width: 100%;
   }
 
   .header__logo {
@@ -608,13 +609,29 @@
   }
 
   .header__burger {
-    margin-right: 77px;
+    margin-right: calc(77 / 320 * 100%);
+  }
+
+  .header__search-form.is-opened {
+    padding: var(--container-padding);
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    min-height: 75px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0;
+  }
+
+  .header__close-btn {
+    position: absolute;
+    top: var(--container-padding);
+    right: var(--container-padding);
   }
 
   .header__search-btn,
   .header__close-btn {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
   }
 }
 
