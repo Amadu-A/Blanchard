@@ -132,4 +132,13 @@
   .hamburger--collapse .hamburger__inner::after {
     top: -16px;
   }
+
+  .hamburger.is-active .hamburger__inner {
+    width: 16px;
+  }
+
+  .header__burger.is-active {
+    max-width: 16px;
+    height: 16px;
+  }
 }
