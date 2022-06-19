@@ -201,7 +201,7 @@
 }
 .dropdown__simplebar .simplebar-scrollbar {
   width: 2px;
-  background-color: var(--white)FFF;
+  background-color: var(--white);
 }
 
 .header__menu-item-dropdown-link {

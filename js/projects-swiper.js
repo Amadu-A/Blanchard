@@ -1,6 +1,6 @@
 (() => {
   let projectsSlider = new Swiper(".projects__slides-container", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     grid: {
       rows: 1,
       fill: "row"

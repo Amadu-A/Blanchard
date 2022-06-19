@@ -137,6 +137,7 @@
 .projects__slide {
   position: relative;
   overflow: hidden;
+  min-height: 150px;
 }
 
 /* .projects__slide::before {
