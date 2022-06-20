@@ -36,6 +36,12 @@
       document.querySelector(".header__search-btn").classList.remove("active")
     });
 
+    // closeBtn.addEventListener('breakpoints', function () {
+    //   openBtn.disabled = false;
+    //   search.classList.add(params.hiddenClass);
+    //   document.querySelector(".header__search-btn").classList.remove("active")
+    // });
+
     document.body.addEventListener('click', function (evt) {
       if (!evt._isSearch && search._isOpened) {
         openBtn.disabled = false;
