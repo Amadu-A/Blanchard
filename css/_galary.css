@@ -225,13 +225,13 @@
   transition: color .3s ease;
 }
 
-.checkbox:checked ~ .check-text {
+/* .checkbox:checked ~ .check-text {
   color: violet;
 }
 
 .checkbox:focus ~ .check-text {
   color: orange;
-}
+} */
 
 
 /* swiper */
@@ -304,6 +304,10 @@
 .galary__nav-btn.swiper-button-disabled:hover:not(:active) {
   outline: none;
   background-color: var(--disable-dark);
+}
+
+.galary__nav-btn.galary__nav-prev.swiper-button-disabled::before {
+  border-color: var(--background-gray);
 }
 
 .galary__nav-prev {

@@ -107,7 +107,6 @@
   border-color: var(--text-dark);
 }
 /* swiper */
-
 .events__slides-container {
   overflow: hidden;
 }
@@ -242,10 +241,16 @@
 }
 
 .events__slider-pagination.swiper-pagination {
+  /* position: absolute; */
   bottom: 27px;
+  width: 18px;
   padding-left: 40px;
   padding-right: 40px;
   line-height: 1;
+  color: aqua;
+  background-color: #7943A4;
+  /* z-index: 100000000000;
+  bottom: -5px; */
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */

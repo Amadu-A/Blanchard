@@ -12,8 +12,9 @@
       },
       spaceBetween: 20,
       pagination: {
-        el: ".events .events__pagination",
-        type: "fraction"
+        el: ".swiper-pagination",
+        clickable: true,
+        // type: "fraction"
       },
       navigation: {
         nextEl: ".events__navigation-next",

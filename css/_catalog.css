@@ -122,6 +122,7 @@
 
 .is-active .catalog__wrapper-accordion-item-spoiler::after {
   transform: rotate(225deg);
+  top: calc(50% - 8px / 2);
 }
 
 .is-active .catalog__wrapper-accordion-item-spoiler::before {
@@ -446,6 +447,17 @@
   .catalog__accordion-list-elem {
     font-size: 16px;
     line-height: 32px;
+  }
+
+  .catalog__accordion-list-background::before {
+    margin-right: 27px;
+    width: 79px;
+    height: 118px;
+    outline-offset: 6px;
+  }
+
+  .catalog__accordion-list-elem-title {
+    font-size: 18px;
   }
 
   .catalog__wrapper-accordion-item-spoiler::before {

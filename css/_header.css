@@ -493,6 +493,7 @@
     margin-bottom: 30px;
     overflow-y: auto;
     max-height: 100%;
+    width: 100%;
     margin-left: -2px;
     padding-left: 2px;
     font-size: 24px;
@@ -621,7 +622,7 @@
   }
 
   .header__burger {
-    /* margin-right: calc(77 / 320 * 100%); */
+    margin-right: calc(72 / 290 * 100%);
     width: 25px;
     height: 25px;
   }
@@ -644,8 +645,8 @@
 
   .header__search-btn,
   .header__close-btn {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
   }
 
   .header__nav-wrap.is-active {
