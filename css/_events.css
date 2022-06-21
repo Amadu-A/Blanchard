@@ -241,16 +241,27 @@
 }
 
 .events__slider-pagination.swiper-pagination {
-  /* position: absolute; */
-  bottom: 27px;
-  width: 18px;
+  display: none;
+  justify-content: center;
+  bottom: -41px;
   padding-left: 40px;
   padding-right: 40px;
   line-height: 1;
-  color: aqua;
-  background-color: #7943A4;
-  /* z-index: 100000000000;
-  bottom: -5px; */
+  color: var(--background-gray);
+}
+
+.events__slider-pagination.swiper-pagination .swiper-pagination-bullet {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+}
+
+.events__slider-pagination.swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 15px;
+}
+
+.events__slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--text-gray);
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
@@ -288,6 +299,10 @@
     font-size: 16px;
     line-height: 32px;
   }
+
+  .events__slider-pagination.swiper-pagination {
+    display: flex;
+  }
 }
 
 @media (max-width: 960px) {
@@ -309,6 +324,10 @@
 
   .events__slide-content-location {
     margin-right: -21px;
+  }
+
+  .events__slider-pagination.swiper-pagination {
+    bottom: -40px;
   }
 }
 
@@ -342,7 +361,11 @@
     padding-top: 6px;
     padding-bottom: 5px;
     font-size: 16px;
-}
+  }
+
+  .events__slider-pagination.swiper-pagination {
+    bottom: -31px;
+  }
 }
 
 @media (any-hover: hover) {

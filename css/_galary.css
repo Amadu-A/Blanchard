@@ -306,7 +306,8 @@
   background-color: var(--disable-dark);
 }
 
-.galary__nav-btn.galary__nav-prev.swiper-button-disabled::before {
+.galary__nav-btn.galary__nav-prev.swiper-button-disabled::before,
+.galary__nav-btn.galary__nav-next.swiper-button-disabled::before {
   border-color: var(--background-gray);
 }
 
