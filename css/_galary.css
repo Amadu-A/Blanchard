@@ -225,15 +225,6 @@
   transition: color .3s ease;
 }
 
-/* .checkbox:checked ~ .check-text {
-  color: violet;
-}
-
-.checkbox:focus ~ .check-text {
-  color: orange;
-} */
-
-
 /* swiper */
 .galary__content-wrap {
   display: flex;

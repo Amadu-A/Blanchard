@@ -95,8 +95,6 @@
 }
 
 .header__nav-list-elem-link:focus:not(:hover) {
-  /* outline: 2px solid var(--hover);
-  outline-offset: 1px; */
   background-color: var(--focus);
 }
 
@@ -169,8 +167,8 @@
   width: 300px;
   padding: 30px;
   opacity: 0;
-  background: rgba(0, 0, 0, .6);
-  background-color: var(--background-default);
+  background: rgba(0, 0, 0, .5);
+  /* background-color: var(--background-default); */
   transition: visibility var(--short) ease-in-out, opacity var(--short) ease-in-out;
 }
 
@@ -322,7 +320,7 @@
 .header__menu-item {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 
 .header__menu-item-btn {
@@ -541,7 +539,6 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    /* display: block; */
     transform: translateX(0);
     animation-name: menu-open;
     animation-duration: .3s;

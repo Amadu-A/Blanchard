@@ -24,7 +24,6 @@ body {
   min-width: var(--body-min-width);
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-  /* max-width: 1920px; */
   font-size: var(--default-fs);
   font-weight: 400;
   line-height: var(--default-lh);
@@ -36,7 +35,6 @@ body {
 .container {
   flex-grow: 1;
   margin-right: auto;
-  /* max-width: var(--container-max-width); */
   margin-left: auto;
   padding-right: var(--container-padding);
   padding-left: var(--container-padding);

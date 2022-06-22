@@ -25,10 +25,12 @@
   --hover: #c283f3;
   --hover-background: #eaeaea;
   --error: #d11616;
+
   /* sizes */
   --body-min-width: 320px;
   --container-max-width: 1920px;
   --container-padding: calc(160 / 1920 * 100%);
+
   /* transition */
   --short: .3s;
 }

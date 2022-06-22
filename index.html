@@ -23,7 +23,6 @@
   <script src="libs/accordion.min.js" defer></script>
   <script src="js/accordion.init.js" defer></script>
 
-
   <script src="js/hero-swiper.js" defer></script>
   <script src="js/galary-swiper.js" defer></script>
   <script src="js/events-swiper.js" defer></script>
@@ -41,7 +40,7 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__up">
-        <button class="btn-reset header__burger hamburger hamburger--collapse js-burger" type="button">
+        <button class="btn-reset header__burger hamburger hamburger--collapse js-burger" type="button" aria-label="Бургер-меню">
           <span class="hamburger__box">
             <span class="hamburger__inner"></span>
           </span>
@@ -51,7 +50,7 @@
             <picture>
               <source srcset="img/logo-!@320.svg" media="(max-width: 680px)" width="97" height="22">
               <source srcset="img/logo-!@1024.svg" media="(max-width: 1360px)" width="187" height="42">
-              <img src="img/logo.svg" alt="Логотип Скиллбокс" width="173" height="40">
+              <img src="img/logo.svg" alt="Логотип Бланчард" width="173" height="40">
             </picture>
           </a>
         </div>
@@ -77,7 +76,7 @@
                 <a class="header__nav-list-elem-link js-menu-link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <button class="btn-reset header__nav-btn js-menu-link" type="button">
+            <button class="btn-reset header__nav-btn js-menu-link" type="button" aria-label="Кнопка входа">
               <span class="header__nav-btn-hover"></span>
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"></path>
@@ -87,21 +86,21 @@
           </div>
         </nav>
         <div class="header__up-search">
-          <button class="btn-reset header__search-btn js-open-search" aria-label="Найти" type="button">
+          <button class="btn-reset header__search-btn js-open-search" aria-label="Кнопка поиска" type="button">
             <svg width="30" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"></rect>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
             </svg>
           </button>
           <form class="header__search-form js-form" action="/" method="get">
-            <button class="btn-reset header__search-btn header__search-btn--submit" aria-label="Найти" type="submit">
+            <button class="btn-reset header__search-btn header__search-btn--submit" aria-label="Кнопка поиска" type="submit">
               <svg width="30" height="30" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"></rect>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
               </svg>
             </button>
-            <input class="header__search-input" type="text" placeholder>
-            <button class="header__close-btn btn-reset js-close-search" aria-label="Закрыть" type="button">
+            <input class="header__search-input" type="text" placeholder aria-label="Строка поиска">
+            <button class="header__close-btn btn-reset js-close-search" aria-label="Кнопка закрытия" type="button">
               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09326 0)" fill="currentColor"></rect>
                 <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9075)" fill="currentColor"></rect>
@@ -239,21 +238,21 @@
           </li>
         </ul>
         <div class="header__down-search">
-          <button class="btn-reset header__search-btn js-open-search active" aria-label="Найти" type="button">
+          <button class="btn-reset header__search-btn js-open-search active" aria-label="Кнопка поиска" type="button">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"></rect>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
             </svg>
           </button>
           <form class="header__search-form js-form is-opened" action="/" method="get">
-            <button class="btn-reset header__search-btn header__search-btn--submit" aria-label="Найти" type="submit">
+            <button class="btn-reset header__search-btn header__search-btn--submit" aria-label="Кнопка поиска" type="submit">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"></rect>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
               </svg>
             </button>
-            <input class="header__search-input" type="text" placeholder="Поиск по сайту">
-            <button class="header__close-btn btn-reset js-close-search" aria-label="Закрыть" type="button">
+            <input class="header__search-input" type="text" placeholder="Поиск по сайту" aria-label="Строка поиска">
+            <button class="header__close-btn btn-reset js-close-search" aria-label="Кнопка закрытия" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="currentColor"></path>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="currentColor"></path>
@@ -319,7 +318,7 @@
                   <source srcset="img/galary-1-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-1-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-1-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-1-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-1-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
               <a class="swiper-slide galary__slide" href="#">
@@ -327,7 +326,7 @@
                   <source srcset="img/galary-2-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-2-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-2-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-2-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-2-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
               <a class="swiper-slide galary__slide" href="#">
@@ -335,7 +334,7 @@
                   <source srcset="img/galary-3-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-3-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-3-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-3-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-3-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
               <a class="swiper-slide galary__slide" href="#">
@@ -343,7 +342,7 @@
                   <source srcset="img/galary-4-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-4-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-4-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-4-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-4-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
               <a class="swiper-slide galary__slide" href="#">
@@ -351,7 +350,7 @@
                   <source srcset="img/galary-5-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-5-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-5-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-5-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-5-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
               <a class="swiper-slide galary__slide" href="#">
@@ -359,7 +358,7 @@
                   <source srcset="img/galary-6-!@320.jpg" media="(max-width: 580px)">
                   <source srcset="img/galary-6-!@768.jpg" media="(max-width: 960px)">
                   <source srcset="img/galary-6-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-6-!@1920.jpg" alt>
+                  <img class="galary__slide-image" src="img/galary-6-!@1920.jpg" alt="Изображение живописи">
                 </picture>
               </a>
             </div>
@@ -650,7 +649,7 @@
                     <source srcset="img/events-book-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-book-!@768.jpg" media="(max-width: 960px)">
                     <source srcset="img/events-book-!@1024.jpg" media="(max-width: 1360px)">
-                    <img class="events__slide-image" src="img/events-book-!@1920.jpg" alt>
+                    <img class="events__slide-image" src="img/events-book-!@1920.jpg" alt="Книжная гравюра">
                   </picture>
                   <div class="events__slide-content">
                     <div class="events__slide-content-up">
@@ -672,7 +671,7 @@
                     <source srcset="img/events-discuss-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-discuss-!@768.jpg" media="(max-width: 960px)">
                     <source srcset="img/events-discuss-!@1024.jpg" media="(max-width: 1360px)">
-                    <img class="events__slide-image" src="img/events-discuss-!@1920.jpg" alt>
+                    <img class="events__slide-image" src="img/events-discuss-!@1920.jpg" alt="Петров и Ильин">
                   </picture>
                   <div class="events__slide-content">
                     <div class="events__slide-content-up">
@@ -691,7 +690,7 @@
                     <source srcset="img/events-exhibition-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-exhibition-!@768.jpg" media="(max-width: 960px)">
                     <source srcset="img/events-exhibition-!@1024.jpg" media="(max-width: 1360px)">
-                    <img class="events__slide-image" src="img/events-exhibition-!@1920.jpg" alt>
+                    <img class="events__slide-image" src="img/events-exhibition-!@1920.jpg" alt="Формация 2020">
                   </picture>
                   <div class="events__slide-content">
                     <div class="events__slide-content-up">
@@ -713,7 +712,7 @@
                     <source srcset="img/events-art-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-art-!@768.jpg" media="(max-width: 960px)">
                     <source srcset="img/events-art-!@1024.jpg" media="(max-width: 1360px)">
-                    <img class="events__slide-image" src="img/events-art-!@1920.jpg" alt>
+                    <img class="events__slide-image" src="img/events-art-!@1920.jpg" alt="Метафора серебра">
                   </picture>
                   <div class="events__slide-content">
                     <div class="events__slide-content-up">
@@ -735,7 +734,7 @@
                     <source srcset="img/events-vinzor-!@320.jpg" media="(max-width: 580px)">
                     <source srcset="img/events-vinzor-!@768.jpg" media="(max-width: 960px)">
                     <source srcset="img/events-vinzor-!@1024.jpg" media="(max-width: 1360px)">
-                    <img class="events__slide-image" src="img/events-vinzor-!@1920.jpg" alt>
+                    <img class="events__slide-image" src="img/events-vinzor-!@1920.jpg" alt="Молодое искусство">
                   </picture>
                   <div class="events__slide-content">
                     <div class="events__slide-content-up">
@@ -763,9 +762,9 @@
         <h2 class="title projects__title">Проекты</h2>
         <p class="projects__text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
-          <button class="btn-reset js-tooltip-btn" data-tippy-content="Пример современных тенденций - современная методология разработки"></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-          <button class="btn-reset js-tooltip-btn" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  "></button> исключительно в разрезе маркетинговых и финансовых
-          <button class="btn-reset js-tooltip-btn" data-tippy-content="В стремлении повысить качество"></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="#projects">blanchard-art.ru/projects</a>
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="Пример современных тенденций - современная методология разработки" aria-label="tooltip"></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  " aria-label="tooltip"></button> исключительно в разрезе маркетинговых и финансовых
+          <button class="btn-reset js-tooltip-btn" data-tippy-content="В стремлении повысить качество" aria-label="tooltip"></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="#projects">blanchard-art.ru/projects</a>
         </p>
         <h3 class="projects__title-3">Партнёры проектов:</h3>
         <div class="projects__content-wrap">
@@ -780,7 +779,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-freeelands.png" alt>
+                    <img class="projects__slide-image" src="img/projects-freeelands.png" alt="freeelands">
                   </picture>
                 </a>
 
@@ -788,16 +787,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-ICA.png" alt>
-                  </picture>
-                </a>
-
-              </div>
-
-              <div class="projects__card swiper-slide">
-                <a class="projects__slide" href="#" tabindex="-1">
-                  <picture>
-                    <img class="projects__slide-image" src="img/projects-workhouse.png" alt>
+                    <img class="projects__slide-image" src="img/projects-ICA.png" alt="ICA">
                   </picture>
                 </a>
 
@@ -806,7 +796,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-1849.png" alt>
+                    <img class="projects__slide-image" src="img/projects-workhouse.png" alt="workhouse">
                   </picture>
                 </a>
 
@@ -815,7 +805,16 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-hiscox.png" alt>
+                    <img class="projects__slide-image" src="img/projects-1849.png" alt="1849">
+                  </picture>
+                </a>
+
+              </div>
+
+              <div class="projects__card swiper-slide">
+                <a class="projects__slide" href="#" tabindex="-1">
+                  <picture>
+                    <img class="projects__slide-image" src="img/projects-hiscox.png" alt="hiscox">
                   </picture>
                 </a>
 
@@ -823,7 +822,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-camden.png" alt>
+                    <img class="projects__slide-image" src="img/projects-camden.png" alt="camden">
                   </picture>
                 </a>
 
@@ -831,7 +830,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-stassen.png" alt>
+                    <img class="projects__slide-image" src="img/projects-stassen.png" alt="stassen">
                   </picture>
                 </a>
 
@@ -839,7 +838,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-watts.png" alt>
+                    <img class="projects__slide-image" src="img/projects-watts.png" alt="watts">
                   </picture>
                 </a>
 
@@ -847,7 +846,7 @@
               <div class="projects__card swiper-slide">
                 <a class="projects__slide" href="#" tabindex="-1">
                   <picture>
-                    <img class="projects__slide-image" src="img/projects-esad.png" alt>
+                    <img class="projects__slide-image" src="img/projects-esad.png" alt="esad">
                   </picture>
                 </a>
 
@@ -877,7 +876,7 @@
           <label class="contacts__form-validation-error contacts__form-validation-mr">
             <input class="contacts__form-validation-input input-tel" data-validate-field="phone" name="Телефон" type="tel" placeholder="Телефон*" required>
           </label>
-          <button class="btn-reset btn contacts__form-btn">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
+          <button class="btn-reset btn contacts__form-btn" aria-label="Конпка заказа">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
         </form>
         <div class="contacts__links">
           <p class="contacts__links-text">
@@ -915,7 +914,7 @@
   <footer class="footer">
     <div class="container footer__container">
       <a class="footer__logo" href="#">
-        <img src="img/logo.svg" alt="Логотип Скиллбокс">
+        <img src="img/logo.svg" alt="Логотип Бланчард">
       </a>
       <div class="footer__social">
         <ul class="footer__social-list list-reset">
