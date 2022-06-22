@@ -90,7 +90,6 @@
   }
 }
 
-
 @media (any-hover: hover) {
   .footer__social-list-elem-link:hover:not(:active) {
     color: var(--white);

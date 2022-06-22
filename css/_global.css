@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
   scroll-behavior: smooth;
 }
 
@@ -14,30 +15,29 @@ a {
   text-decoration: none;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
 }
 
 body {
   min-width: var(--body-min-width);
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* max-width: 1920px; */
   font-size: var(--default-fs);
-  line-height: var(--default-lh);
   font-weight: 400;
+  line-height: var(--default-lh);
   color: var(--text-dark);
   background-color: var(--background-default);
-
-
 }
 
 /* glob */
 .container {
   flex-grow: 1;
+  margin-right: auto;
   /* max-width: var(--container-max-width); */
   margin-left: auto;
-  margin-right: auto;
   padding-right: var(--container-padding);
   padding-left: var(--container-padding);
 }
@@ -65,28 +65,28 @@ body {
 
 .btn {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 23px;
   width: 270px;
-  color: #FFFFFF;
-  background: #9D5CD0;
+  padding: 23px;
   border-radius: 100px;
-  transition-property: background-color, color, outline-color;
+  color: #ffffff;
+  background: #9d5cd0;
   transition-duration: var(--short);
+  transition-property: background-color, color, outline-color;
 }
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
+  border: 0;
 }
 
 /* a:focus-visible, .btn:focus-visible {
@@ -104,15 +104,15 @@ body {
 }
 
 .btn:active {
-  background-color: var(--active);
   outline: 3px solid var(--active-border);
   outline-offset: -3px;
+  background-color: var(--active);
 }
 
 @media (max-width: 580px) {
   .btn {
-    padding: 12px;
     width: 200px;
+    padding: 12px;
   }
 
   .title {

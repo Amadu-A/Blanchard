@@ -1,9 +1,10 @@
 .hero__container {
-  max-width: 620px;
-  padding: 243px 0 121px;
   position: relative;
   z-index: 2;
+  max-width: 620px;
+  padding: 243px 0 121px;
 }
+
 .hero {
   position: relative;
   color: var(--white);
@@ -12,59 +13,59 @@
 
 .hero .swiper {
   position: absolute;
+  z-index: 1;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  left: 0;
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 19px;
-  font-weight: 700;
   font-size: 72px;
+  font-weight: 700;
   line-height: 82px;
 }
 
 .hero__text {
   margin-top: 0;
   margin-bottom: 92px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 30px;
 }
 
 .hero__btn {
   width: 314px;
   min-height: 70px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 25px;
 }
 
 .swiper-slide:nth-child(1) {
-  background-image: url("../img/hero-birmingham-!@1920-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: var(--grey);
+  background-image: url("../img/hero-birmingham-!@1920-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .swiper-slide:nth-child(2) {
-  background-image: url("../img/hero-birmingham-!@1920-2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: var(--grey);
+  background-image: url("../img/hero-birmingham-!@1920-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .swiper-slide:nth-child(3) {
-  background-image: url("../img/hero-birmingham-!@1920-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: var(--grey);
+  background-image: url("../img/hero-birmingham-!@1920-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .white {
@@ -80,36 +81,34 @@
 
   .hero__title {
     margin-bottom: 13px;
-}
+  }
 
   .hero__text {
     margin-bottom: 134px;
   }
 }
 
-
-
 @media (max-width: 680px) {
   .hero__container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     max-width: 700px;
     padding-top: 75px;
     padding-bottom: 45px;
-}
+  }
 
   .hero__title {
     margin-bottom: 13px;
-    font-weight: 700;
     font-size: 32px;
+    font-weight: 700;
     line-height: 39px;
     text-align: center;
   }
 
   .hero__text {
-    margin: 0 auto 40px;
     max-width: 265px;
+    margin: 0 auto 40px;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -123,4 +122,3 @@
     line-height: 1;
   }
 }
-

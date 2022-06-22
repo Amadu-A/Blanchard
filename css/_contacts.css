@@ -5,11 +5,11 @@
 .contacts__container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 155px;
   padding-top: 18px;
   padding-bottom: 18px;
-  flex-wrap: wrap;
-  min-height: 155px;
   border: 1px solid var(--background-gray);
 }
 
@@ -41,28 +41,27 @@
 .contacts__form-validation-error {
   display: flex;
   flex-direction: column-reverse;
-
 }
 
 .contacts__form-validation-input {
-  margin-right: 20px;
-  padding: 9px 24px;
   width: 270px;
   height: 50px;
-  line-height: 32px;
+  margin-right: 20px;
+  padding: 9px 24px;
   border-radius: 100px;
+  line-height: 32px;
 }
 
 .contacts__form-btn {
-  padding: 9px 24px;
-  min-height: 50px;
   width: 329px;
   height: 100%;
-  font-weight: 700;
-  font-size: 18px;
-  background-color: transparent;
+  min-height: 50px;
+  padding: 9px 24px;
   border: 2px solid var(--active-btn-enter);
+  font-size: 18px;
+  font-weight: 700;
   color: var(--active-btn-enter);
+  background-color: transparent;
 }
 
 .contacts__form-btn:focus:not(:hover) {
@@ -71,10 +70,10 @@
 }
 
 .contacts__form-btn:active {
+  color: var(--text-white);
   outline: 3px solid var(--active-border);
   outline-offset: -3px;
   background-color: var(--active);
-  color: var(--text-white);
 }
 
 .contacts__form-validation-input.is-invalid {
@@ -97,16 +96,16 @@
 }
 
 .contacts__links {
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .contacts__links-text {
   margin: 0;
   margin-bottom: 6px;
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -131,15 +130,14 @@
 }
 
 .contacts__links-list-elem-link:focus:not(:hover) {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .contacts__links-list-elem-link:active {
-  outline: 1px solid #9643A4;
-  outline-offset: -1px;
   border-radius: 100%;
+  outline: 1px solid #9643a4;
+  outline-offset: -1px;
 }
-
 
 .contacts__map {
   width: 100%;
@@ -147,12 +145,12 @@
 }
 
 .contacts__map-point {
+  z-index: 999999;
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   background: var(--active-btn-enter);
-  z-index: 999999;
 }
 
 [class*="ground-pane"] {
@@ -189,17 +187,17 @@
   }
 
   .contacts__form-btn {
+    width: 342px;
     margin-bottom: 12px;
     font-size: 18px;
-    width: 342px;
   }
 }
 
 @media (max-width: 960px) {
   .contacts__form-validation-error {
     width: calc(50% - 10px);
-    margin-right: 20px;
     min-width: 290px;
+    margin-right: 20px;
   }
 
   .contacts__form-validation-mr {
@@ -207,8 +205,9 @@
   }
 
   .contacts__form-validation-input {
+    width: 100%;
+;
     margin-right: 0;
-    width: 100%
   }
 
   .contacts__form-btn {
@@ -219,12 +218,13 @@
 @media (max-width: 720px) {
   .contacts__container,
   .contacts__form {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
+
   .contacts__form,
   .contacts__form-validation-error {
-    width: 100%
+    width: 100%;
   }
 
   .contacts__form-btn-display {
@@ -260,11 +260,11 @@
 
   .contacts__form {
     margin-bottom: 9px;
-}
+  }
 
   .contacts__form-validation-input {
-    margin-bottom: 20px;
     height: 40px;
+    margin-bottom: 20px;
   }
 
   .contacts__form-btn {
@@ -273,8 +273,8 @@
   }
 
   .contacts__links-text {
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
   }
 
   .contacts__links-list-elem-link {
@@ -289,14 +289,14 @@
 
 @media (any-hover: hover) {
   .contacts__links-list-elem-link:hover:not(:active) {
-    opacity: 0.5;
+    opacity: .5;
   }
 
   .contacts__form-btn:hover:not(:active) {
-    background-color: var(--active-btn-enter);
     border: none;
-    outline: none;
     color: var(--text-white);
+    outline: none;
+    background-color: var(--active-btn-enter);
   }
 
   .contacts__form-validation-input:hover:not(:active) {

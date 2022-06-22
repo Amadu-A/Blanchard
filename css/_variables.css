@@ -5,35 +5,30 @@
   --bold: 700;
   --default-fs: 16px;
   --default-lh: 32px;
-
   /* color */
-  --white: #FFFFFF;
+  --white: #ffffff;
   --grey: #999999;
-  --background-default: #E5E5E5;
-  --background-gray: #CACACA;
+  --background-default: #e5e5e5;
+  --background-gray: #cacaca;
   --background-black: #000000;
-  --background-empty: #B7B7B7;
+  --background-empty: #b7b7b7;
   --text-dark: #333333;
-  --text-white: #FFFFFF;
+  --text-white: #ffffff;
   --text-gray: #666666;
-  --disable-dark: #B0B0B0;
-  --disable-light: #ECECEC;
-  --disable-border: #BBBBBB;
-  --focus: #7943A4;
-  --active: #7943A4;
-  --active-btn-enter: #9D5CD0;
-  --active-border: #D1A9F0;
-  --hover: #C283F3;
-  --hover-background: #EAEAEA;
-  --error: #D11616;
-
-
+  --disable-dark: #b0b0b0;
+  --disable-light: #ececec;
+  --disable-border: #bbbbbb;
+  --focus: #7943a4;
+  --active: #7943a4;
+  --active-btn-enter: #9d5cd0;
+  --active-border: #d1a9f0;
+  --hover: #c283f3;
+  --hover-background: #eaeaea;
+  --error: #d11616;
   /* sizes */
   --body-min-width: 320px;
   --container-max-width: 1920px;
   --container-padding: calc(160 / 1920 * 100%);
-
-
   /* transition */
   --short: .3s;
 }
