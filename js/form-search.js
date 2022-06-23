@@ -9,6 +9,8 @@
         this.classList.remove(params.activeClass);
         this.classList.remove(params.hiddenClass);
         this._isOpened = false;
+        openBtn.classList.remove("active");
+        openBtn.disabled = false;
       } else {
         this._isOpened = true;
       }
@@ -46,6 +48,7 @@
       if (!evt._isSearch && search._isOpened) {
         openBtn.disabled = false;
         search.classList.add(params.hiddenClass);
+        openBtn.classList.remove("active");
       }
     });
   }

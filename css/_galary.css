@@ -381,9 +381,72 @@
   object-fit: cover;
 }
 
-/* .swiper-wrapper .swiper-slide {
-  background-image: unset;
-} */
+
+/* modal */
+.swiper-section-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+  opacity: 0;
+  transform: translateY(-300px);
+  transition-property: opacity, transform;
+  transition-duration: .7s;
+  transition-timing-function: ease-in-out;
+}
+.swiper-section-modal.modal-active {
+  opacity: 1;
+  transform: none;
+}
+.swiper-section-modal__content {
+  max-width: 800px;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  min-height: 400px;
+}
+
+.swiper-section-modal__content-left {
+  width: 40%;
+}
+.swiper-section-modal__content-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-section-modal__content-right {
+  flex: 1;
+
+  padding: 40px;
+  position: relative;
+}
+.close {
+  align-self: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+
+  background-color: transparent;
+  border: 2px solid grey;
+  font-size: 16px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 

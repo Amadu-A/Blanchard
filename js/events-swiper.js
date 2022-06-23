@@ -5,7 +5,7 @@
 
 
     let eventsSlider = new Swiper(".events__slides-container", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       grid: {
         rows: 1,
         fill: "row"
@@ -76,10 +76,10 @@
           this.slides.forEach(slide => {
             if (!slide.classList.contains('slide-visible')) {
               // slide.tabIndex = '-1';
-              document.querySelector(".events__slide-content-link").tabIndex = '-1';
+              slide.querySelector(".events__slide-content-link").tabIndex = '-1';
             } else {
               // slide.tabIndex = '';
-              document.querySelector(".events__slide-content-link").tabIndex = '';
+              slide.querySelector(".events__slide-content-link").tabIndex = '';
             }
           });
         },
@@ -87,10 +87,10 @@
           this.slides.forEach(slide => {
             if (!slide.classList.contains('slide-visible')) {
               // slide.tabIndex = '-1';
-              indx.tabIndex = '-1';
+              slide.querySelector(".events__slide-content-link").tabIndex = '-1';
             } else {
               // slide.tabIndex = '';
-              indx.tabIndex = '';
+              slide.querySelector(".events__slide-content-link").tabIndex = '';
             }
           });
         }
