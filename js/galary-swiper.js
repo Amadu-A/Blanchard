@@ -93,18 +93,25 @@
       let img = this.querySelector("img");
       let link = img.getAttribute("src");
 
-
-
       let content = this.querySelector("div");
-      let content_link = content.getAttribute("data-content");
-      var cont_div1 = document.getElementById("malevich");
+      let name = content.getAttribute("data-content");
+
+      var cont_div1 = document.getElementById(name);
       var cont_div2 = document.getElementById("empty");
       cont_div2.innerHTML = cont_div1.innerHTML;
 
       console.log(modal.querySelector("img"));
       animation(modal, "modal-active", "play");
       modal.querySelector("img").setAttribute("src", link);
-      modal.querySelector(".galary__slide-modal-window").setAttribute("data-content", content_link);
+      modal.querySelector(".galary__slide-modal-window").setAttribute("data-window", name);
+
+      // let contents = document.querySelectorAll("*[data-content]");
+      // for(let i = 0; i<contents.lenghth; i++) {
+      //   if(contents[i].getAttribute("data-content") === modal.getAttribute("data-window")) {
+      //     var cont_div = document.getElementsByClassName("galary__slide-modal-content")[i];
+      //   }
+      // }
+      // let cont_div = document.querySelector("[data-content]='"+name+"'");
     })
   })
   modalBtn.addEventListener("click", function() {

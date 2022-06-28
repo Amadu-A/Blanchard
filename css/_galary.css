@@ -383,9 +383,6 @@
 
 .galary__slide-modal-content {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* modal */
@@ -452,6 +449,11 @@
   justify-content: center;
 
   cursor: pointer;
+}
+
+.galary__slide-modal-window {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
