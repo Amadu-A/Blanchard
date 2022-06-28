@@ -92,9 +92,19 @@
     el.addEventListener("click", function() {
       let img = this.querySelector("img");
       let link = img.getAttribute("src");
+
+
+
+      let content = this.querySelector("div");
+      let content_link = content.getAttribute("data-content");
+      var cont_div1 = document.getElementById("malevich");
+      var cont_div2 = document.getElementById("empty");
+      cont_div2.innerHTML = cont_div1.innerHTML;
+
       console.log(modal.querySelector("img"));
       animation(modal, "modal-active", "play");
       modal.querySelector("img").setAttribute("src", link);
+      modal.querySelector(".galary__slide-modal-window").setAttribute("data-content", content_link);
     })
   })
   modalBtn.addEventListener("click", function() {

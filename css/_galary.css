@@ -381,6 +381,12 @@
   object-fit: cover;
 }
 
+.galary__slide-modal-content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* modal */
 .swiper-section-modal {
