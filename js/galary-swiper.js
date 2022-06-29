@@ -118,6 +118,20 @@
     animation(modal, "modal-active", "reverse");
   });
 
+  window.onclick = function (event) {
+    if (event.target.hasAttribute('data-window')) {
+        event.target.style.display = "none";
+        let modals = document.querySelectorAll("*[data-window]");
+        modals[0].style.display = 'none';
+      }
+  };
+
+  // window.onclick = function (event) {
+  //   if (event.target.hasAttribute('data-window')) {
+  //     animation(modal, "modal-active", "reverse");
+  //   }
+  // };
+
   function animation(el, Class, flag) {
     if (flag === "play") {
       el.style.display = "flex";
