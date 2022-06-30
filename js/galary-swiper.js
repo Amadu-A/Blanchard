@@ -119,11 +119,12 @@
   });
 
   window.onclick = function (event) {
-    if (event.target.hasAttribute('data-window')) {
-        event.target.style.display = "none";
-        let modals = document.querySelectorAll("*[data-window]");
-        modals[0].style.display = 'none';
-      }
+    if (event.target.hasAttribute('data-modal')) {
+      animation(modal, "modal-active", "reverse");
+      event.target.style.display = "none";
+        // let modals = querySelector(".swiper-section-modal");
+        // modals.style.display = "none";
+    }
   };
 
   // window.onclick = function (event) {
