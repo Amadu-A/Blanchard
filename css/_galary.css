@@ -420,12 +420,12 @@
 }
 
 .swiper-section-modal__content-left {
-  width: 40%;
+  width: 44.5%;
 }
 .swiper-section-modal__content-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .swiper-section-modal__content-right {
   flex: 1;
@@ -436,13 +436,16 @@
 .close {
   align-self: flex-start;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  padding: 0 6px;
+  right: 16px;
+  top: 16px;
 
 
-  background-color: transparent;
-  border: 2px solid grey;
-  font-size: 16px;
+  /* background-color: transparent; */
+  /* border: 2px solid grey; */
+  font-size: 38px;
+  font-weight: 100;
+  line-height: 1;
   display: block;
   display: flex;
   align-items: center;
@@ -465,6 +468,28 @@
   font-size: 24px;
   line-height: 33px;
 }
+
+.galary__slide-modal-content-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.galary__slide-modal-content-date {
+  margin-bottom: 41px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.galary__slide-modal-content-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 
