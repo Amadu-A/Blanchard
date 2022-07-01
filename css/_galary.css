@@ -411,7 +411,10 @@
   opacity: 1;
   transform: none;
 }
+
 .swiper-section-modal__content {
+  position: absolute;
+  top: 285px;
   max-width: 900px;
   display: flex;
   background-color: var(--white);
@@ -425,25 +428,27 @@
 .swiper-section-modal__content-left img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .swiper-section-modal__content-right {
   flex: 1;
 
-  padding: 40px;
+  padding: 121px 50px 50px;
   position: relative;
 }
 .close {
   align-self: flex-start;
   position: absolute;
-  padding: 0 6px;
-  right: 16px;
-  top: 16px;
-
-
+  padding: 0;
+  right: 20px;
+  top: 20px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z' fill='black'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z' fill='black'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
   /* background-color: transparent; */
   /* border: 2px solid grey; */
-  font-size: 38px;
+  font-size: 0;
   font-weight: 100;
   line-height: 1;
   display: block;
@@ -454,16 +459,13 @@
   cursor: pointer;
 }
 
-.swiper-section-modal__content-right {
-  padding: 121px 50px;
-}
-
 .galary__slide-modal-window {
   display: flex;
   flex-direction: column;
 }
 
 .galary__slide-modal-content-title {
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -476,7 +478,7 @@
 }
 
 .galary__slide-modal-content-date {
-  margin-bottom: 41px;
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -484,16 +486,17 @@
 }
 
 .galary__slide-modal-content-description {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 32px;
 }
 
 
 
 /* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
 
-@media (max-width: 1360px) {
+@media (max-width: 1280px) {
   .galary__slide::before {
     padding-top: calc(85% - 6px);
     border: 2px solid transparent;
@@ -520,6 +523,12 @@
 
   .galary__last-content {
     bottom: 35px;
+  }
+
+  .swiper-section-modal__content {
+    top: 165px;
+    max-width: 594px;
+    min-height: 594px;
   }
 }
 
@@ -555,6 +564,16 @@
   .galary__slide::before,
   .galary__slide {
     min-height: 330px;
+  }
+
+  .swiper-section-modal__content {
+    top: 411px;
+    max-width: 668px;
+    min-height: 594px;
+  }
+
+  .swiper-section-modal__content-left {
+    width: 45%;
   }
 }
 
@@ -599,6 +618,32 @@
 
   .galary__slide::before {
     padding-top: calc(110% - 6px);
+  }
+
+  .swiper-section-modal__content {
+    flex-direction: column;
+    top: 294px;
+    max-width: 290px;
+    min-height: 600px;
+  }
+
+  .swiper-section-modal__content-left {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .close {
+    right: 10px;
+    top: -190px;
+  }
+
+  .swiper-section-modal__content-right {
+    padding: 17px 20px 17px;
+  }
+
+  .galary__slide-modal-content-date {
+    margin-bottom: 4px;
   }
 }
 
