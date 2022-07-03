@@ -136,21 +136,9 @@
   height: 50px;
   border: none;
   border-radius: 50%;
-  background-color: var(--disable-light);
+  background-image: var(--nav-btn);
   cursor: pointer;
-  transition: outline-color var(--short) ease-in-out, background-color var(--short) ease-in-out;
-}
-
-.events__navigation-btn::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 12px / 2);
-  width: 12px;
-  height: 12px;
-  border-color: var(--background-black);
-  transition: background-color var(--short) ease-in-out, border-color var(--short) ease-in-out;
-  transform: rotate(45deg);
-  transform-origin: center;
+  transition: outline-color var(--short) ease-in-out, background-image var(--short) ease-in-out;
 }
 
 .events__navigation-btn:focus:not(:hover) {
@@ -161,7 +149,7 @@
 .events__navigation-btn:active {
   outline: 2px solid var(--active-btn-enter);
   outline-offset: -2px;
-  background-color: var(--active-border);
+  background-image: var(--nav-btn-hover);
 }
 
 .events__navigation-btn.swiper-button-disabled::before,
@@ -176,14 +164,16 @@
 .events__navigation-prev {
   position: absolute;
   left: -25px;
+  transform: rotate(90deg);
 }
 
 .events__navigation-next {
   position: absolute;
   right: -25px;
+  transform: rotate(-90deg);
 }
 
-.events__navigation-next::before {
+/* .events__navigation-next::before {
   left: calc(50% - 17px / 2);
   border-top: 1px solid var(--background-black);
   border-right: 1px solid var(--background-black);
@@ -193,7 +183,7 @@
   left: calc(50% - 10px / 2);
   border-bottom: 1px solid var(--background-black);
   border-left: 1px solid var(--background-black);
-}
+} */
 
 .events__slides-container {
   overflow: hidden;
@@ -372,12 +362,11 @@
 @media (any-hover: hover) {
   .events__navigation-btn:hover:not(:active) {
     outline: none;
-    background-color: var(--active-border);
+    background-image: var(--nav-btn-hover);
   }
 
   .events__slide-content-link:hover:not(:active) {
     border-color: transparent;
     color: var(--focus);
-    /* border-bottom: 1px solid var(--active-btn-enter); */
   }
 }

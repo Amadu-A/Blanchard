@@ -52,29 +52,13 @@
   position: absolute;
   top: calc(50% - 50px / 2);
   right: 0;
-  flex-shrink: 0;
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 50%;
-  background-color: var(--disable-light);
+  background-image: var(--nav-btn);
   cursor: pointer;
-  transition: outline-color var(--short) ease-in-out, background-color var(--short) ease-in-out, outline-color var(--short) ease-in-out;
-}
-
-.catalog__wrapper-accordion-item-spoiler::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 12px / 2);
-  right: calc(50px / 2 - 12px / 2);
-  flex-shrink: 0;
-  width: 12px;
-  height: 12px;
-  border-right: 1px solid var(--background-black);
-  border-bottom: 1px solid var(--background-black);
-  transition: transform var(--short) ease-in-out;
-  transform: rotate(45deg);
-  transform-origin: center;
+  transition: outline-color var(--short) ease-in-out, background-image var(--short) ease-in-out, outline-color var(--short) ease-in-out, transform var(--short) ease-in-out;
 }
 
 .catalog__wrapper-accordion-item-spoiler-text {
@@ -82,7 +66,7 @@
 }
 
 .catalog__wrapper-accordion-item-spoiler:focus::before {
-  background-color: var(--active-border);
+  background-image: var(--nav-btn-hover);
 }
 
 .catalog__wrapper-accordion-item-spoiler:focus:not(:hover) {
@@ -103,29 +87,19 @@
 }
 
 .catalog__wrapper-accordion-item-spoiler:active::before {
-  border-color: var(--active-btn-enter);
-  outline: 2px solid var(--active-btn-enter);
-  outline-offset: -2px;
-  background-color: var(--active-border);
+  background-image: var(--nav-btn-active);
 }
 
 .is-active .catalog__wrapper-accordion-item-spoiler {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   border-color: var(--active);
   color: var(--active);
   outline: none;
 }
 
-.is-active .catalog__wrapper-accordion-item-spoiler::after {
-  top: calc(50% - 8px / 2);
-  transform: rotate(225deg);
-}
-
 .is-active .catalog__wrapper-accordion-item-spoiler::before {
-  outline: 2px solid var(--active-btn-enter);
-  outline-offset: -2px;
-  background-color: var(--active-border);
+  background-image: var(--nav-btn-active);
 }
 
 .catalog__accordion {
@@ -486,19 +460,19 @@
 @media (any-hover: hover) {
   .catalog__wrapper-accordion-item-spoiler:hover:not(:active) {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     border-color: var(--active-btn-enter);
     outline: none;
-  }
-
-  .catalog__wrapper-accordion-item-spoiler:hover:not(:active) {
-    z-index: 1;
     color: var(--active-btn-enter);
     outline: none;
   }
 
-  .catalog__wrapper-accordion-item-spoiler:hover::before {
-    background-color: var(--active-border);
+  .catalog__wrapper-accordion-item-spoiler:not(:active):hover::before {
+    background-image: var(--nav-btn-hover);
+  }
+
+  .is-active .catalog__wrapper-accordion-item-spoiler:not(:active):hover::before {
+    background-image: var(--nav-btn-active);
   }
 
   .catalog__wrapper-article-link:hover:not(:active),

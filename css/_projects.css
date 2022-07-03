@@ -62,21 +62,9 @@
   height: 30px;
   border: none;
   border-radius: 50%;
-  background-color: var(--disable-light);
+  background-image: var(--nav-btn);
   cursor: pointer;
-  transition: outline-color var(--short) ease-in-out, background-color var(--short) ease-in-out;
-}
-
-.projects__nav-btn::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 7px / 2);
-  width: 7px;
-  height: 7px;
-  border-color: var(--background-black);
-  transition: background-color var(--short) ease-in-out, border-color var(--short) ease-in-out;
-  transform: rotate(45deg);
-  transform-origin: center;
+  transition: outline-color var(--short) ease-in-out, background-image var(--short) ease-in-out;
 }
 
 .projects__nav-btn:focus:not(:hover) {
@@ -87,27 +75,22 @@
 .projects__nav-btn:active {
   outline: 2px solid var(--active-btn-enter);
   outline-offset: -2px;
-  background-color: var(--active-border);
+  background-image: var(--nav-btn-hover);
 }
 
-.projects__nav-btn.swiper-button-disabled::before,
 .projects__nav-btn.swiper-button-disabled,
 .projects__nav-btn.swiper-button-disabled:hover:not(:active) {
-  border-color: var(--disable-border);
   outline: none;
-  background-color: var(--disable-light);
+  background-image: var(--nav-btn);
+  opacity: 0.5;
 }
 
-.projects__next::before {
-  left: calc(50% - 7px / 2);
-  border-top: 1px solid var(--background-black);
-  border-right: 1px solid var(--background-black);
+.projects__prev {
+  transform: rotate(90deg);
 }
 
-.projects__prev::before {
-  left: calc(50% - 7px / 2);
-  border-bottom: 1px solid var(--background-black);
-  border-left: 1px solid var(--background-black);
+.projects__next {
+  transform: rotate(-90deg);
 }
 
 .projects__pagination {
@@ -314,7 +297,7 @@
 @media (any-hover: hover) {
   .projects__nav-btn:hover:not(:active) {
     outline: none;
-    background-color: var(--active-border);
+    background-image: var(--nav-btn-hover);
   }
 
   .js-tooltip-btn:hover:not(:active) {
@@ -324,7 +307,7 @@
   .projects__text-link:hover:not(:active) {
     border-bottom: 1px solid var(--active-btn-enter);
     color: var(--active-btn-enter);
-    background-color: transparent;;
+    background-color: transparent;
   }
 
   .projects__slide-image:hover:not(:active) {
