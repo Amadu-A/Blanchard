@@ -236,7 +236,7 @@
 .galary__swiper {
   width: calc(1150 / 1600 * 100%);
   margin-right: 0;
-  padding-top: 18px;
+  padding-top: 23px;
 }
 
 .galary__slides-container {
@@ -265,20 +265,9 @@
   border-radius: 50%;
   background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z' fill='%23666666'/%3E%3Cpath d='M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z'/%3E%3Cpath d='M14 20L19 15L14 10' stroke='white'/%3E%3C/svg%3E");
   cursor: pointer;
-  /* transform: rotate(-90deg); */
   transition-duration: var(--short);
   transition-property: transform, background-image, color, outline-color;
 }
-
-/* .galary__nav-btn::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 7px / 2);
-  width: 7px;
-  height: 7px;
-  transform: rotate(45deg);
-  transform-origin: center;
-} */
 
 .galary__nav-btn:focus:not(:hover) {
   outline: 2px solid var(--background-black);
@@ -298,31 +287,10 @@
   opacity: 0.5;
 }
 
-/* .galary__nav-btn.galary__nav-prev.swiper-button-disabled::before,
-.galary__nav-btn.galary__nav-next.swiper-button-disabled::before {
-  border-color: var(--background-gray);
-} */
-
 .galary__nav-prev {
   margin-right: 19px;
   transform: rotate(180deg);
 }
-
-.galary__nav-next {
-  /* transform: rotate(-90deg); */
-}
-/*
-.galary__nav-next::before {
-  left: calc(50% - 7px / 2);
-  border-top: 1px solid var(--white);
-  border-right: 1px solid var(--white);
-}
-
-.galary__nav-prev::before {
-  left: calc(50% - 7px / 2);
-  border-bottom: 1px solid var(--white);
-  border-left: 1px solid var(--white);
-} */
 
 .galary__slide {
   position: relative;
@@ -453,8 +421,6 @@
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
-  /* background-color: transparent; */
-  /* border: 2px solid grey; */
   font-size: 0;
   font-weight: 100;
   line-height: 1;
@@ -530,6 +496,10 @@
 
   .galary__last-content {
     bottom: 35px;
+  }
+
+  .galary__swiper {
+    padding-top: 24px;
   }
 
   .swiper-section-modal__content {

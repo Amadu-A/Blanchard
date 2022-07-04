@@ -9,13 +9,16 @@ function init(){
         center: [55.76036893311881,37.61470110778741],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 17,
-        controls: [] // это отключает элементы управления
+        zoom: 14,
+        controls: ["zoomControl", "geolocationControl"] // это отключает элементы управления
 
     },
     {
         suppressMapOpenBlock: true, // это отключает некоторые элементы внизу карты
     });
+
+    // myMap.controls.add(new ymaps.control.SmallZoomControl());
+    // myMap.controls.add('smallZoomControl');
 
     // Создание геообъекта с типом точка (метка).
     // var myGeoObject = new ymaps.GeoObject({
@@ -24,6 +27,8 @@ function init(){
     //         coordinates: [48.872185073737896,2.354223999999991] // координаты точки
     //     }
     // });
+
+
 
     var myPlacemark = new ymaps.Placemark([55.76036893311881,37.61470110778741], {}, {
         iconLayout: 'default#image',

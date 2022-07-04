@@ -158,6 +158,55 @@
   filter: grayscale(1);
 }
 
+/* Позиционирование элементов управления на карте */
+.ymaps-2-1-79-controls__toolbar_left {
+  margin-top: 340px;
+  margin-right: 10px;
+  float: right !important;
+}
+
+.ymaps-2-1-79-controls-pane *, .ymaps-2-1-79-searchpanel-pane * {
+  text-align: center !important;
+  vertical-align: center !important;
+}
+
+.ymaps-2-1-79-zoom__scale {
+  display: none;
+}
+
+.ymaps-2-1-79-controls__control {
+  position: absolute !important;
+  margin-right: 27px !important;
+  top: 285px !important;
+  right: 10px !important;
+  left: unset !important;
+}
+
+.ymaps-2-1-79-zoom {
+  height: 0 !important;
+}
+
+.ymaps-2-1-79-float-button {
+  padding: 20px !important;
+}
+
+.ymaps-2-1-79-float-button-icon {
+  position: absolute;
+  left: 7px;
+  top: 0px;
+}
+
+.ymaps-2-1-79-float-button-icon {
+  border: 12px solid transparent !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top;
+}
+
+.ymaps-2-1-79-zoom__plus {
+  top: -27px !important;
+}
+
 @media (max-width: 1360px) {
   .contacts__container {
     padding-top: 43px;
@@ -191,6 +240,14 @@
     width: 342px;
     margin-bottom: 12px;
     font-size: 18px;
+  }
+
+  .ymaps-2-1-79-controls__control {
+    display: none !important;
+  }
+
+  .ymaps-2-1-79-controls__toolbar_left {
+    display: none !important;
   }
 }
 

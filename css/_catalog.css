@@ -7,7 +7,7 @@
 .catalog__text {
   max-width: 1080px;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .catalog__wrapper {
@@ -269,7 +269,11 @@
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1280px) {
+  .catalog__text {
+    margin-bottom: 40px;
+  }
+
   .catalog__accordion-wrap {
     columns: 2;
   }
@@ -318,7 +322,7 @@
 
 @media (max-width: 960px) {
   .catalog__text {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .catalog__wrapper {
