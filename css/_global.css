@@ -107,7 +107,7 @@ body {
   background-color: var(--active);
 }
 
-@media (max-width: 580px) {
+@media (max-width: 680px) {
   .btn {
     width: 200px;
     padding: 12px;

@@ -94,10 +94,12 @@
 }
 
 .events__slide-content-link:focus:not(:hover) {
+  margin-left: -6px;
   padding: 6px;
   border-color: var(--text-white);
   color: var(--text-white);
   background-color: var(--active-btn-enter);
+  outline: none;
 }
 
 .events__slide-content-link:active {
@@ -366,7 +368,8 @@
   }
 
   .events__slide-content-link:hover:not(:active) {
-    border-color: transparent;
+    border-color: var(--focus);
     color: var(--focus);
+    /* outline: none; */
   }
 }

@@ -474,7 +474,7 @@
     display: inline-block;
     width: 45px;
     height: 29px;
-    margin-right: calc(349 / 924 * 100%);
+    margin-right: calc(330 / 924 * 100%);
   }
 
   .header__burger.is-active {
@@ -587,7 +587,7 @@
 
 @media (max-width: 960px) {
   .header__burger {
-    margin-right: calc(221 / 668 * 100%);
+    margin-right: calc(203 / 668 * 100%);
   }
 
   .header__search-form.is-opened {
