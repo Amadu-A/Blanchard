@@ -1,5 +1,5 @@
 (() => {
-  let gallerySlider = new Swiper(".galary__slides-container", {
+  let gallerySlider = new Swiper(".gallery__slides-container", {
     slidesPerView: 1,
     slidesPerGroup: 1,
     grid: {
@@ -8,12 +8,12 @@
     },
     spaceBetween: 20,
     pagination: {
-      el: ".galary .galary__pagination",
+      el: ".gallery .gallery__pagination",
       type: "fraction"
     },
     navigation: {
-      nextEl: ".galary__nav-next",
-      prevEl: ".galary__nav-prev"
+      nextEl: ".gallery__nav-next",
+      prevEl: ".gallery__nav-prev"
     },
 
     breakpoints: {
@@ -85,7 +85,7 @@
   });
 
 
-  let swiperSlides = document.querySelector(".galary__container").querySelectorAll(".swiper-slide");
+  let swiperSlides = document.querySelector(".gallery__container").querySelectorAll(".swiper-slide");
   let modal = document.querySelector(".swiper-section-modal");
   let modalBtn = modal.querySelector(".close");
   swiperSlides.forEach(el => {
@@ -103,12 +103,12 @@
       console.log(modal.querySelector("img"));
       animation(modal, "modal-active", "play");
       modal.querySelector("img").setAttribute("src", link);
-      modal.querySelector(".galary__slide-modal-window").setAttribute("data-window", name);
+      modal.querySelector(".gallery__slide-modal-window").setAttribute("data-window", name);
 
       // let contents = document.querySelectorAll("*[data-content]");
       // for(let i = 0; i<contents.lenghth; i++) {
       //   if(contents[i].getAttribute("data-content") === modal.getAttribute("data-window")) {
-      //     var cont_div = document.getElementsByClassName("galary__slide-modal-content")[i];
+      //     var cont_div = document.getElementsByClassName("gallery__slide-modal-content")[i];
       //   }
       // }
       // let cont_div = document.querySelector("[data-content]='"+name+"'");
