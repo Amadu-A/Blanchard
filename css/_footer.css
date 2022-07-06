@@ -43,6 +43,7 @@
 }
 
 .footer__social-list-elem-link:focus:not(:hover) {
+  outline: none;
   color: var(--white);
 }
 

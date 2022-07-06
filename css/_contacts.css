@@ -86,6 +86,7 @@
 }
 
 .just-validate-error-label {
+  margin-bottom: 2px;
   margin-left: 26px;
   font-size: 12px;
   line-height: 16px;
@@ -131,6 +132,7 @@
 }
 
 .contacts__links-list-elem-link:focus:not(:hover) {
+  outline: none;
   opacity: .5;
 }
 
