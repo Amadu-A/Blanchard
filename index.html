@@ -25,7 +25,7 @@
   <script src="js/accordion.init.js" defer></script>
 
   <script src="js/hero-swiper.js" defer></script>
-  <script src="js/galary-swiper.js" defer></script>
+  <script src="js/gallery-swiper.js" defer></script>
   <script src="js/events-swiper.js" defer></script>
   <script src="libs/popper.min.js" defer></script>
   <script src="js/tippy-bundle.umd.js" defer></script>
@@ -62,7 +62,7 @@
                 <a class="header__nav-list-elem-link js-menu-link" href="#about">О&nbsp;нас</a>
               </li>
               <li class="header__nav-list-elem">
-                <a class="header__nav-list-elem-link js-menu-link" href="#galary">Галерея</a>
+                <a class="header__nav-list-elem-link js-menu-link" href="#gallery">Галерея</a>
               </li>
               <li class="header__nav-list-elem">
                 <a class="header__nav-list-elem-link js-menu-link" href="#catalog">Каталог</a>
@@ -292,8 +292,8 @@
         </p>
       </div>
     </section>
-    <section class="galary" id="galary">
-      <div class="container galary__container">
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container">
         <div class="swiper-section-modal" data-modal="">
           <div class="swiper-section-modal__content">
             <div class="swiper-section-modal__content-left">
@@ -301,15 +301,15 @@
             </div>
             <div class="swiper-section-modal__content-right">
               <button class="close btn-reset"></button>
-              <div class="galary__slide-modal-window" data-window="" id="empty"></div>
+              <div class="gallery__slide-modal-window" data-window="" id="empty"></div>
             </div>
           </div>
         </div>
-        <div class="galary__content-wrap">
-          <div class="galary__left-elem">
-            <h2 class="title galary__title">Галерея</h2>
-            <p class="galary__select-title">Фильтр:</p>
-            <div class="galary__select">
+        <div class="gallery__content-wrap">
+          <div class="gallery__left-elem">
+            <h2 class="title gallery__title">Галерея</h2>
+            <p class="gallery__select-title">Фильтр:</p>
+            <div class="gallery__select">
               <select name="select">
                 <option value="Живопись" label="text"></option>
                 <option value="Рисунок" label="text"></option>
@@ -317,19 +317,19 @@
               </select>
             </div>
 
-            <div class="galary__last-content">
-              <ul class="galary__last-content-checkbox list-reset">
-                <li class="galary__last-content-checkbox-elem">
+            <div class="gallery__last-content">
+              <ul class="gallery__last-content-checkbox list-reset">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XIX век</span>
                   </label>
                 </li>
-                <li class="galary__last-content-checkbox-elem">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XX век</span>
                   </label>
                 </li>
-                <li class="galary__last-content-checkbox-elem">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">Совеременность</span>
                   </label>
@@ -338,106 +338,106 @@
             </div>
 
           </div>
-          <div class="galary__swiper">
-            <div class="galary__nav">
-              <button class="galary__nav-btn galary__nav-prev" aria-label="К предыдущему слайду"></button>
-              <div class="galary__pagination"></div>
-              <button class="galary__nav-btn galary__nav-next" aria-label="К следующему слайду"></button>
+          <div class="gallery__swiper">
+            <div class="gallery__nav">
+              <button class="gallery__nav-btn gallery__nav-prev" aria-label="К предыдущему слайду"></button>
+              <div class="gallery__pagination"></div>
+              <button class="gallery__nav-btn gallery__nav-next" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper-container galary__slides-container">
+            <div class="swiper-container gallery__slides-container">
             <div class="swiper-wrapper">
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-1-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-1-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-1-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-1-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-1-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-1-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-1-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-1-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                <div class="galary__slide-modal-content" data-content="1" id="1">
-                  <h2 class="galary__slide-modal-content-title title">Создатель1</h2>
-                    <span class="galary__slide-modal-content-name">Наименование</span>
-                    <span class="galary__slide-modal-content-date">Дата</span>
-                    <p class="galary__slide-modal-content-description">
+                <div class="gallery__slide-modal-content" data-content="1" id="1">
+                  <h2 class="gallery__slide-modal-content-title title">Создатель1</h2>
+                    <span class="gallery__slide-modal-content-name">Наименование</span>
+                    <span class="gallery__slide-modal-content-date">Дата</span>
+                    <p class="gallery__slide-modal-content-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut cupiditate asperiores reprehenderit repellat odit! Animi libero, hic expedita autem blanditiis ad tempore ipsam, labore tempora iure maxime, asperiores doloribus.
                     </p>
                 </div>
               </a>
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-2-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-2-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-2-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-2-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-2-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-2-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-2-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-2-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                <div class="galary__slide-modal-content" data-content="malevich" id="malevich">
-                  <h2 class="galary__slide-modal-content-title title">Казимир Малевич</h2>
-                  <span class="galary__slide-modal-content-name">“Женщина с граблями”</span>
-                  <span class="galary__slide-modal-content-date">1931-1932</span>
-                  <p class="galary__slide-modal-content-description">
+                <div class="gallery__slide-modal-content" data-content="malevich" id="malevich">
+                  <h2 class="gallery__slide-modal-content-title title">Казимир Малевич</h2>
+                  <span class="gallery__slide-modal-content-name">“Женщина с граблями”</span>
+                  <span class="gallery__slide-modal-content-date">1931-1932</span>
+                  <p class="gallery__slide-modal-content-description">
                     Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.
                   </p>
                 </div>
               </a>
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-3-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-3-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-3-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-3-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-3-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-3-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-3-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-3-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                  <div class="galary__slide-modal-content" data-content="3" id="3">
-                    <h2 class="galary__slide-modal-content-title title">Создатель3</h2>
-                    <span class="galary__slide-modal-content-name">Наименование</span>
-                    <span class="galary__slide-modal-content-date">Дата</span>
-                    <p class="galary__slide-modal-content-description">
+                  <div class="gallery__slide-modal-content" data-content="3" id="3">
+                    <h2 class="gallery__slide-modal-content-title title">Создатель3</h2>
+                    <span class="gallery__slide-modal-content-name">Наименование</span>
+                    <span class="gallery__slide-modal-content-date">Дата</span>
+                    <p class="gallery__slide-modal-content-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut cupiditate asperiores reprehenderit repellat odit! Animi libero, hic expedita autem blanditiis ad tempore ipsam, labore tempora iure maxime, asperiores doloribus.
                     </p>
                 </div>
               </a>
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-4-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-4-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-4-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-4-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-4-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-4-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-4-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-4-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                  <div class="galary__slide-modal-content" data-content="4" id="4">
-                    <h2 class="galary__slide-modal-content-title title">Создатель4</h2>
-                    <span class="galary__slide-modal-content-name">Наименование</span>
-                    <span class="galary__slide-modal-content-date">Дата</span>
-                    <p class="galary__slide-modal-content-description">
+                  <div class="gallery__slide-modal-content" data-content="4" id="4">
+                    <h2 class="gallery__slide-modal-content-title title">Создатель4</h2>
+                    <span class="gallery__slide-modal-content-name">Наименование</span>
+                    <span class="gallery__slide-modal-content-date">Дата</span>
+                    <p class="gallery__slide-modal-content-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut cupiditate asperiores reprehenderit repellat odit! Animi libero, hic expedita autem blanditiis ad tempore ipsam, labore tempora iure maxime, asperiores doloribus.
                     </p>
                 </div>
               </a>
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-5-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-5-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-5-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-5-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-5-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-5-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-5-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-5-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                  <div class="galary__slide-modal-content" data-content="5" id="5">
-                    <h2 class="galary__slide-modal-content-title title">Создатель5</h2>
-                    <span class="galary__slide-modal-content-name">Наименование</span>
-                    <span class="galary__slide-modal-content-date">Дата</span>
-                    <p class="galary__slide-modal-content-description">
+                  <div class="gallery__slide-modal-content" data-content="5" id="5">
+                    <h2 class="gallery__slide-modal-content-title title">Создатель5</h2>
+                    <span class="gallery__slide-modal-content-name">Наименование</span>
+                    <span class="gallery__slide-modal-content-date">Дата</span>
+                    <p class="gallery__slide-modal-content-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut cupiditate asperiores reprehenderit repellat odit! Animi libero, hic expedita autem blanditiis ad tempore ipsam, labore tempora iure maxime, asperiores doloribus.
                     </p>
                 </div>
               </a>
-              <a class="swiper-slide galary__slide" href="#">
+              <a class="swiper-slide gallery__slide" href="#">
                 <picture>
-                  <source srcset="img/galary-6-!@320.jpg" media="(max-width: 580px)">
-                  <source srcset="img/galary-6-!@768.jpg" media="(max-width: 960px)">
-                  <source srcset="img/galary-6-!@1024.jpg" media="(max-width: 1360px)">
-                  <img class="galary__slide-image" src="img/galary-6-!@1920.jpg" alt="Изображение живописи">
+                  <source srcset="img/gallery-6-!@320.jpg" media="(max-width: 580px)">
+                  <source srcset="img/gallery-6-!@768.jpg" media="(max-width: 960px)">
+                  <source srcset="img/gallery-6-!@1024.jpg" media="(max-width: 1360px)">
+                  <img class="gallery__slide-image" src="img/gallery-6-!@1920.jpg" alt="Изображение живописи">
                 </picture>
-                  <div class="galary__slide-modal-content" data-content="6" id="6">
-                    <h2 class="galary__slide-modal-content-title title">Создатель6</h2>
-                    <span class="galary__slide-modal-content-name">Наименование</span>
-                    <span class="galary__slide-modal-content-date">Дата</span>
-                    <p class="galary__slide-modal-content-description">
+                  <div class="gallery__slide-modal-content" data-content="6" id="6">
+                    <h2 class="gallery__slide-modal-content-title title">Создатель6</h2>
+                    <span class="gallery__slide-modal-content-name">Наименование</span>
+                    <span class="gallery__slide-modal-content-date">Дата</span>
+                    <p class="gallery__slide-modal-content-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut cupiditate asperiores reprehenderit repellat odit! Animi libero, hic expedita autem blanditiis ad tempore ipsam, labore tempora iure maxime, asperiores doloribus.
                     </p>
                 </div>
@@ -445,20 +445,20 @@
             </div>
           </div>
           </div>
-          <!-- <div class="galary__last">
-            <div class="galary__last-content">
-              <ul class="galary__last-content-checkbox list-reset">
-                <li class="galary__last-content-checkbox-elem">
+          <!-- <div class="gallery__last">
+            <div class="gallery__last-content">
+              <ul class="gallery__last-content-checkbox list-reset">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XIX век</span>
                   </label>
                 </li>
-                <li class="galary__last-content-checkbox-elem">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">XX век</span>
                   </label>
                 </li>
-                <li class="galary__last-content-checkbox-elem">
+                <li class="gallery__last-content-checkbox-elem">
                   <label class="check-label">
                     <input class="visually-hidden checkbox" type="checkbox"><span class="custom-checkbox"></span><span class="custom-checkbox-text">Совеременность</span>
                   </label>
@@ -572,7 +572,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -590,7 +590,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -608,7 +608,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -626,7 +626,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -644,7 +644,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -662,7 +662,7 @@
                       <p class="catalog__accordion-list-elem-text">
                         А в галерее вы всегда можете найти что-то интересное для себя
                       </p>
-                      <a class="catalog__accordion-wrap-link" href="#galary">В галерею</a>
+                      <a class="catalog__accordion-wrap-link" href="#gallery">В галерею</a>
                     </div>
                   </div>
                 </div>
@@ -707,7 +707,7 @@
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
             </div>
-            <a class="catalog__wrapper-article-link" href="#galary">В галерею</a>
+            <a class="catalog__wrapper-article-link" href="#gallery">В галерею</a>
           </article>
 
         </div>
