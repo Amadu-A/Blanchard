@@ -49,6 +49,7 @@
 
 .footer__social-list-elem-link:active {
   color: var(--active-btn-enter);
+  outline: none;
 }
 
 @media (max-width: 1360px) {

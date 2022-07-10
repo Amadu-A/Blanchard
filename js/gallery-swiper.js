@@ -88,6 +88,10 @@
   let swiperSlides = document.querySelector(".gallery__container").querySelectorAll(".swiper-slide");
   let modal = document.querySelector(".swiper-section-modal");
   let modalBtn = modal.querySelector(".close");
+  let html = document.documentElement;
+  //сохраним текущую прокрутку:
+  let scrollPosition = window.pageYOffset;
+
   swiperSlides.forEach(el => {
     el.addEventListener("click", function() {
       let img = this.querySelector("img");
@@ -95,6 +99,8 @@
 
       let content = this.querySelector("div");
       let name = content.getAttribute("data-content");
+
+      html.classList.add("hystmodal__opened");
 
       var cont_div1 = document.getElementById(name);
       var cont_div2 = document.getElementById("empty");
@@ -105,33 +111,28 @@
       modal.querySelector("img").setAttribute("src", link);
       modal.querySelector(".gallery__slide-modal-window").setAttribute("data-window", name);
 
-      // let contents = document.querySelectorAll("*[data-content]");
-      // for(let i = 0; i<contents.lenghth; i++) {
-      //   if(contents[i].getAttribute("data-content") === modal.getAttribute("data-window")) {
-      //     var cont_div = document.getElementsByClassName("gallery__slide-modal-content")[i];
-      //   }
-      // }
-      // let cont_div = document.querySelector("[data-content]='"+name+"'");
+      //блокировка страницы
+      html.classList.add("hystmodal__opened");
     })
   })
+
   modalBtn.addEventListener("click", function() {
     animation(modal, "modal-active", "reverse");
+    //разблокировка страницы
+    html.classList.remove("hystmodal__opened");
+    window.scrollTo(0, scrollPosition);
   });
 
   window.onclick = function (event) {
     if (event.target.hasAttribute('data-modal')) {
       animation(modal, "modal-active", "reverse");
       event.target.style.display = "none";
-        // let modals = querySelector(".swiper-section-modal");
-        // modals.style.display = "none";
+        //разблокировка страницы
+      html.classList.remove("hystmodal__opened");
+      window.scrollTo(0, scrollPosition);
     }
   };
 
-  // window.onclick = function (event) {
-  //   if (event.target.hasAttribute('data-window')) {
-  //     animation(modal, "modal-active", "reverse");
-  //   }
-  // };
 
   function animation(el, Class, flag) {
     if (flag === "play") {
