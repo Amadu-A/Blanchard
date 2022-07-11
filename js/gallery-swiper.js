@@ -90,7 +90,7 @@
   let modalBtn = modal.querySelector(".close");
   let html = document.documentElement;
   //сохраним текущую прокрутку:
-  let scrollPosition = window.pageYOffset;
+  // let scrollPosition = window.pageYOffset;
 
   swiperSlides.forEach(el => {
     el.addEventListener("click", function() {
