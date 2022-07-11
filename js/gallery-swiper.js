@@ -99,7 +99,7 @@
 
       let content = this.querySelector("div");
       let name = content.getAttribute("data-content");
-
+      let scrollPosition = window.pageYOffset;
       html.classList.add("hystmodal__opened");
 
       var cont_div1 = document.getElementById(name);
