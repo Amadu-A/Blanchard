@@ -25,12 +25,12 @@
 
         form.reset();
 
-        fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
+        // fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
       }
     });
   }
 
-  validateForms('.form', { email: {required: true, email: true}, tel: {required: true} }, '.thanks-popup', 'send goal');
+  validateForms('.contacts__form', { text: {required: true}, tel: {required: true} }, '.thanks-popup', 'send goal');
 
   // const validation = new window.JustValidate('.contacts__form', {
   //   errorFieldCssClass: 'is-invalid',
