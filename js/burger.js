@@ -1,8 +1,14 @@
 (() => {
+
   function setBurger(params) {
     const btn = document.querySelector(`.${params.btnClass}`);
     const menu = document.querySelector(`.${params.menuClass}`);
     const links = document.querySelectorAll(`.${params.link}`);
+
+    // const headerlink = document.querySelector(`.${params.link}`);
+    // headerlink.addEventListener("click", function() {
+    //   document.body.removeAttribute('style');
+    // });
 
     function onBtnClick () {
       btn.classList.toggle(params.activeClass);
@@ -19,6 +25,8 @@
         }
     }
 
+
+
     menu.addEventListener("animationend", function () {
       if (this.classList.contains(params.hiddenClass)) {
         this.classList.remove(params.activeClass);
@@ -26,10 +34,14 @@
       }
     });
 
+
     btn.addEventListener("click", onBtnClick);
 
     links.forEach((link) => {
-      link.addEventListener('click', onBtnClick)
+      link.addEventListener('click', onBtnClick);
+      link.addEventListener("click", function() {
+        document.body.removeAttribute('style');
+      })
     });
   }
 
@@ -41,4 +53,5 @@
     activeClass: "is-active", // класс открытого состояния
     hiddenClass: "is-closed" // класс закрывающегося состояния (удаляется сразу после закрытия)
   });
+
 })();
