@@ -58,7 +58,7 @@
     });
   }
 
-  validateForms('.contacts__form', { phone: {required: true, tel: true}, name: {required: true} }, '.thanks-popup', 'send goal');
+  validateForms('.contacts__form', { tel: {required: true, tel: true}, name: {required: true} }, '.thanks-popup', 'send goal');
 
   // const validation = new window.JustValidate('.contacts__form', {
   //   errorFieldCssClass: 'is-invalid',
