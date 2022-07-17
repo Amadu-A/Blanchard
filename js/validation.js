@@ -1,8 +1,36 @@
 (() => {
-  var phoneElement = document.querySelector("input[type='tel']");
+  let selector = document.querySelectorAll('input[type="tel"]');
+  let im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(selector);
 
-  var im = new Inputmask("+7(999) 999-99-99");
-  im.mask(phoneElement);
+  let selector2 = document.querySelector('input[type="tel"]');
+
+  selector2.addEventListener('input', function(){
+    console.log(selector2.value)
+
+
+    const re = /^\d*(\.\d+)?$/
+
+    console.log(selector2.value.match(/[0-9]/g).length)
+
+
+    console.log(selector2.value.replace(/[0-9]/g, "0"));
+
+  });
+
+  // const fileInput = document.querySelector('input[type="file"]');
+
+  // fileInput.addEventListener('change', (e) => {
+  // 	let files = e.currentTarget.files;
+  // 	console.log(files);
+
+  // 	if (files.length) {
+  // 		fileInput.closest('label').querySelector('span').textContent = files[0].name;
+  // 	} else {
+  // 		fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
+  // 	}
+
+  // });
 
   let validateForms = function(selector, rules, successModal, yaGoal) {
     new window.JustValidate(selector, {
@@ -30,7 +58,7 @@
     });
   }
 
-  validateForms('.contacts__form', { text: {required: true}, tel: {required: true} }, '.thanks-popup', 'send goal');
+  validateForms('.contacts__form', { phone: {required: true, tel: true}, name: {required: true} }, '.thanks-popup', 'send goal');
 
   // const validation = new window.JustValidate('.contacts__form', {
   //   errorFieldCssClass: 'is-invalid',
