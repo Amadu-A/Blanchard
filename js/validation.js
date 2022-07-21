@@ -58,7 +58,39 @@
     });
   }
 
-  validateForms('.contacts__form', { tel: {required: true, tel: true}, name: {required: true} }, '.thanks-popup', 'send goal');
+  validateForms('.contacts__form', {
+    rules: {
+      tel: {
+        required: true,
+        tel: true,
+      },
+      name: {
+        required: true,
+        minLength: 4,
+        maxLength: 30,
+
+      },
+      messages: {
+        name: {
+          required: "Вы не ввели имя",
+          minlength: "Please include your complete name",
+          maxlength: "Name is too long. Please abbreviate.",
+        },
+
+        tel: {
+          required: "Неверный формат номера",
+          tel: "Введите телефон",
+        },
+      },
+    },
+
+    // {
+    //   required: true,
+    //   rule: 'minLength',
+    //   value: 3,
+    //   errorMessage: 'Имя должно содержать хотя бы 3 буквы'
+    // }
+  }, '.thanks-popup', 'send goal');
 
   // const validation = new window.JustValidate('.contacts__form', {
   //   errorFieldCssClass: 'is-invalid',
