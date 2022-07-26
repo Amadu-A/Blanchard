@@ -3,6 +3,7 @@
 * (c) 2017-2021 atomiks
 * MIT License
 */
+(() => {
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
@@ -2513,4 +2514,5 @@
   return tippy;
 
 })));
+})();
 //# sourceMappingURL=tippy-bundle.umd.js.map

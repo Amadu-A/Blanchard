@@ -4,6 +4,7 @@
   im.mask(selector);
 
   let selector2 = document.querySelector('input[type="tel"]');
+  let selector3 = document.querySelector('input[type="tel"]');
 
   selector2.addEventListener('input', function(){
     console.log(selector2.value)
@@ -32,9 +33,10 @@
 
   // });
 
-  let validateForms = function(selector, rules, successModal, yaGoal) {
+  let validateForms = function(selector, rules, messages, successModal, yaGoal) {
     new window.JustValidate(selector, {
       rules: rules,
+      messages: messages,
       submitHandler: function(form) {
         let formData = new FormData(form);
 
@@ -56,34 +58,49 @@
         // fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
       }
     });
-  }
+  };
+
+  let messages = {
+    name: {
+      required: "Вы не ввели имя",
+      minLength: "Имя должно иметь более 3 символов",
+      maxLength: "Имя должно быть менее 30 символов",
+    },
+    tel: {
+      required: "Неверный формат номера",
+      tel: "Введите телефон",
+    },
+  };
 
   validateForms('.contacts__form', {
     rules: {
-      tel: {
-        required: true,
-        tel: true,
-      },
       name: {
         required: true,
-        minLength: 3,
+        minLength: 7,
         maxLength: 30,
-
       },
-      messages: {
-        name: {
-          required: "Вы не ввели имя",
-          minlength: "Имя должно иметь более 3 символов",
-          maxlength: "Имя должно быть менее 30 символов",
-        },
-
-        tel: {
-          required: "Неверный формат номера",
-          tel: "Введите телефон",
-        },
+      tel: {
+        tel: true,
+        function: (name, value) => {
+          const phone = document.querySelector('input[type="tel"]').inputmask.unmaskedvalue()
+          console.log(phone)
+          return Number(phone) && phone.length === 11
+        }
       },
+
     },
+  }, messages, '.thanks-popup', 'send goal');
 
-  }, '.thanks-popup', 'send goal');
+  // let messages = {
+  //   myField: {
+  //     required: "Вы не ввели имя",
+  //     minLength: "Имя должно иметь более 3 символов",
+  //     maxLength: "Имя должно быть менее 30 символов",
+  //   },
+  //   tel: {
+  //     required: "Неверный формат номера",
+  //     // tel: "Введите телефон",
+  //   },
+  // };
 
 })();
