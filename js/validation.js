@@ -35,6 +35,18 @@
 
   let validateForms = function(selector, rules, messages, successModal, yaGoal) {
     new window.JustValidate(selector, {
+
+      // errorFieldCssClass: 'is-invalid',
+      // errorFieldStyle: {
+      //   border: '1px solid #FF5C00',
+      // },
+      // errorLabelCssClass: 'is-label-invalid',
+      // errorLabelStyle: {
+      //   color: '#FF5C00',
+      // },
+      // focusInvalidField: true,
+      // lockForm: true,
+
       rules: rules,
       messages: messages,
       submitHandler: function(form) {
@@ -60,47 +72,40 @@
     });
   };
 
-  let messages = {
-    name: {
-      required: "Вы не ввели имя",
-      minLength: "Имя должно иметь более 3 символов",
-      maxLength: "Имя должно быть менее 30 символов",
-    },
-    tel: {
-      required: "Неверный формат номера",
-      tel: "Введите телефон",
-    },
-  };
-
-  validateForms('.contacts__form', {
+  new JustValidate('.contacts__form', {
+    colorWrong: '#D11616',
+    // errorLabelStyle: {
+    //   color: '#D11616',
+    // },
     rules: {
       name: {
         required: true,
-        minLength: 7,
-        maxLength: 30,
+        minLength: 4,
+        maxLength: 12,
       },
       tel: {
+        required: true,
         tel: true,
         function: (name, value) => {
           const phone = document.querySelector('input[type="tel"]').inputmask.unmaskedvalue()
           console.log(phone)
-          return Number(phone) && phone.length === 11
+          return Number(phone) && phone.length === 10
         }
       },
-
     },
-  }, messages, '.thanks-popup', 'send goal');
 
-  // let messages = {
-  //   myField: {
-  //     required: "Вы не ввели имя",
-  //     minLength: "Имя должно иметь более 3 символов",
-  //     maxLength: "Имя должно быть менее 30 символов",
-  //   },
-  //   tel: {
-  //     required: "Неверный формат номера",
-  //     // tel: "Введите телефон",
-  //   },
-  // };
+    messages: {
+      name: {
+        required: "Вы не ввели имя",
+        minLength: "Имя должно иметь более 3 символов",
+        maxLength: "Имя должно быть менее 12 символов",
+      },
+      tel: {
+        required: "Введите телефон",
+        tel: "Неверный формат номера",
+      },
+    },
+
+  }, '.thanks-popup', 'send goal');
 
 })();
