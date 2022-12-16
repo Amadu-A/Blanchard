@@ -91,6 +91,10 @@
   let html = document.documentElement;
   //сохраним текущую прокрутку:
   // let scrollPosition = window.pageYOffset;
+  console.log(swiperSlides[0])
+  // let scrollPosition = swiperSlides[0].offsetTop;
+  var scrollPosition = swiperSlides[0].getBoundingClientRect().top;
+  console.log(scrollPosition)
 
   swiperSlides.forEach(el => {
     el.addEventListener("click", function() {
@@ -100,19 +104,22 @@
       let content = this.querySelector("div");
       let name = content.getAttribute("data-content");
       let scrollPosition = window.pageYOffset;
-      html.classList.add("hystmodal__opened");
+      // html.classList.add("hystmodal__opened");
 
       var cont_div1 = document.getElementById(name);
       var cont_div2 = document.getElementById("empty");
       cont_div2.innerHTML = cont_div1.innerHTML;
 
+      console.log(scrollPosition);
       console.log(modal.querySelector("img"));
       animation(modal, "modal-active", "play");
       modal.querySelector("img").setAttribute("src", link);
       modal.querySelector(".gallery__slide-modal-window").setAttribute("data-window", name);
 
       //блокировка страницы
+      window.scrollTo(0, scrollPosition);
       html.classList.add("hystmodal__opened");
+
     })
   })
 
@@ -120,6 +127,7 @@
     animation(modal, "modal-active", "reverse");
     //разблокировка страницы
     html.classList.remove("hystmodal__opened");
+    console.log(scrollPosition);
     window.scrollTo(0, scrollPosition);
   });
 

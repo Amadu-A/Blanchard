@@ -103,7 +103,9 @@
 }
 
 .catalog__accordion {
+  padding-left: 2px;
   overflow: hidden;
+  transition-duration: 600ms;
 }
 
 .catalog__accordion-list {
@@ -145,6 +147,10 @@
 
 .catalog__accordion-wrap-empty {
   columns: unset;
+}
+
+.catalog__accordion-list-elem {
+  padding-left: 2px;
 }
 
 .catalog__accordion-list-elem-link.active {

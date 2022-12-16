@@ -288,6 +288,8 @@
   }
 
   .projects__slide-image {
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: 65px;
   }
 

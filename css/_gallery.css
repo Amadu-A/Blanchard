@@ -462,6 +462,7 @@
 
 .hystmodal__opened {
   position: fixed;
+  /* top: 1266px; */
   right: 0;
   left: 0;
   overflow: hidden;
@@ -514,7 +515,6 @@
 @media (max-width: 960px) {
   .gallery__left-elem {
     width: 42%;
-
     padding-bottom: 0;
   }
 
