@@ -53,10 +53,10 @@ $body = $message;
 $mail->msgHTML($body);
 
 // Приложения
-if ($_FILES){
-	foreach ( $_FILES['file']['tmp_name'] as $key => $value ) {
-		$mail->addAttachment($value, $_FILES['file']['name'][$key]);
-	}
-}
+// if ($_FILES){
+// 	foreach ( $_FILES['file']['tmp_name'] as $key => $value ) {
+// 		$mail->addAttachment($value, $_FILES['file']['name'][$key]);
+// 	}
+// }
 $mail->send();
 ?>

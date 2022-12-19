@@ -49,26 +49,30 @@
 
       rules: rules,
       messages: messages,
-      submitHandler: function(form) {
-        let formData = new FormData(form);
+      submitHandler: submitHandler,
 
-        let xhr = new XMLHttpRequest();
+      // submitHandler: function(form) {
+      //   console.log('Исполняется');
+      //   let formData = new FormData(form);
 
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              console.log('Отправлено');
-            }
-          }
-        }
+      //   let xhr = new XMLHttpRequest();
 
-        xhr.open('POST', 'mail.php', true);
-        xhr.send(formData);
+      //   xhr.onreadystatechange = function() {
+      //     console.log(xhr.readyState, xhr.statu);
+      //     if (xhr.readyState === 4) {
+      //       if (xhr.status === 200) {
+      //         console.log('Отправлено');
+      //       }
+      //     }
+      //   };
 
-        form.reset();
+      //   xhr.open('POST', 'mail.php', true);
+      //   xhr.send(formData);
+
+      //   form.reset();
 
         // fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
-      }
+      // }
     });
   };
 
@@ -104,6 +108,29 @@
         required: "Введите телефон",
         tel: "Неверный формат номера",
       },
+    },
+
+    submitHandler: function(form) {
+      console.log('Исполняется2');
+      let formData = new FormData(form);
+
+      let xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function() {
+        console.log(xhr.readyState, xhr.status);
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log('Отправлено2');
+          }
+        }
+      };
+
+      xhr.open('POST', 'mail.php', true);
+      xhr.send(formData);
+
+      form.reset();
+
+      // fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
     },
 
   }, '.thanks-popup', 'send goal');

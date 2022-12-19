@@ -8,9 +8,10 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="libs/choices.min.css" rel="stylesheet">
   <link href="libs/swiper.min.css" rel="stylesheet">
+  <link href="libs/simplebar.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="favicon.svg" rel="icon">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" rel="stylesheet" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" rel="stylesheet" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
   <!-- <link href="//yandex.st/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
   <!-- <script src="js/scrollto.js" defer></script> -->
@@ -19,7 +20,8 @@
   <script src="libs/swiper.min.js" defer></script>
   <script src="libs/choices.min.js" defer></script>
   <script src="js/select.js" defer></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+  <!-- <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script> -->
+  <script src="libs/simplebar.min.js" defer></script>
   <script src="js/dropdown-simplebar.js" defer></script>
   <script src="js/tabs.js" defer></script>
   <script src="libs/accordion.min.js" defer></script>
@@ -928,6 +930,7 @@
         </div>
         <form class="contacts__form" action="mail.php" enctype="multipart/form-data" method="POST">
           <input type="hidden" name="admin_email[]" value="main_ivan@mail.ru">
+          <input type="hidden" name="admin_email[]" value="ivanmain52@gmail.com">
           <input type="hidden" name="form_subject" value="Тема письма">
           <label class="contacts__form-validation-error">
             <input class="contacts__form-validation-input input-name" data-validate-field="name" name="name" type="name" placeholder="Имя*" required>
@@ -935,7 +938,7 @@
           <label class="contacts__form-validation-error contacts__form-validation-mr">
             <input class="contacts__form-validation-input input-tel" data-validate-field="tel" name="tel" type="tel" placeholder="Телефон*" required>
           </label>
-          <button class="btn-reset btn contacts__form-btn" aria-label="Кнопка заказа">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
+          <button class="btn-reset btn contacts__form-btn" type="submit" aria-label="Кнопка заказа">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
         </form>
         <div class="contacts__links">
           <p class="contacts__links-text">
