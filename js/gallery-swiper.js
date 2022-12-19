@@ -107,7 +107,7 @@
       // html.classList.add("hystmodal__opened");
 
       var cont_div1 = document.getElementById(name);
-      var cont_div2 = document.getElementById("empty");
+      var cont_div2 = document.getElementById("empty-pic");
       cont_div2.innerHTML = cont_div1.innerHTML;
 
       console.log(scrollPosition);
