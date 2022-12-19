@@ -164,7 +164,8 @@
   padding: 30px;
   opacity: 0;
   background: rgba(0, 0, 0, .5);
-  /* background-color: var(--background-default); */
+
+/* background-color: var(--background-default); */
   transition: visibility var(--short) ease-in-out, opacity var(--short) ease-in-out;
 }
 

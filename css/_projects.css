@@ -29,9 +29,9 @@
 .projects__swiper {
   position: relative;
   width: 100%;
-;
   padding-right: 75px;
   padding-left: 75px;
+  ;
 }
 
 .projects__card.swiper-slide {
@@ -80,9 +80,9 @@
 
 .projects__nav-btn.swiper-button-disabled,
 .projects__nav-btn.swiper-button-disabled:hover:not(:active) {
+  opacity: .5;
   outline: none;
   background-image: var(--nav-btn);
-  opacity: 0.5;
 }
 
 .projects__prev {
@@ -194,8 +194,8 @@
 }
 
 .js-tooltip-btn:focus:not(:hover) {
-  background-color: var(--active-border);
   outline: none;
+  background-color: var(--active-border);
 }
 
 .js-tooltip-btn:active {
@@ -288,9 +288,9 @@
   }
 
   .projects__slide-image {
+    height: 65px;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: 65px;
   }
 
   .projects__swiper {
@@ -310,8 +310,8 @@
   }
 
   .js-tooltip-btn:hover:not(:active) {
-    background-color: var(--active-border);
     outline: none;
+    background-color: var(--active-border);
   }
 
   .projects__text-link:hover:not(:active) {

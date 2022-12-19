@@ -103,8 +103,8 @@
 }
 
 .catalog__accordion {
-  padding-left: 2px;
   overflow: hidden;
+  padding-left: 2px;
   transition-duration: 600ms;
 }
 
@@ -472,7 +472,6 @@
     position: relative;
     z-index: 2;
     border-color: var(--active-btn-enter);
-    outline: none;
     color: var(--active-btn-enter);
     outline: none;
   }

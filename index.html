@@ -44,7 +44,7 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__up">
-        <button class="btn-reset header__burger hamburger hamburger--collapse js-burger" type="button" aria-label="Бургер-меню">
+        <button class="btn-reset header__burger hamburger hamburger--collapse js-burger" aria-label="Бургер-меню" type="button">
           <span class="hamburger__box">
             <span class="hamburger__inner"></span>
           </span>
@@ -79,7 +79,7 @@
               <a class="header__nav-list-elem-link js-menu-link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <button class="btn-reset header__nav-btn js-menu-link" type="button" aria-label="Кнопка входа">
+          <button class="btn-reset header__nav-btn js-menu-link" aria-label="Кнопка входа" type="button">
             <span class="header__nav-btn-hover"></span>
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"></path>
@@ -101,7 +101,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
               </svg>
             </button>
-            <input class="header__search-input" type="text" placeholder aria-label="Строка поиска">
+            <input class="header__search-input" aria-label="Строка поиска" type="text" placeholder>
             <button class="header__close-btn btn-reset js-close-search" aria-label="Кнопка закрытия" type="button">
               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09326 0)" fill="currentColor"></rect>
@@ -253,7 +253,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"></path>
               </svg>
             </button>
-            <input class="header__search-input" type="text" placeholder="Поиск по сайту" aria-label="Строка поиска">
+            <input class="header__search-input" aria-label="Строка поиска" type="text" placeholder="Поиск по сайту">
             <button class="header__close-btn btn-reset js-close-search" aria-label="Кнопка закрытия" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="currentColor"></path>
@@ -295,14 +295,14 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="container gallery__container">
-        <div class="swiper-section-modal" data-modal="">
+        <div class="swiper-section-modal" data-modal>
           <div class="swiper-section-modal__content">
             <div class="swiper-section-modal__content-left">
-              <img src="https://searchtips.ru/wp-content/uploads/8/e/d/8ede857c010f1b4d0f203f8d226e339d.jpg" />
+              <img src="https://searchtips.ru/wp-content/uploads/8/e/d/8ede857c010f1b4d0f203f8d226e339d.jpg">
             </div>
             <div class="swiper-section-modal__content-right">
               <button class="close btn-reset"></button>
-              <div class="gallery__slide-modal-window" data-window="" id="empty"></div>
+              <div class="gallery__slide-modal-window" id="empty" data-window></div>
             </div>
           </div>
         </div>
@@ -352,7 +352,7 @@
                     <source srcset="img/gallery-1-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-1-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                  <div class="gallery__slide-modal-content" data-content="1" id="1">
+                  <div class="gallery__slide-modal-content" id="1" data-content="1">
                     <h2 class="gallery__slide-modal-content-title title">Создатель1</h2>
                       <span class="gallery__slide-modal-content-name">Наименование</span>
                       <span class="gallery__slide-modal-content-date">Дата</span>
@@ -368,7 +368,7 @@
                     <source srcset="img/gallery-2-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-2-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                  <div class="gallery__slide-modal-content" data-content="malevich" id="malevich">
+                  <div class="gallery__slide-modal-content" id="malevich" data-content="malevich">
                     <h2 class="gallery__slide-modal-content-title title">Казимир Малевич</h2>
                     <span class="gallery__slide-modal-content-name">“Женщина с граблями”</span>
                     <span class="gallery__slide-modal-content-date">1931-1932</span>
@@ -384,7 +384,7 @@
                     <source srcset="img/gallery-3-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-3-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                    <div class="gallery__slide-modal-content" data-content="3" id="3">
+                    <div class="gallery__slide-modal-content" id="3" data-content="3">
                       <h2 class="gallery__slide-modal-content-title title">Создатель3</h2>
                       <span class="gallery__slide-modal-content-name">Наименование</span>
                       <span class="gallery__slide-modal-content-date">Дата</span>
@@ -400,7 +400,7 @@
                     <source srcset="img/gallery-4-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-4-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                    <div class="gallery__slide-modal-content" data-content="4" id="4">
+                    <div class="gallery__slide-modal-content" id="4" data-content="4">
                       <h2 class="gallery__slide-modal-content-title title">Создатель4</h2>
                       <span class="gallery__slide-modal-content-name">Наименование</span>
                       <span class="gallery__slide-modal-content-date">Дата</span>
@@ -416,7 +416,7 @@
                     <source srcset="img/gallery-5-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-5-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                    <div class="gallery__slide-modal-content" data-content="5" id="5">
+                    <div class="gallery__slide-modal-content" id="5" data-content="5">
                       <h2 class="gallery__slide-modal-content-title title">Создатель5</h2>
                       <span class="gallery__slide-modal-content-name">Наименование</span>
                       <span class="gallery__slide-modal-content-date">Дата</span>
@@ -432,7 +432,7 @@
                     <source srcset="img/gallery-6-!@1024.jpg" media="(max-width: 1360px)">
                     <img class="gallery__slide-image" src="img/gallery-6-!@1920.jpg" alt="Изображение живописи">
                   </picture>
-                    <div class="gallery__slide-modal-content" data-content="6" id="6">
+                    <div class="gallery__slide-modal-content" id="6" data-content="6">
                       <h2 class="gallery__slide-modal-content-title title">Создатель6</h2>
                       <span class="gallery__slide-modal-content-name">Наименование</span>
                       <span class="gallery__slide-modal-content-date">Дата</span>
@@ -938,7 +938,7 @@
           <label class="contacts__form-validation-error contacts__form-validation-mr">
             <input class="contacts__form-validation-input input-tel" data-validate-field="tel" name="tel" type="tel" placeholder="Телефон*" required>
           </label>
-          <button class="btn-reset btn contacts__form-btn" type="submit" aria-label="Кнопка заказа">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
+          <button class="btn-reset btn contacts__form-btn" aria-label="Кнопка заказа" type="submit">Заказать<span class="contacts__form-btn-display">&nbsp;обратный звонок</span></button>
         </form>
         <div class="contacts__links">
           <p class="contacts__links-text">

@@ -89,16 +89,16 @@
 
 .events__slide-content-link::before {
   content: "";
+  position: absolute;
+  z-index: -1;
   top: -4px;
   left: -6px;
-  position: absolute;
-  padding-top: 6px;
-  padding-bottom: 6px;
   width: 115%;
   height: 105%;
-  background-color: var(--active-btn-enter);
-  z-index: -1;
+  padding-top: 6px;
+  padding-bottom: 6px;
   opacity: 0;
+  background-color: var(--active-btn-enter);
   transition-duration: var(--short);
   transition-property: background-color;
 }
@@ -108,16 +108,16 @@
 }
 
 .events__slide-content-link:focus:not(:hover) {
-  color: var(--text-white);
   border-color: var(--text-white);
+  color: var(--text-white);
   outline: none;
 }
 
 .events__slide-content-link:active {
   border-color: var(--text-dark);
   color: var(--text-dark);
-  background-color: transparent;
   outline: none;
+  background-color: transparent;
 }
 
 /* swiper */

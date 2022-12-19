@@ -48,7 +48,6 @@
 .js-validate-error-label {
   margin-left: 24px;
   font-size: 12px;
-
 }
 
 .contacts__form-validation-input {
@@ -56,9 +55,9 @@
   height: 50px;
   margin-right: 20px;
   padding: 9px 24px;
+  border: 1px solid var(--text-dark);
   border-radius: 100px;
   line-height: 32px;
-  border: 1px solid var(--text-dark);
 }
 
 .contacts__form-btn {
@@ -140,8 +139,8 @@
 }
 
 .contacts__links-list-elem-link:focus:not(:hover) {
-  outline: none;
   opacity: .5;
+  outline: none;
 }
 
 .contacts__links-list-elem-link:active {
@@ -170,12 +169,13 @@
 
 /* Позиционирование элементов управления на карте */
 .ymaps-2-1-79-controls__toolbar_left {
+  float: right !important;
   margin-top: 340px;
   margin-right: 10px;
-  float: right !important;
 }
 
-.ymaps-2-1-79-controls-pane *, .ymaps-2-1-79-searchpanel-pane * {
+.ymaps-2-1-79-controls-pane *,
+.ymaps-2-1-79-searchpanel-pane * {
   text-align: center !important;
   vertical-align: center !important;
 }
@@ -186,10 +186,10 @@
 
 .ymaps-2-1-79-controls__control {
   position: absolute !important;
-  margin-right: 27px !important;
   top: 285px !important;
   right: 10px !important;
   left: unset !important;
+  margin-right: 27px !important;
 }
 
 .ymaps-2-1-79-zoom {
@@ -202,15 +202,15 @@
 
 .ymaps-2-1-79-float-button-icon {
   position: absolute;
+  top: 0;
   left: 7px;
-  top: 0px;
 }
 
 .ymaps-2-1-79-float-button-icon {
   border: 12px solid transparent !important;
+  vertical-align: top;
   background-repeat: no-repeat;
   background-position: center;
-  vertical-align: top;
 }
 
 .ymaps-2-1-79-zoom__plus {
@@ -274,7 +274,6 @@
 
   .contacts__form-validation-input {
     width: 100%;
-;
     margin-right: 0;
   }
 

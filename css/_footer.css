@@ -43,8 +43,8 @@
 }
 
 .footer__social-list-elem-link:focus:not(:hover) {
-  outline: none;
   color: var(--white);
+  outline: none;
 }
 
 .footer__social-list-elem-link:active {
